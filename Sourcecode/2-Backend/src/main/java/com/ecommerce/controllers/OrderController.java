@@ -2,32 +2,56 @@ package com.ecommerce.controllers;
 
 import com.ecommerce.models.Pesanan;
 import com.ecommerce.models.Produk;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import com.ecommerce.config.DatabaseConfig;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class OrderController {
-    private List<Pesanan> tabelPesanan = new ArrayList<>();
 
-    // Logika memproses Checkout produk
-    public boolean buatPesanan(int idPesanan, int idPembeli, Produk produkYangDibeli, int jumlahBeli) {
-        // Cek apakah stok cukup
-        if (produkYangDibeli.getStok() < jumlahBeli) {
-            System.out.println("Maaf, stok tidak mencukupi!");
+    public boolean buatPesanan(int idPembeli, Produk produk, int jumlahBeli) {
+        // Cek stok (asumsi stok dicek dulu sebelum memanggil fungsi ini)
+        if (produk.getStok() < jumlahBeli) {
+            System.out.println("Stok tidak mencukupi!");
             return false;
         }
 
-        // Kurangi stok produk
-        produkYangDibeli.setStok(produkYangDibeli.getStok() - jumlahBeli);
+        double totalHarga = produk.getHarga() * jumlahBeli;
+        String sqlInsertPesanan = "INSERT INTO pesanan (id_pembeli, id_produk, jumlah_beli, total_harga, status_pesanan) VALUES (?, ?, ?, ?, 'Menunggu Pembayaran')";
+        String sqlUpdateStok = "UPDATE produk SET stok = stok - ? WHERE id = ?";
 
-        // Hitung total harga
-        double total = produkYangDibeli.getHarga() * jumlahBeli;
+        try (Connection conn = DatabaseConfig.getConnection()) {
+            // Kita matikan auto-commit agar transaksi aman (kalau satu gagal, semua batal)
+            conn.setAutoCommit(false); 
 
-        // Simpan ke catatan pesanan (Memakai model Pesanan)
-        Pesanan pesananBaru = new Pesanan(idPesanan, idPembeli, produkYangDibeli, jumlahBeli, total, new Date(), "Lunas");
-        tabelPesanan.add(pesananBaru);
-        
-        System.out.println("Pesanan berhasil dibuat dengan total: Rp" + total);
-        return true;
+            try (PreparedStatement stmtPesanan = conn.prepareStatement(sqlInsertPesanan);
+                 PreparedStatement stmtStok = conn.prepareStatement(sqlUpdateStok)) {
+                
+                // 1. Simpan Pesanan
+                stmtPesanan.setInt(1, idPembeli);
+                stmtPesanan.setInt(2, produk.getId());
+                stmtPesanan.setInt(3, jumlahBeli);
+                stmtPesanan.setDouble(4, totalHarga);
+                stmtPesanan.executeUpdate();
+
+                // 2. Kurangi Stok Produk
+                stmtStok.setInt(1, jumlahBeli);
+                stmtStok.setInt(2, produk.getId());
+                stmtStok.executeUpdate();
+
+                // 3. Simpan perubahan ke database
+                conn.commit();
+                System.out.println("Transaksi Berhasil! Total yang harus dibayar: Rp" + totalHarga);
+                return true;
+                
+            } catch (SQLException ex) {
+                conn.rollback(); // Batalkan jika ada error
+                System.out.println("Transaksi Gagal, mengembalikan data... " + ex.getMessage());
+                return false;
+            }
+        } catch (SQLException e) {
+            System.out.println("Error Koneksi: " + e.getMessage());
+            return false;
+        }
     }
 }

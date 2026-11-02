@@ -1,40 +1,69 @@
 package com.ecommerce.controllers;
 
-import com.ecommerce.models.*;
-import java.util.ArrayList;
-import java.util.List;
+import com.ecommerce.models.Pembeli;
+import com.ecommerce.models.Pengguna;
+import com.ecommerce.config.DatabaseConfig;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class AuthController {
-    // Simulasi tabel database Pengguna menggunakan List
-    private List<Pengguna> tabelPengguna = new ArrayList<>();
 
-    // Logika untuk Mendaftar (Register) Pembeli
-    public boolean registerPembeli(int id, String nama, String email, String password, String noTelepon, String alamat) {
-        // Mengecek apakah email sudah dipakai
-        for (Pengguna p : tabelPengguna) {
-            if (p.getEmail().equals(email)) {
-                System.out.println("Email sudah terdaftar!");
-                return false; // Gagal mendaftar
+    // Fungsi Register Pembeli ke Database
+    public boolean registerPembeli(String nama, String email, String password, String noTelepon, String alamat) {
+        String sql = "INSERT INTO pembeli (nama, email, password, no_telepon, alamat_pengiriman) VALUES (?, ?, ?, ?, ?)";
+
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            
+            stmt.setString(1, nama);
+            stmt.setString(2, email);
+            stmt.setString(3, password);
+            stmt.setString(4, noTelepon);
+            stmt.setString(5, alamat);
+            
+            int barisBerubah = stmt.executeUpdate();
+            if (barisBerubah > 0) {
+                System.out.println("Berhasil: Akun pembeli baru telah disimpan ke database!");
+                return true;
             }
+        } catch (SQLException e) {
+            System.out.println("Gagal Register: " + e.getMessage());
         }
-        
-        // Memakai model Pembeli
-        Pembeli pembeliBaru = new Pembeli(id, nama, email, password, noTelepon, alamat);
-        tabelPengguna.add(pembeliBaru);
-        System.out.println("Registrasi Pembeli Berhasil!");
-        return true;
+        return false;
     }
 
-    // Logika untuk Login
+    // Fungsi Login dari Database
     public Pengguna login(String email, String password) {
-        for (Pengguna p : tabelPengguna) {
-            // Jika email dan password cocok
-            if (p.getEmail().equals(email) && p.getPassword().equals(password)) {
-                System.out.println("Login Berhasil! Selamat datang, " + p.getNama());
-                return p; // Mengembalikan data pengguna yang berhasil login
+        String sql = "SELECT * FROM pembeli WHERE email = ? AND password = ?";
+        
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            
+            stmt.setString(1, email);
+            stmt.setString(2, password);
+            
+            ResultSet rs = stmt.executeQuery();
+            
+            if (rs.next()) {
+                // Jika data ditemukan, buat objek Pembeli dan kembalikan
+                Pembeli user = new Pembeli(
+                    rs.getInt("id"),
+                    rs.getString("nama"),
+                    rs.getString("email"),
+                    rs.getString("password"),
+                    rs.getString("no_telepon"),
+                    rs.getString("alamat_pengiriman")
+                );
+                System.out.println("Berhasil Login! Selamat datang, " + user.getNama());
+                return user;
+            } else {
+                System.out.println("Email atau Password salah!");
             }
+        } catch (SQLException e) {
+            System.out.println("Gagal Login (Error Database): " + e.getMessage());
         }
-        System.out.println("Email atau Password salah!");
-        return null; // Gagal login
+        return null;
     }
 }
