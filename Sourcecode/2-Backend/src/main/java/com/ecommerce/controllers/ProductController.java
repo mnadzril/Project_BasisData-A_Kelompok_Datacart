@@ -1,8 +1,9 @@
 package com.ecommerce.controllers;
 
-import com.ecommerce.models.Produk;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.ecommerce.models.Produk;
 
 public class ProductController {
     private List<Produk> tabelProduk = new ArrayList<>();
