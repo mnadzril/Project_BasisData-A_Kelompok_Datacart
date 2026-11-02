@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Nexora</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+
+        .login-container {
+            width: 320px;
+            min-height: 520px;
+            background: linear-gradient(180deg, #19ae9e, #08635c);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 95px;
+            font-family: Georgia, serif;
+        }
+
+        .login-form {
+            width: 100%;
+        }
+
+        .login-form h4 {
+            text-align: center;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            height: 43px;
+            background: white;
+            border-radius: 5px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .input-box span {
+            color: #555;
+            margin-right: 8px;
+        }
+
+        .input-box input {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 12px;
+        }
+
+        .input-box input::placeholder {
+            color: #aaa;
+        }
+
+        .login-button {
+            width: 100%;
+            height: 38px;
+            margin-top: 10px;
+            background: #13aa9c;
+            color: white;
+            border: 1px solid #064f49;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background: #0c9588;
+        }
+
+        .signup-text {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 25px;
+        }
+
+        .signup-text a {
+            display: block;
+            margin-top: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-text a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 400px) {
+            .login-container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <div class="logo">NEXORA</div>
+
+        <form class="login-form" action="#" method="post">
+
+            <h4>Login to your Account</h4>
+
+            <div class="input-box">
+                <span>♙</span>
+                <input type="text" name="username"
+                    placeholder="Username" required>
+            </div>
+
+            <div class="input-box">
+                <span>♙</span>
+                <input type="password" name="password"
+                    placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="login-button">
+                LOGIN
+            </button>
+
+            <div class="signup-text">
+                Don't have an account?
+                <a href="signup.html">Sign up</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
