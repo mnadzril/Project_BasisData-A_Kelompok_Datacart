@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexora - Login</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap">
+</head>
+<body>
+
+    <div class="loginnnnnnnnn">
+
+        <div class="loginnnnnnnnn-child"></div>
+
+        <!-- LOGIN -->
+        <div class="login" id="login"></div>
+
+        <div class="password"></div>
+        <div class="username"></div>
+
+        <div class="username2">Username</div>
+        <div class="password2">Password</div>
+
+        <b class="login2">LOGIN</b>
+
+        <img class="vector-user-icon" src="icons/Vector_PW.svg">
+        <img class="vector-pw-icon" src="icons/Vector_User.svg">
+
+        <b class="sign-up" id="signUpText">Sign up</b>
+
+        <b class="login-to-your">Login to your Account</b>
+        <b class="dont-have-an">Don’t have an account?</b>
+
+        <div class="logo-shop-parent">
+            <img class="logo-shop-icon" src="icons/Logo Shop.png">
+            <img class="shopid-icon" src="icons/Shop.id.png">
+        </div>
+
+
+        <!-- POPUP SIGN UP -->
+        <div id="kotakSignContainer" class="popup-overlay">
+
+            <div class="kotak-sign">
+
+                <div class="kotak-sign-child"></div>
+
+                <div class="login3"></div>
+                <b class="login4">LOGIN</b>
+
+                <div class="password3"></div>
+                <div class="password4">Password</div>
+                <img class="vector-icon" src="" alt="">
+
+                <div class="password5"></div>
+                <img class="group-email-icon" src="" alt="">
+                <div class="email">Email</div>
+
+                <div class="username-parent">
+                    <div class="username3"></div>
+                    <div class="username4">Username</div>
+                    <img class="vector-icon2" src="" alt="">
+                </div>
+
+                <b class="sign-up2">Sign up</b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // MEMBUKA POPUP SIGN UP
+
+        const signUpText = document.getElementById("signUpText");
+        const popup = document.getElementById("kotakSignContainer");
+
+        signUpText.addEventListener("click", function () {
+            popup.style.display = "flex";
+        });
+
+
+        // MENUTUP POPUP JIKA KLIK AREA LUAR KOTAK
+
+        popup.addEventListener("click", function (e) {
+
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
