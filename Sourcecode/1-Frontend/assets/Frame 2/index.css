@@ -1,0 +1,547 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #eeeeee;
+    line-height: normal;
+}
+.frame-2-done {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: Poppins;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.frame-2-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+  	flex-shrink: 0;
+}
+.frame-2-done-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #18a999;
+  	width: 440px;
+  	height: 148px;
+  	flex-shrink: 0;
+}
+.frame-2-done-inner {
+  	position: absolute;
+  	top: 854px;
+  	left: 0px;
+  	box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+  	background-color: #fff;
+  	width: 440px;
+  	height: 102px;
+  	flex-shrink: 0;
+}
+.cart-icon {
+  	position: absolute;
+  	top: 871px;
+  	left: 201px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.category-icon {
+  	position: absolute;
+  	height: 3.35%;
+  	width: 7.5%;
+  	top: 91.42%;
+  	right: 64.32%;
+  	bottom: 5.23%;
+  	left: 28.18%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.home {
+  	position: absolute;
+  	top: 916px;
+  	left: 25px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 62px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.category {
+  	position: absolute;
+  	top: 916px;
+  	left: 99px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 82px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.cart {
+  	position: absolute;
+  	top: 916px;
+  	left: 201px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 39px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.wishlist {
+  	position: absolute;
+  	top: 916px;
+  	left: 264px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 68px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.profile {
+  	position: absolute;
+  	top: 916px;
+  	left: 355px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 54px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 79px;
+  	left: 34px;
+  	border-radius: 20px;
+  	background-color: #fff;
+  	width: 372px;
+  	height: 47px;
+  	flex-shrink: 0;
+}
+.cari-produk-kategori {
+  	position: absolute;
+  	top: 91px;
+  	left: 78px;
+  	line-height: 140%;
+  	display: flex;
+  	color: #b1b1b1;
+  	align-items: center;
+  	justify-content: center;
+  	width: 276px;
+  	height: 23px;
+  	flex-shrink: 0;
+}
+.produk-terlaris {
+  	position: absolute;
+  	top: 540px;
+  	left: 25px;
+  	font-size: 24px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 201px;
+  	height: 37px;
+  	flex-shrink: 0;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 291px;
+  	left: 25px;
+  	width: 428.4px;
+  	height: 248.4px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: 26px;
+  	color: #fff;
+}
+.group-child {
+  	position: absolute;
+  	top: 19px;
+  	left: 0px;
+  	border-radius: 20px;
+  	background-color: #7ceba3;
+  	width: 392px;
+  	height: 210px;
+}
+.group-item {
+  	position: absolute;
+  	top: 153px;
+  	left: 21px;
+  	border-radius: 10px;
+  	width: 170px;
+  	height: 58px;
+}
+.diskon-besar {
+  	position: absolute;
+  	top: 31px;
+  	left: 25px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 224px;
+  	height: 34px;
+}
+.akhir-tahun {
+  	position: absolute;
+  	top: 60px;
+  	left: 25px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 184px;
+  	height: 34px;
+}
+.diskon-hingga-50 {
+  	position: absolute;
+  	top: 97px;
+  	left: 26px;
+  	font-size: 12px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 160px;
+  	height: 45px;
+}
+.belanja-sekarang {
+  	position: absolute;
+  	top: 165px;
+  	left: 31px;
+  	font-size: 16px;
+  	line-height: 140%;
+  	display: flex;
+  	color: #18a999;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  	width: 149px;
+  	height: 34px;
+}
+.iklan-hp-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 180px;
+  	width: 248.4px;
+  	height: 248.4px;
+  	object-fit: contain;
+}
+.frame-2-done-child2 {
+  	position: absolute;
+  	top: 589px;
+  	left: 25px;
+  	border-radius: 20px;
+  	background-color: #fff;
+  	border: 5px solid #a9ffcd;
+  	box-sizing: border-box;
+  	width: 186px;
+  	height: 247px;
+  	flex-shrink: 0;
+}
+.iphone-16-teal-container {
+  	position: absolute;
+  	top: 765px;
+  	left: 45px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 145px;
+  	height: 23px;
+  	flex-shrink: 0;
+}
+.iphone-16-teal-container2 {
+  	width: 100%;
+}
+.iphone-16 {
+  	line-height: 140%;
+}
+.teal {
+  	color: #008080;
+  	line-height: 140%;
+}
+.frame-2-done-child3 {
+  	position: absolute;
+  	top: 589px;
+  	left: 25px;
+  	border-radius: 20px 20px 0px 0px;
+  	background-color: rgba(169, 255, 205, 0.4);
+  	width: 186px;
+  	height: 171px;
+  	flex-shrink: 0;
+}
+.frame-2-done-child4 {
+  	position: absolute;
+  	top: 589px;
+  	left: 231px;
+  	border-radius: 20px;
+  	background-color: #fff;
+  	border: 5px solid #a9ffcd;
+  	box-sizing: border-box;
+  	width: 186px;
+  	height: 247px;
+  	flex-shrink: 0;
+}
+.fnix-7x-solar {
+  	position: absolute;
+  	top: 765px;
+  	left: 245px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 158px;
+  	height: 23px;
+  	flex-shrink: 0;
+}
+.frame-2-done-child5 {
+  	position: absolute;
+  	top: 589px;
+  	left: 231px;
+  	border-radius: 20px 20px 0px 0px;
+  	background-color: rgba(169, 255, 205, 0.4);
+  	width: 186px;
+  	height: 171px;
+  	flex-shrink: 0;
+}
+.iphone-16-icon {
+  	position: absolute;
+  	top: 603px;
+  	left: 61px;
+  	width: 113px;
+  	height: 141px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.jamtangan-icon {
+  	position: absolute;
+  	top: 585px;
+  	left: 235px;
+  	width: 178px;
+  	height: 178px;
+  	object-fit: cover;
+  	flex-shrink: 0;
+}
+.search-icon {
+  	position: absolute;
+  	height: 2.21%;
+  	width: 4.8%;
+  	top: 9.62%;
+  	right: 83.16%;
+  	bottom: 88.17%;
+  	left: 12.05%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 166px;
+  	left: 24px;
+  	width: 392px;
+  	height: 125px;
+  	flex-shrink: 0;
+  	font-size: 13px;
+}
+.group-inner {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 20px;
+  	background-color: #7ceba3;
+  	width: 392px;
+  	height: 125px;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 22px;
+  	left: 20px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 76px;
+  	height: 82px;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 22px;
+  	left: 111px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 76px;
+  	height: 82px;
+}
+.group-child4 {
+  	position: absolute;
+  	top: 22px;
+  	left: 202px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 76px;
+  	height: 82px;
+}
+.group-child5 {
+  	position: absolute;
+  	top: 22px;
+  	left: 293px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	width: 76px;
+  	height: 82px;
+}
+.lainnya-icon {
+  	position: absolute;
+  	top: 33px;
+  	left: 308px;
+  	width: 46px;
+  	height: 46px;
+  	object-fit: cover;
+}
+.pulsa {
+  	position: absolute;
+  	top: 77px;
+  	left: 23px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 70px;
+  	height: 22px;
+}
+.makanan {
+  	position: absolute;
+  	top: 77px;
+  	left: 114px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 70px;
+  	height: 22px;
+}
+.games {
+  	position: absolute;
+  	top: 77px;
+  	left: 205px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 70px;
+  	height: 22px;
+}
+.lainnya {
+  	position: absolute;
+  	top: 77px;
+  	left: 296px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 70px;
+  	height: 22px;
+}
+.logo-makanan-icon {
+  	position: absolute;
+  	top: 30px;
+  	left: 124px;
+  	width: 49px;
+  	height: 50px;
+  	object-fit: cover;
+}
+.logo-pulsa-icon {
+  	position: absolute;
+  	top: 31px;
+  	left: 33px;
+  	width: 50px;
+  	height: 49px;
+  	object-fit: cover;
+}
+.logo-game-icon {
+  	position: absolute;
+  	top: 31px;
+  	left: 214px;
+  	width: 51px;
+  	height: 49px;
+  	object-fit: cover;
+}
+.love-icon {
+  	position: absolute;
+  	top: 872px;
+  	left: 280px;
+  	width: 36px;
+  	height: 36px;
+  	object-fit: cover;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.home-icon {
+  	position: absolute;
+  	height: 3.97%;
+  	width: 7.5%;
+  	top: 91.11%;
+  	right: 83.41%;
+  	bottom: 4.92%;
+  	left: 9.09%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.group-profile-icon {
+  	position: absolute;
+  	height: 3.48%;
+  	width: 7.57%;
+  	top: 91.11%;
+  	right: 9.48%;
+  	bottom: 5.41%;
+  	left: 82.95%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.rp15269000 {
+  	position: absolute;
+  	top: 790px;
+  	left: 54px;
+  	font-size: 18px;
+  	font-weight: 800;
+  	font-family: Inter;
+  	color: #008080;
+  	flex-shrink: 0;
+}
+.rp12789000 {
+  	position: absolute;
+  	top: 790px;
+  	left: 261px;
+  	font-size: 18px;
+  	font-weight: 800;
+  	font-family: Inter;
+  	color: #008080;
+  	flex-shrink: 0;
+}
+

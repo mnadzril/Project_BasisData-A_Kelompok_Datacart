@@ -1,0 +1,195 @@
+
+/* PENGATURAN HALAMAN */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #d4d4d4;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* HALAMAN LOGIN */
+
+.loginnnnnnnnn {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    color: #b1b1b1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.loginnnnnnnnn-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #18a999 55%, #0b655e 70%);
+    width: 440px;
+    height: 956px;
+}
+
+
+/* TOMBOL LOGIN */
+
+.login,
+.login2 {
+    cursor: pointer;
+}
+
+.login {
+    position: absolute;
+    top: 735px;
+    left: 82px;
+    border-radius: 10px;
+    background-color: #18a999;
+    border: 1px solid #000;
+    width: 276px;
+    height: 56px;
+}
+
+
+/* INPUT USERNAME DAN PASSWORD */
+
+.username,
+.password {
+    position: absolute;
+    left: 82px;
+    width: 276px;
+    height: 68px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 3px solid #18a999;
+    padding-left: 65px;
+    padding-right: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+.username {
+    top: 523px;
+}
+
+.password {
+    top: 621px;
+}
+
+.username::placeholder,
+.password::placeholder {
+    color: #b1b1b1;
+}
+
+
+/* TULISAN LOGIN */
+
+.login2 {
+    position: absolute;
+    top: 755px;
+    left: 163px;
+    font-size: 32px;
+    line-height: 140%;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 114px;
+    height: 15px;
+}
+
+
+/* IKON USERNAME DAN PASSWORD */
+
+.vector-user-icon {
+    position: absolute;
+    height: 2.93%;
+    width: 6.59%;
+    top: 56.8%;
+    right: 68.64%;
+    bottom: 40.27%;
+    left: 24.77%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+.vector-pw-icon {
+    position: absolute;
+    height: 3.66%;
+    width: 7.27%;
+    top: 66.63%;
+    right: 67.95%;
+    bottom: 29.71%;
+    left: 24.77%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+
+/* TULISAN SIGN UP */
+
+.sign-up {
+    position: absolute;
+    top: 857px;
+    left: 177px;
+    font-size: 22px;
+    color: #fffbfb;
+    cursor: pointer;
+}
+
+.login-to-your {
+    position: absolute;
+    top: 463px;
+    left: 108px;
+    color: #fff;
+}
+
+.dont-have-an {
+    position: absolute;
+    top: 817px;
+    left: 98px;
+    color: #fff9f9;
+}
+
+
+/* LOGO */
+
+.logo-shop-parent {
+    position: absolute;
+    top: 182px;
+    left: 124px;
+    width: 191px;
+    height: 218px;
+}
+
+.logo-shop-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 191px;
+    height: 149px;
+    object-fit: cover;
+}
+
+.shopid-icon {
+    position: absolute;
+    top: 147px;
+    left: 1px;
+    width: 190px;
+    height: 71px;
+    object-fit: cover;
+}
