@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nexora - Login</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="KotakSign.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">
+</head>
+<body>
+
+    <div class="loginnnnnnnnn">
+
+        <div class="loginnnnnnnnn-child"></div>
+
+        <!-- LOGIN UTAMA -->
+
+        <div class="login" id="login"></div>
+
+        <input type="text" class="username" id="username"
+            placeholder="Username" autocomplete="username">
+
+        <input type="password" class="password" id="password"
+            placeholder="Password" autocomplete="current-password">
+
+        <b class="login2">LOGIN</b>
+
+        <img class="vector-user-icon" src="icons/Vector_User.svg" alt="">
+        <img class="vector-pw-icon" src="icons/Vector_PW.svg" alt="">
+
+        <b class="sign-up" id="signUpText">Sign up</b>
+
+        <b class="login-to-your">Login to your Account</b>
+        <b class="dont-have-an">Don’t have an account?</b>
+
+        <div class="logo-shop-parent">
+            <img class="logo-shop-icon" src="icons/Logo Shop.png" alt="">
+            <img class="shopid-icon" src="icons/Shop.id.png" alt="">
+        </div>
+
+
+        <!-- POPUP SIGN UP -->
+
+        <div id="kotakSignContainer" class="popup-overlay">
+
+            <div class="kotak-sign">
+
+                <div class="kotak-sign-child"></div>
+
+                <!-- TOMBOL LOGIN POPUP -->
+
+                <div class="login3" id="loginPopup"></div>
+                <b class="login4">LOGIN</b>
+
+                <!-- PASSWORD -->
+
+                <input type="password" class="password3"
+                    id="passwordPopup" placeholder="Password">
+
+                <img class="vector-icon" src="icons/Vector_PW.svg" alt="">
+
+                <!-- EMAIL -->
+
+                <input type="email" class="password5"
+                    id="emailPopup" placeholder="Email">
+
+                <img class="group-email-icon" src="icons/Group_Email.svg" alt="">
+
+                <!-- USERNAME -->
+
+                <div class="username-parent">
+
+                    <input type="text" class="username3"
+                        id="usernamePopup" placeholder="Username">
+
+                    <img class="vector-icon2" src="icons/Vector_User.svg" alt="">
+
+                </div>
+
+                <b class="sign-up2">Sign up</b>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        // MEMBUKA POPUP SIGN UP
+
+        const signUpText = document.getElementById("signUpText");
+        const popup = document.getElementById("kotakSignContainer");
+
+        signUpText.addEventListener("click", function () {
+            popup.style.display = "flex";
+        });
+
+
+        // MENUTUP POPUP JIKA KLIK AREA LUAR KOTAK
+
+        popup.addEventListener("click", function (e) {
+
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+
+        });
+
+
+        // LOGIN HALAMAN UTAMA
+
+        const tombolLogin = document.getElementById("login");
+        const teksLogin = document.querySelector(".login2");
+
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+
+        function masukHome() {
+
+            if (
+                usernameInput.value.trim() === "" ||
+                passwordInput.value.trim() === ""
+            ) {
+                alert("Username dan Password harus diisi!");
+                return;
+            }
+
+            window.location.href = "../Frame%202/index.html";
+
+        }
+
+        tombolLogin.addEventListener("click", masukHome);
+        teksLogin.addEventListener("click", masukHome);
+
+
+        // LOGIN DI DALAM POPUP
+
+        const loginPopup = document.getElementById("loginPopup");
+        const teksLoginPopup = document.querySelector(".login4");
+
+        const usernamePopup = document.getElementById("usernamePopup");
+        const passwordPopup = document.getElementById("passwordPopup");
+        const emailPopup = document.getElementById("emailPopup");
+
+        function masukHomePopup() {
+
+            if (
+                usernamePopup.value.trim() === "" ||
+                passwordPopup.value.trim() === "" ||
+                emailPopup.value.trim() === ""
+            ) {
+                alert("Username, Email, dan Password harus diisi!");
+                return;
+            }
+
+            window.location.href = "../Frame%202/index.html";
+
+        }
+
+        loginPopup.addEventListener("click", masukHomePopup);
+        teksLoginPopup.addEventListener("click", masukHomePopup);
+
+    </script>
+
+</body>
+</html>
