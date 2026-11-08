@@ -1,0 +1,849 @@
+body {
+    margin: 0;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+.frame-3-done {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    font-family: Poppins;
+}
+.frame-3-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+  	flex-shrink: 0;
+}
+.frame-3-done-item {
+  	position: absolute;
+  	top: 153px;
+  	left: 0px;
+  	border-radius: 20px 20px 0px 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 38px;
+  	flex-shrink: 0;
+}
+.semua {
+  	position: absolute;
+  	top: 160px;
+  	left: 29px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 87px;
+  	height: 25px;
+  	flex-shrink: 0;
+}
+.produk {
+  	position: absolute;
+  	top: 160px;
+  	left: 176px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 87px;
+  	height: 25px;
+  	flex-shrink: 0;
+}
+.toko {
+  	position: absolute;
+  	top: 160px;
+  	left: 322px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 87px;
+  	height: 25px;
+  	flex-shrink: 0;
+}
+.hasil-pencarian-untuk {
+  	position: absolute;
+  	top: 201px;
+  	left: 16px;
+  	font-size: 13.5px;
+  	line-height: 140%;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 274px;
+  	height: 28px;
+  	flex-shrink: 0;
+}
+.filter {
+  	position: absolute;
+  	top: 214px;
+  	left: 385px;
+  	font-size: 11px;
+  	line-height: 140%;
+  	font-weight: 500;
+  	color: #0066ff;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 34px;
+  	height: 19px;
+  	flex-shrink: 0;
+}
+.produk-ditemukan {
+  	position: absolute;
+  	top: 219px;
+  	left: 18px;
+  	font-size: 13.5px;
+  	line-height: 140%;
+  	font-weight: 500;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 154px;
+  	height: 28px;
+  	flex-shrink: 0;
+}
+.frame-3-done-inner {
+  	position: absolute;
+  	top: 251px;
+  	left: 0px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 592px;
+  	flex-shrink: 0;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #18a999;
+  	width: 440px;
+  	height: 148px;
+  	flex-shrink: 0;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 79px;
+  	left: 34px;
+  	width: 372px;
+  	height: 47px;
+  	flex-shrink: 0;
+  	color: #b1b1b1;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 20px;
+  	background-color: #fff;
+  	width: 372px;
+  	height: 47px;
+}
+.barang-favorit {
+  	position: absolute;
+  	top: 12px;
+  	left: 44px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 130px;
+  	height: 23px;
+}
+.vector-icon {
+  	position: absolute;
+  	height: 2.21%;
+  	width: 4.8%;
+  	top: 9.62%;
+  	right: 83.16%;
+  	bottom: 88.17%;
+  	left: 12.05%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.line-div {
+  	position: absolute;
+  	top: 190.67px;
+  	left: -1.5px;
+  	border-top: 3px solid #029d29;
+  	box-sizing: border-box;
+  	width: 149.6px;
+  	height: 3px;
+  	flex-shrink: 0;
+}
+.frame-3-done-child2 {
+  	position: absolute;
+  	top: 190.67px;
+  	left: 144.5px;
+  	border-top: 3px solid #25d77e;
+  	box-sizing: border-box;
+  	width: 149.6px;
+  	height: 3px;
+  	flex-shrink: 0;
+}
+.frame-3-done-child3 {
+  	position: absolute;
+  	top: 190.67px;
+  	left: 291.1px;
+  	border-top: 3px solid #25d77e;
+  	box-sizing: border-box;
+  	width: 151px;
+  	height: 3px;
+  	flex-shrink: 0;
+}
+.filterr-icon {
+  	position: absolute;
+  	height: 1.67%;
+  	width: 3.86%;
+  	top: 22.59%;
+  	right: 12.73%;
+  	bottom: 75.73%;
+  	left: 83.41%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.frame-3-done-child4 {
+  	position: absolute;
+  	top: 854px;
+  	left: 0px;
+  	box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+  	background-color: #fff;
+  	width: 440px;
+  	height: 102px;
+  	flex-shrink: 0;
+}
+.group-icon {
+  	position: absolute;
+  	height: 3.48%;
+  	width: 7.57%;
+  	top: 91.11%;
+  	right: 9.48%;
+  	bottom: 5.41%;
+  	left: 82.95%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.cart-icon {
+  	position: absolute;
+  	top: 871px;
+  	left: 201px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.vector-icon2 {
+  	position: absolute;
+  	height: 3.35%;
+  	width: 7.5%;
+  	top: 91.42%;
+  	right: 64.32%;
+  	bottom: 5.23%;
+  	left: 28.18%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	flex-shrink: 0;
+}
+.home {
+  	position: absolute;
+  	top: 916px;
+  	left: 25px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 62px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.category {
+  	position: absolute;
+  	top: 916px;
+  	left: 99px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 82px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.cart {
+  	position: absolute;
+  	top: 916px;
+  	left: 201px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 39px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.wishlist {
+  	position: absolute;
+  	top: 916px;
+  	left: 264px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 68px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.profile {
+  	position: absolute;
+  	top: 916px;
+  	left: 355px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 54px;
+  	height: 13px;
+  	flex-shrink: 0;
+}
+.vector-icon3 {
+  	position: absolute;
+  	height: 3.97%;
+  	width: 7.5%;
+  	top: 91.11%;
+  	right: 83.41%;
+  	bottom: 4.92%;
+  	left: 9.09%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.imageslove-removebg-preview-1-icon {
+  	position: absolute;
+  	top: 872px;
+  	left: 280px;
+  	width: 36px;
+  	height: 36px;
+  	object-fit: cover;
+  	cursor: pointer;
+  	flex-shrink: 0;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 251px;
+  	left: 0px;
+  	width: 441px;
+  	height: 172px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	width: 441px;
+  	height: 172px;
+  	cursor: pointer;
+}
+.wishlistt-icon {
+  	position: absolute;
+  	height: 12.79%;
+  	width: 5.67%;
+  	top: 29.07%;
+  	right: 9.3%;
+  	bottom: 58.14%;
+  	left: 85.03%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	cursor: pointer;
+}
+.samsung-s24-ultra {
+  	position: absolute;
+  	top: 60px;
+  	left: 136px;
+  	display: inline-block;
+  	width: 193px;
+}
+.tersedia {
+  	position: absolute;
+  	top: 42px;
+  	left: 145.26px;
+  	font-size: 10px;
+  	font-weight: 800;
+  	color: #004712;
+  	display: inline-block;
+  	width: 46px;
+}
+.rp21999000 {
+  	position: absolute;
+  	top: 115px;
+  	left: 136px;
+  	font-weight: 800;
+  	color: #18a999;
+  	display: inline-block;
+  	width: 142px;
+}
+.samsunghp-icon {
+  	position: absolute;
+  	top: 35.77px;
+  	left: 19.9px;
+  	width: 98px;
+  	height: 112.7px;
+  	object-fit: cover;
+}
+.ulasan-parent {
+  	position: absolute;
+  	top: 88px;
+  	left: 135.85px;
+  	width: 112.9px;
+  	height: 20px;
+  	font-size: 9px;
+  	color: #7e7e7e;
+}
+.ulasan {
+  	position: absolute;
+  	top: 5px;
+  	left: 66.88px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 46px;
+}
+.b {
+  	position: absolute;
+  	top: 2px;
+  	left: 22.99px;
+  	font-size: 15px;
+  	display: inline-block;
+  	color: #ffcd29;
+  	width: 25.1px;
+}
+.bintang-icon {
+  	position: absolute;
+  	height: 100%;
+  	width: 18.51%;
+  	top: 0%;
+  	right: 81.49%;
+  	bottom: 0%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.group-inner {
+  	position: absolute;
+  	top: 5px;
+  	left: 57.48px;
+  	border-right: 2.1px solid #acacac;
+  	box-sizing: border-box;
+  	width: 2.1px;
+  	height: 13.1px;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 42px;
+  	left: 135.85px;
+  	border-radius: 3px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 63.7px;
+  	height: 13px;
+}
+.keranjangbiru {
+  	position: absolute;
+  	top: 98px;
+  	left: 368px;
+  	width: 41.8px;
+  	height: 40px;
+}
+.keranjangbiru-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 10px;
+  	background-color: #fff;
+  	border: 2px solid #0088ff;
+  	box-sizing: border-box;
+  	width: 41.8px;
+  	height: 40px;
+}
+.cart-icon2 {
+  	position: absolute;
+  	top: 3.64px;
+  	left: 4.39px;
+  	border-radius: 10px;
+  	width: 32.7px;
+  	height: 32.7px;
+  	cursor: pointer;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 423px;
+  	left: 1px;
+  	width: 440px;
+  	height: 150px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	border-top: 1px solid rgba(0, 0, 0, 0.25);
+  	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  	box-sizing: border-box;
+  	width: 440px;
+  	height: 150px;
+}
+.vector-icon4 {
+  	position: absolute;
+  	height: 14.67%;
+  	width: 5.68%;
+  	top: 14.67%;
+  	right: 9.32%;
+  	bottom: 70.67%;
+  	left: 85%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.nvidia-geforce-rtx {
+  	position: absolute;
+  	top: 32px;
+  	left: 135px;
+  	display: inline-block;
+  	width: 207px;
+}
+.rp-173999000 {
+  	position: absolute;
+  	top: 101px;
+  	left: 135px;
+  	font-weight: 800;
+  	color: #18a999;
+  	display: inline-block;
+  	width: 163px;
+}
+.group-child4 {
+  	position: absolute;
+  	top: 70px;
+  	left: 187.84px;
+  	background-color: #d7d7d7;
+  	width: 0px;
+  	height: 11px;
+}
+.tersedia-parent {
+  	position: absolute;
+  	top: 13px;
+  	left: 135px;
+  	width: 66.6px;
+  	height: 13px;
+  	font-size: 10px;
+  	color: #004712;
+}
+.tersedia2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 9.82px;
+  	font-weight: 800;
+  	display: inline-block;
+  	width: 48px;
+}
+.group-child5 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 66.6px;
+  	height: 13px;
+}
+.rtx-icon {
+  	position: absolute;
+  	top: 27px;
+  	left: 7px;
+  	width: 115.1px;
+  	height: 98.1px;
+  	object-fit: cover;
+}
+.group-div {
+  	position: absolute;
+  	top: 71px;
+  	left: 368px;
+  	width: 41.8px;
+  	height: 40px;
+}
+.ulasan-group {
+  	position: absolute;
+  	top: 80px;
+  	left: 135px;
+  	width: 112.9px;
+  	height: 20px;
+  	font-size: 9px;
+  	color: #7e7e7e;
+}
+.group-child7 {
+  	position: absolute;
+  	top: 5px;
+  	left: 57.48px;
+  	background-color: #d7d7d7;
+  	border-right: 2.1px solid #acacac;
+  	box-sizing: border-box;
+  	width: 2.1px;
+  	height: 13.1px;
+}
+.rectangle-parent2 {
+  	position: absolute;
+  	top: 573px;
+  	left: 1px;
+  	width: 441px;
+  	height: 145px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.group-child8 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  	box-sizing: border-box;
+  	width: 441px;
+  	height: 145px;
+}
+.vector-icon6 {
+  	position: absolute;
+  	height: 15.17%;
+  	width: 5.67%;
+  	top: 16.55%;
+  	right: 9.52%;
+  	bottom: 68.28%;
+  	left: 84.81%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.sneakers-classic-black {
+  	position: absolute;
+  	top: 25px;
+  	left: 138px;
+  	display: inline-block;
+  	width: 183.7px;
+}
+.rp-4899000 {
+  	position: absolute;
+  	top: 96px;
+  	left: 138px;
+  	font-weight: 800;
+  	color: #18a999;
+  	display: inline-block;
+  	width: 155px;
+}
+.sneakers-icon {
+  	position: absolute;
+  	top: 1.95px;
+  	left: 10.56px;
+  	width: 109px;
+  	height: 127px;
+  	object-fit: cover;
+}
+.tersedia-group {
+  	position: absolute;
+  	top: 8px;
+  	left: 138px;
+  	width: 69.6px;
+  	height: 13px;
+  	font-size: 10px;
+  	color: #004712;
+}
+.tersedia3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 10.27px;
+  	font-weight: 800;
+  	display: inline-block;
+  	width: 50.2px;
+}
+.group-child9 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 69.6px;
+  	height: 13px;
+}
+.ulasan-container {
+  	position: absolute;
+  	top: 73px;
+  	left: 135px;
+  	width: 120px;
+  	height: 20px;
+  	font-size: 9px;
+  	color: #7e7e7e;
+}
+.ulasan3 {
+  	position: absolute;
+  	top: 5px;
+  	left: 67px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 53px;
+}
+.vector-icon7 {
+  	position: absolute;
+  	height: 100%;
+  	width: 17.42%;
+  	top: 0%;
+  	right: 82.58%;
+  	bottom: 0%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.rectangle-parent4 {
+  	position: absolute;
+  	top: 718px;
+  	left: 0px;
+  	width: 441px;
+  	height: 133px;
+  	flex-shrink: 0;
+  	text-align: left;
+  	font-size: 20px;
+  	font-family: Inter;
+}
+.group-child12 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 441px;
+  	height: 133px;
+}
+.vector-icon8 {
+  	position: absolute;
+  	height: 16.54%;
+  	width: 5.67%;
+  	top: 12.03%;
+  	right: 9.3%;
+  	bottom: 71.43%;
+  	left: 85.03%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.headset-openear-2 {
+  	position: absolute;
+  	top: 34px;
+  	left: 139px;
+  	display: inline-block;
+  	width: 193px;
+}
+.tersedia4 {
+  	position: absolute;
+  	top: 14px;
+  	left: 148.87px;
+  	font-size: 10px;
+  	font-weight: 800;
+  	color: #004712;
+  	display: inline-block;
+  	width: 48.3px;
+}
+.rp-550000 {
+  	position: absolute;
+  	top: 91px;
+  	left: 139px;
+  	font-weight: 800;
+  	color: #18a999;
+  	display: inline-block;
+  	width: 130.5px;
+}
+.openear-icon {
+  	position: absolute;
+  	top: 3.54px;
+  	left: 11.23px;
+  	width: 103.7px;
+  	height: 108.9px;
+  	object-fit: cover;
+}
+.ulasan-parent2 {
+  	position: absolute;
+  	top: 64px;
+  	left: 139px;
+  	width: 118.5px;
+  	height: 20px;
+  	font-size: 9px;
+  	color: #7e7e7e;
+}
+.ulasan4 {
+  	position: absolute;
+  	top: 5px;
+  	left: 70.21px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 48.3px;
+}
+.b4 {
+  	position: absolute;
+  	top: 2px;
+  	left: 24.13px;
+  	font-size: 15px;
+  	display: inline-block;
+  	color: #ffcd29;
+  	width: 27.4px;
+}
+.vector-icon9 {
+  	position: absolute;
+  	height: 100%;
+  	width: 18.48%;
+  	top: 0%;
+  	right: 81.52%;
+  	bottom: 0%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.group-child13 {
+  	position: absolute;
+  	top: 5px;
+  	left: 60.34px;
+  	background-color: #d7d7d7;
+  	border-right: 2.1px solid #acacac;
+  	box-sizing: border-box;
+  	width: 2.1px;
+  	height: 13.1px;
+}
+.group-child14 {
+  	position: absolute;
+  	top: 14px;
+  	left: 139px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 66.9px;
+  	height: 13px;
+}
+
