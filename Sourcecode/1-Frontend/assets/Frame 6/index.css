@@ -1,0 +1,283 @@
+.frame-6-done {
+  	width: 100%;
+  	height: 956px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 20px;
+  	color: #000;
+  	font-family: Inter;
+}
+.frame-6-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+}
+.arrow-left-icon {
+  	position: absolute;
+  	top: 72px;
+  	left: 19px;
+  	width: 40px;
+  	height: 40px;
+  	cursor: pointer;
+}
+.wishlist {
+  	position: absolute;
+  	top: 80px;
+  	left: 180px;
+}
+.edit {
+  	position: absolute;
+  	top: 83px;
+  	left: 381px;
+  	font-size: 17px;
+  	color: #3207f5;
+}
+.frame-6-done-item {
+  	position: absolute;
+  	top: 139px;
+  	left: 0px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 715px;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 167px;
+  	left: 17px;
+  	width: 405px;
+  	height: 121px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #a9ffcd;
+  	width: 405px;
+  	height: 121px;
+}
+.vention-power-bank {
+  	position: absolute;
+  	top: 22px;
+  	left: 126px;
+}
+.rp-345344 {
+  	position: absolute;
+  	top: 73px;
+  	left: 127px;
+  	color: #18a999;
+}
+.lovemerah1-icon {
+  	position: absolute;
+  	top: 50px;
+  	left: 353px;
+  	width: 24px;
+  	height: 24px;
+}
+.powerbank-icon {
+  	position: absolute;
+  	top: 8px;
+  	left: 14px;
+  	width: 91px;
+  	height: 106px;
+  	object-fit: cover;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 323px;
+  	left: 17px;
+  	width: 405px;
+  	height: 121px;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px;
+  	background-color: #a9ffcd;
+  	width: 405px;
+  	height: 121px;
+}
+.headset-icon {
+  	position: absolute;
+  	top: 14px;
+  	left: 14px;
+  	width: 97px;
+  	height: 92px;
+  	object-fit: cover;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 479px;
+  	left: 17px;
+  	width: 405px;
+  	height: 121px;
+}
+.group-div {
+  	position: absolute;
+  	top: 635px;
+  	left: 17px;
+  	width: 405px;
+  	height: 121px;
+}
+.lovetrans-icon {
+  	position: absolute;
+  	height: 13.14%;
+  	width: 4.57%;
+  	top: 44.61%;
+  	right: 7.51%;
+  	bottom: 42.25%;
+  	left: 87.92%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.music-icon {
+  	position: absolute;
+  	top: 6px;
+  	left: 12px;
+  	width: 91px;
+  	height: 106px;
+  	object-fit: cover;
+}
+.rectangle-parent2 {
+  	position: absolute;
+  	top: 854px;
+  	left: 0px;
+  	width: 440px;
+  	height: 102px;
+  	text-align: center;
+  	font-size: 16px;
+  	font-family: Poppins;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 102px;
+}
+.loveijo-icon {
+  	position: absolute;
+  	top: 11px;
+  	left: 275px;
+  	width: 46px;
+  	height: 46px;
+}
+.orang-icon {
+  	position: absolute;
+  	top: 10px;
+  	left: 357px;
+  	width: 50px;
+  	height: 50px;
+}
+.category-icon {
+  	position: absolute;
+  	height: 31.37%;
+  	width: 7.5%;
+  	top: 19.61%;
+  	right: 64.32%;
+  	bottom: 49.02%;
+  	left: 28.18%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.home {
+  	position: absolute;
+  	top: 62px;
+  	left: 25px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 62px;
+  	height: 13px;
+}
+.category {
+  	position: absolute;
+  	top: 62px;
+  	left: 99px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 82px;
+  	height: 13px;
+}
+.cart {
+  	position: absolute;
+  	top: 62px;
+  	left: 201px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 39px;
+  	height: 13px;
+}
+.wishlist2 {
+  	position: absolute;
+  	top: 62px;
+  	left: 264px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 68px;
+  	height: 13px;
+}
+.profile {
+  	position: absolute;
+  	top: 62px;
+  	left: 355px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 54px;
+  	height: 13px;
+}
+.cart-icon {
+  	position: absolute;
+  	top: 17px;
+  	left: 201px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
+}
+.rumahitem-icon {
+  	position: absolute;
+  	top: 11px;
+  	left: 31px;
+  	width: 51px;
+  	height: 51px;
+}
+.sepatu-icon {
+  	position: absolute;
+  	top: 476px;
+  	left: 24px;
+  	width: 109px;
+  	height: 127px;
+  	object-fit: cover;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.frame-6-done {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex: 0 0 440px;
+}
