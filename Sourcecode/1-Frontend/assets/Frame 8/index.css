@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.frame-8-done {
+  	width: 440px;
+  	height: 956px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 15px;
+  	color: #000;
+  	font-family: Inter;
+}
+.frame-8-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+}
+.alamat-pengiriman {
+  	position: absolute;
+  	top: 128px;
+  	left: 23px;
+  	font-size: 16px;
+}
+.ekspedisi-pengiriman {
+  	position: absolute;
+  	top: 449px;
+  	left: 17px;
+  	font-size: 20px;
+}
+.pilih-alamat {
+  	position: absolute;
+  	top: 147px;
+  	left: 23px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 96px;
+  	height: 36px;
+}
+.vector-parent {
+  	position: absolute;
+  	top: 173px;
+  	left: 17px;
+  	width: 406px;
+  	height: 120px;
+  	font-size: 17px;
+  	color: #504e4e;
+}
+.group-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    width: 406px;
+    height: 120px;
+    object-fit: fill;
+    display: block;
+	box-shadow: 0 0 6px 2px #c7fff2;
+}
+.div {
+  	position: absolute;
+  	top: 20px;
+  	left: 254px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 145px;
+  	height: 21px;
+}
+.ubah {
+  	position: absolute;
+  	top: 86px;
+  	left: 346px;
+  	display: inline-block;
+  	color: #16c03b;
+  	width: 49px;
+  	height: 21px;
+}
+.jl-barat-landak {
+  	position: absolute;
+  	top: 50px;
+  	left: 69px;
+  	font-size: 16px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 256px;
+  	height: 33px;
+}
+.wahyu-kusuma {
+  	position: absolute;
+  	top: 18px;
+  	left: 69px;
+  	font-size: 18px;
+  	display: inline-block;
+  	color: #000;
+  	width: 145px;
+  	height: 15px;
+}
+.buletbiru-icon {
+  	position: absolute;
+  	top: 18px;
+  	left: 16px;
+  	width: 24px;
+  	height: 24px;
+}
+.energy-iconsphone-call-20-bol {
+  	position: absolute;
+  	top: 21px;
+  	left: 229px;
+  	width: 20px;
+  	height: 20px;
+}
+.group-item {
+  	position: absolute;
+  	top: 10px;
+  	left: 54px;
+  	max-width: 100%;
+  	overflow: hidden;
+  	height: 105px;
+  	object-fit: contain;
+}
+.vector-group {
+  	position: absolute;
+  	top: 305px;
+  	left: 17px;
+  	width: 406px;
+  	height: 120px;
+  	font-size: 17px;
+  	color: #504e4e;
+}
+.frame-8-done-item {
+  	position: absolute;
+  	top: 844px;
+  	left: 33px;
+  	background-color: #d9d9d9;
+  	width: 385px;
+  	height: 1px;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 478px;
+  	left: 15px;
+  	width: 408px;
+  	height: 62px;
+}
+.rectangle-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 12px;
+  	width: 408px;
+  	height: 62px;
+}
+.garansi-tiba-2-3 {
+  	position: absolute;
+  	top: 33.17px;
+  	left: 69px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 166px;
+  	height: 14.1px;
+}
+.rp-15000 {
+  	position: absolute;
+  	top: 25.36px;
+  	left: 313px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 77px;
+  	height: 12.7px;
+}
+.akar-iconsradio-fill {
+  	position: absolute;
+  	top: 21.28px;
+  	left: 17.93px;
+  	width: 20.1px;
+  	height: 20.1px;
+}
+.jnexpress {
+  	position: absolute;
+  	top: 12px;
+  	left: 69px;
+  	font-size: 16px;
+  	display: inline-block;
+  	width: 98px;
+  	height: 13px;
+  	color: #0900ff;
+}
+.xpress {
+  	color: #ff0000;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 548px;
+  	left: 15px;
+  	width: 408px;
+  	height: 62px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #ddd;
+  	box-sizing: border-box;
+  	width: 408px;
+  	height: 62px;
+}
+.rp-25000 {
+  	position: absolute;
+  	top: 25.36px;
+  	left: 313px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 84px;
+  	height: 11.3px;
+}
+.garansi-tiba-1-2 {
+  	position: absolute;
+  	top: 33.11px;
+  	left: 69px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 167px;
+  	height: 14.1px;
+}
+.akar-iconsradio {
+  	position: absolute;
+  	top: 20.93px;
+  	left: 17.93px;
+  	width: 20.1px;
+  	height: 20.1px;
+}
+.silambat {
+  	position: absolute;
+  	top: 11px;
+  	left: 68px;
+  	font-size: 16px;
+  	display: inline-block;
+  	width: 85px;
+  	height: 13px;
+}
+.lambat {
+  	color: #ffcd29;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 618px;
+  	left: 15px;
+  	width: 408px;
+  	height: 62px;
+}
+.deliverinn {
+  	position: absolute;
+  	top: 11px;
+  	left: 68px;
+  	font-size: 16px;
+  	display: inline-block;
+  	color: #00a236;
+  	width: 85px;
+  	height: 13px;
+}
+.group-div {
+  	position: absolute;
+  	top: 691px;
+  	left: 15px;
+  	width: 410px;
+  	height: 138px;
+  	font-size: 12px;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 12px;
+  	background-color: #fff;
+  	border: 1px solid #ddd;
+  	box-sizing: border-box;
+  	width: 410px;
+  	height: 138px;
+}
+.line-div {
+  	position: absolute;
+  	top: 101px;
+  	left: 7px;
+  	background-color: #0b0b0b;
+  	border-top: 4px solid #bdb8b8;
+  	box-sizing: border-box;
+  	width: 395px;
+  	height: 4px;
+}
+.rp-21999000 {
+  	position: absolute;
+  	top: 28px;
+  	left: 304px;
+  	font-weight: 600;
+  	text-align: right;
+  	display: inline-block;
+  	width: 87px;
+  	height: 16px;
+}
+.rp-150002 {
+  	position: absolute;
+  	top: 45px;
+  	left: 331px;
+  	font-weight: 600;
+  	text-align: right;
+  	display: inline-block;
+  	width: 60px;
+  	height: 16px;
+}
+.rp-20000 {
+  	position: absolute;
+  	top: 62px;
+  	left: 327px;
+  	font-weight: 600;
+  	text-align: right;
+  	display: inline-block;
+  	width: 64px;
+  	height: 16px;
+}
+.rp-22022000 {
+  	position: absolute;
+  	top: 109px;
+  	left: 294px;
+  	font-weight: 600;
+  	text-align: right;
+  	display: inline-block;
+  	width: 97px;
+  	height: 16px;
+}
+.rp-12000 {
+  	position: absolute;
+  	top: 79px;
+  	left: 323px;
+  	font-weight: 600;
+  	color: #ff0000;
+  	text-align: right;
+  	display: inline-block;
+  	width: 68px;
+  	height: 16px;
+}
+.subtotal-pesanan {
+  	position: absolute;
+  	top: 28px;
+  	left: 17px;
+  	font-size: 13px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 156px;
+  	height: 16px;
+}
+.subtotal-pengiriman {
+  	position: absolute;
+  	top: 45px;
+  	left: 17px;
+  	font-size: 13px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 156px;
+  	height: 16px;
+}
+.biaya-layanan {
+  	position: absolute;
+  	top: 62px;
+  	left: 17px;
+  	font-size: 13px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 156px;
+  	height: 16px;
+}
+.total-diskon-pengiriman {
+  	position: absolute;
+  	top: 79px;
+  	left: 17px;
+  	font-size: 13px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 156px;
+  	height: 16px;
+}
+.total-pembayaran {
+  	position: absolute;
+  	top: 109px;
+  	left: 17px;
+  	font-size: 13px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	display: inline-block;
+  	width: 156px;
+  	height: 16px;
+}
+.rincian-pembayaran {
+  	position: absolute;
+  	top: 6px;
+  	left: 17px;
+  	font-size: 14.5px;
+}
+.mingcutequestion-line-icon {
+  	position: absolute;
+  	top: 755px;
+  	left: 124px;
+  	width: 14px;
+  	height: 14px;
+}
+.tambah-alamat-parent {
+  	position: absolute;
+  	top: 134px;
+  	left: 289px;
+  	width: 134px;
+  	height: 17px;
+  	color: #0088ff;
+}
+.tambah-alamat {
+  	position: absolute;
+  	top: 0px;
+  	left: 20px;
+  	font-weight: 600;
+  	display: inline-block;
+  	width: 114px;
+  	height: 17px;
+}
+.vector-icon {
+  	position: absolute;
+  	height: 94.12%;
+  	width: 11.94%;
+  	top: 5.88%;
+  	right: 88.06%;
+  	bottom: 0%;
+  	left: 0%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.lihat-semua-parent {
+  	position: absolute;
+  	top: 452px;
+  	left: 316px;
+  	width: 124px;
+  	height: 21px;
+}
+.lihat-semua {
+  	position: absolute;
+  	top: 1px;
+  	left: 0px;
+  	font-weight: 500;
+  	display: inline-block;
+  	width: 124px;
+  	height: 16px;
+}
+.vector-icon2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 92px;
+  	width: 21px;
+  	height: 21px;
+}
+.kotakbayar-icon {
+  	position: absolute;
+  	top: 850px;
+  	left: 21px;
+  	border-radius: 20px;
+  	width: 398px;
+  	height: 62px;
+  	cursor: pointer;
+}
+.lanjut-ke-pembayaran {
+  	position: absolute;
+  	top: 866px;
+  	left: 85px;
+  	font-size: 25px;
+  	color: #fff;
+}
+.pengiriman-parent {
+  	position: absolute;
+  	top: 72px;
+  	left: 19px;
+  	width: 256px;
+  	height: 40px;
+  	font-size: 20px;
+}
+.pengiriman {
+  	position: absolute;
+  	top: 8px;
+  	left: 144px;
+}
+.arrow-left-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 40px;
+  	height: 40px;
+  	cursor: pointer;
+}
+
