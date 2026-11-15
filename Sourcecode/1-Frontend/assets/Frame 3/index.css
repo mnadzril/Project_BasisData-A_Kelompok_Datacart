@@ -70,18 +70,19 @@ body {
   	flex-shrink: 0;
 }
 .hasil-pencarian-untuk {
-  	position: absolute;
-  	top: 201px;
-  	left: 16px;
-  	font-size: 13.5px;
-  	line-height: 140%;
-  	font-weight: 500;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	width: 274px;
-  	height: 28px;
-  	flex-shrink: 0;
+    position: absolute;
+    top: 201px;
+    left: 18px;
+    font-size: 13.5px;
+    line-height: 140%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 274px;
+    height: 28px;
+    flex-shrink: 0;
 }
 .filter {
   	position: absolute;
@@ -99,18 +100,19 @@ body {
   	flex-shrink: 0;
 }
 .produk-ditemukan {
-  	position: absolute;
-  	top: 219px;
-  	left: 18px;
-  	font-size: 13.5px;
-  	line-height: 140%;
-  	font-weight: 500;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	width: 154px;
-  	height: 28px;
-  	flex-shrink: 0;
+    position: absolute;
+    top: 219px;
+    left: 18px;
+    font-size: 13.5px;
+    line-height: 140%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 154px;
+    height: 28px;
+    flex-shrink: 0;
 }
 .frame-3-done-inner {
   	position: absolute;
@@ -150,28 +152,24 @@ body {
   	height: 47px;
 }
 .barang-favorit {
-  	position: absolute;
-  	top: 12px;
-  	left: 44px;
-  	line-height: 140%;
-  	display: flex;
-  	align-items: center;
-  	justify-content: center;
-  	width: 130px;
-  	height: 23px;
+    position: absolute;
+    top: 12px;
+    left: 44px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 280px;
+    height: 23px;
 }
 .vector-icon {
-  	position: absolute;
-  	height: 2.21%;
-  	width: 4.8%;
-  	top: 9.62%;
-  	right: 83.16%;
-  	bottom: 88.17%;
-  	left: 12.05%;
-  	max-width: 100%;
-  	overflow: hidden;
-  	max-height: 100%;
-  	flex-shrink: 0;
+    position: absolute;
+    top: 91px;
+    left: 45px;
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
 }
 .line-div {
   	position: absolute;
