@@ -544,4 +544,11 @@ body {
   	color: #008080;
   	flex-shrink: 0;
 }
-
+.cari-produk-kategori {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: Poppins;
+    font-weight: 700;
+    cursor: text;
+}

@@ -31,7 +31,8 @@
     		<b class="profile">Profile</b>
     		<div class="rectangle-div">
     		</div>
-    		<b class="cari-produk-kategori">Cari Produk, Kategori, atau Toko </b>
+    		<input type="text"  class="cari-produk-kategori" id="inputPencarian" placeholder="Cari Produk, Kategori, atau Toko"
+>
     		<b class="produk-terlaris">Produk Terlaris</b>
     		<div class="rectangle-parent">
       			<div class="group-child">
@@ -64,7 +65,7 @@
     		
     		<img class="jamtangan-icon" src="icons/JamTangan.png">
     		
-    		<img class="search-icon" src="icons/Search.svg">
+    		<img class="search-icon" src="icons/Search.svg" id="searchIcon">
     		
     		<div class="rectangle-group">
       			<div class="group-inner">
@@ -103,18 +104,36 @@
   	
   	
   	
-  	<script>
-    		var cartIcon = document.getElementById("cartIcon");
-    		if(cartIcon) {
-      			cartIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var loveIcon = document.getElementById("loveIcon");
-    		if(loveIcon) {
-      			loveIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+<script>
+
+    const inputPencarian = document.getElementById("inputPencarian");
+    const searchIcon = document.getElementById("searchIcon");
+
+    function cariProduk() {
+
+        const kataKunci = inputPencarian.value.trim();
+
+        if (kataKunci === "") {
+            alert("Masukkan nama produk terlebih dahulu!");
+            return;
+        }
+
+        window.location.href = "../Frame%203/index.html?q=" + encodeURIComponent(kataKunci);
+
+    }
+
+    // Klik ikon Search
+    searchIcon.addEventListener("click", cariProduk);
+
+    // Tekan Enter
+    inputPencarian.addEventListener("keydown", function(event) {
+
+        if (event.key === "Enter") {
+            cariProduk();
+        }
+
+    });
+
+</script>
+</body>
 </html>
