@@ -21,7 +21,7 @@
     		<b class="semua">Semua</b>
     		<b class="produk">Produk</b>
     		<b class="toko">Toko</b>
-    		<div class="hasil-pencarian-untuk">Hasil pencarian untuk, “Barang Favorit”</div>
+    		<div class="hasil-pencarian-untuk" id="hasilPencarian"> Hasil pencarian untuk, “Barang Favorit” </div>
     		<div class="filter">Filter</div>
     		<div class="produk-ditemukan">124 Produk ditemukan</div>
     		<div class="frame-3-done-inner">
@@ -31,7 +31,7 @@
     		<div class="rectangle-parent">
       			<div class="group-child">
       			</div>
-      			<b class="barang-favorit">Barang Favorit</b>
+      			<b class="barang-favorit" id="kataKunci">Barang Favorit</b>
     		</div>
     		<img class="vector-icon" src="icons/Search.svg">
     		
@@ -212,5 +212,20 @@
       			wishlisttIcon.addEventListener("click", function (e) {
         				// Add your code here
       			});
-    		}</script></body>
+    		}
+			// Menerima kata pencarian dari Frame 2
+
+const params = new URLSearchParams(window.location.search);
+
+const kataKunci = params.get("q");
+
+if (kataKunci) {
+
+    document.getElementById("kataKunci").textContent = kataKunci;
+
+    document.getElementById("hasilPencarian").textContent =
+        'Hasil pencarian untuk, “' + kataKunci + '”';
+
+}
+			</script></body>
 </html>

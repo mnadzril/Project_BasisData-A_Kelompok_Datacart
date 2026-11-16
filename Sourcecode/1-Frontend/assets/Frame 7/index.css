@@ -1,0 +1,377 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.frame-7-done {
+  	width: 440px;
+  	height: 956px;
+  	position: relative;
+  	text-align: right;
+  	font-size: 20px;
+  	color: #000;
+  	font-family: Inter;
+    flex: 0 0 440px;
+}
+.frame-7-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+}
+.frame-7-done-item {
+  	position: absolute;
+  	top: 139px;
+  	left: 0px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 715px;
+}
+.voucher {
+  	position: absolute;
+  	top: 709px;
+  	left: 44px;
+}
+.rectangle-parent {
+  	position: absolute;
+  	top: 738px;
+  	left: 21px;
+  	width: 398px;
+  	height: 51px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 17px;
+  	background-color: #d9d9d9;
+  	width: 398px;
+  	height: 51px;
+}
+.pilih-atau-masukkan {
+  	position: absolute;
+  	top: 14px;
+  	left: 23px;
+}
+.panahkanan-icon {
+  	position: absolute;
+  	top: 14px;
+  	left: 361px;
+  	width: 24px;
+  	height: 24px;
+}
+.total {
+  	position: absolute;
+  	top: 799px;
+  	left: 44px;
+}
+.rp21999000 {
+  	position: absolute;
+  	top: 799px;
+  	left: 261px;
+  	color: #1a0fef;
+}
+.frame-7-done-inner {
+  	position: absolute;
+  	top: 850px;
+  	left: 21px;
+  	border-radius: 20px;
+  	width: 398px;
+  	height: 62px;
+  	cursor: pointer;
+}
+.checkout-1 {
+  	position: absolute;
+  	top: 866px;
+  	left: 140px;
+  	font-size: 25px;
+  	font-weight: 800;
+  	color: #fffbfb;
+}
+.pilih-semua-parent {
+  	position: absolute;
+  	top: 153px;
+  	left: 280px;
+  	width: 122px;
+  	height: 26px;
+  	text-align: left;
+  	font-size: 15px;
+}
+.pilih-semua {
+  	position: absolute;
+  	top: 4px;
+  	left: 0px;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 96px;
+  	border-radius: 2px;
+  	background-color: #d9d9d9;
+  	width: 26px;
+  	height: 26px;
+}
+.keranjang-parent {
+  	position: absolute;
+  	top: 72px;
+  	left: 19px;
+  	width: 252px;
+  	height: 40px;
+  	text-align: left;
+}
+.keranjang {
+  	position: absolute;
+  	top: 8px;
+  	left: 152px;
+}
+.arrow-left-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 40px;
+  	height: 40px;
+  	cursor: pointer;
+}
+.rectangle-group {
+  	position: absolute;
+  	height: 16.53%;
+  	width: 92.95%;
+  	top: 19.87%;
+  	right: 3.64%;
+  	bottom: 63.6%;
+  	left: 3.41%;
+  	text-align: left;
+  	font-size: 24px;
+}
+.group-inner {
+  	position: absolute;
+  	height: 17.59%;
+  	width: 6.85%;
+  	top: 41.14%;
+  	right: 7.09%;
+  	bottom: 41.27%;
+  	left: 86.06%;
+  	border-radius: 2px;
+  	background-color: #0c0c0c;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 4px 4px 4px #e5f7f3, 4px 4px 4px #e5f7f3 inset;
+  	border-radius: 30px;
+  	background-color: #fff;
+  	width: 409px;
+  	height: 158px;
+}
+.iconoircheck-square-solid {
+  	position: absolute;
+  	top: 62px;
+  	left: 349px;
+  	width: 34px;
+  	height: 34px;
+}
+.rectangle-container {
+  	position: absolute;
+  	top: 106px;
+  	left: 112px;
+  	width: 122px;
+  	height: 30px;
+  	text-align: center;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 30px;
+  	height: 30px;
+}
+.b {
+  	position: absolute;
+  	top: 8px;
+  	left: 6px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 18px;
+  	height: 11px;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 92px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 30px;
+  	height: 30px;
+}
+.b2 {
+  	position: absolute;
+  	top: 8px;
+  	left: 98px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 18px;
+  	height: 11px;
+}
+.group-child4 {
+  	position: absolute;
+  	top: 0px;
+  	left: 46px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 30px;
+  	height: 30px;
+}
+.b3 {
+  	position: absolute;
+  	top: 9px;
+  	left: 51px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 18px;
+  	height: 11px;
+}
+.samsung-s24-ultra {
+  	position: absolute;
+  	top: 43px;
+  	left: 112px;
+  	font-size: 20px;
+  	display: inline-block;
+  	white-space: pre-wrap;
+  	width: 188px;
+  	height: 23px;
+}
+.rp-21999000 {
+  	position: absolute;
+  	top: 71px;
+  	left: 112px;
+  	font-size: 18px;
+  	display: inline-block;
+  	color: #18a999;
+  	width: 188px;
+  	height: 20px;
+}
+.tempatsampah-icon {
+  	position: absolute;
+  	top: 105px;
+  	left: 255px;
+  	width: 28px;
+  	height: 29.4px;
+}
+.samsung-icon {
+  	position: absolute;
+  	top: 19px;
+  	left: 0px;
+  	width: 104px;
+  	height: 120px;
+  	object-fit: cover;
+}
+.group-div {
+  	position: absolute;
+  	top: 360px;
+  	left: 15px;
+  	width: 409px;
+  	height: 158px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.laptop-rass-x56 {
+  	position: absolute;
+  	top: 34px;
+  	left: 112px;
+  	font-size: 20px;
+  	display: inline-block;
+  	width: 202px;
+  	height: 39px;
+}
+.rp-5699000 {
+  	position: absolute;
+  	top: 65px;
+  	left: 112px;
+  	font-size: 18px;
+  	display: inline-block;
+  	color: #18a999;
+  	width: 188px;
+  	height: 20px;
+}
+.laptop-icon {
+  	position: absolute;
+  	top: 34px;
+  	left: 11px;
+  	width: 76px;
+  	height: 89px;
+  	object-fit: cover;
+}
+.group-child9 {
+  	position: absolute;
+  	height: 17.59%;
+  	width: 6.85%;
+  	top: 41.14%;
+  	right: 7.09%;
+  	bottom: 41.27%;
+  	left: 86.06%;
+  	border-radius: 2px;
+  	background-color: #d9d9d9;
+}
+.rectangle-parent3 {
+  	position: absolute;
+  	top: 530px;
+  	left: 15px;
+  	width: 409px;
+  	height: 158px;
+  	text-align: left;
+  	font-size: 24px;
+}
+.rectangle-parent4 {
+  	position: absolute;
+  	top: 112px;
+  	left: 112px;
+  	width: 122px;
+  	height: 30px;
+  	text-align: center;
+}
+.vention-power-bank {
+  	position: absolute;
+  	top: 26px;
+  	left: 112px;
+  	font-size: 20px;
+  	display: inline-block;
+  	width: 202px;
+  	height: 39px;
+}
+.rp-345344 {
+  	position: absolute;
+  	top: 77px;
+  	left: 112px;
+  	font-size: 18px;
+  	display: inline-block;
+  	color: #18a999;
+  	width: 188px;
+  	height: 20px;
+}
+.trash-5-icon2 {
+  	position: absolute;
+  	top: 112px;
+  	left: 255px;
+  	width: 28px;
+  	height: 29.4px;
+}
+.power-icon {
+  	position: absolute;
+  	top: 28px;
+  	left: 6px;
+  	width: 85px;
+  	height: 100px;
+  	object-fit: cover;
+}
+
