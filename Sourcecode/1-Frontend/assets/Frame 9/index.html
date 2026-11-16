@@ -98,26 +98,36 @@
     		<b class="lanjut-ke-ringkasan">Lanjut ke Ringkasan</b>
     		<div class="pembayaran-parent">
       			<b class="pembayaran">Pembayaran</b>
-      			<img class="panah-icon" src="icons/Panah.svg" id="icons/panahIcon">
+      			<img class="panah-icon" src="icons/Panah.svg" id="panahIcon">
       			
     		</div>
   	</div>
   	
-  	
-  	
-  	
-  	<script>
-    		var rectangle1 = document.getElementById("rectangle1");
-    		if(rectangle1) {
-      			rectangle1.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var panahIcon = document.getElementById("panahIcon");
-    		if(panahIcon) {
-      			panahIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+<script>
+	var rectangle1 = document.getElementById("rectangle1");
+	  var tombolRingkasan = document.querySelector(".lanjut-ke-ringkasan");
+	  
+	  function keRingkasan() {
+    window.location.href = "../Frame%2010/index.html";
+}
+
+if (rectangle1) {
+    rectangle1.addEventListener("click", keRingkasan);
+}
+
+if (tombolRingkasan) {
+    tombolRingkasan.addEventListener("click", keRingkasan);
+}
+
+// Tombol kembali ke halaman sebelumnya
+var panahIcon = document.getElementById("panahIcon");
+
+if (panahIcon) {
+	panahIcon.addEventListener("click", function() {
+		window.history.back();
+    });
+}
+</script>
+
+</body>
 </html>

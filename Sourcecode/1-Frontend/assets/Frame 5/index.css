@@ -226,6 +226,7 @@
   	text-align: center;
   	font-size: 30px;
   	color: #fff;
+	cursor: pointer;
 }
 .tombolkeranjang-child {
   	position: absolute;

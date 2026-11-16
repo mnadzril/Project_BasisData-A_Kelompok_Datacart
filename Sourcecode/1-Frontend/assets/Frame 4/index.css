@@ -52,13 +52,23 @@ body {
   	cursor: pointer;
 }
 .categoryijo-parent {
-  	position: absolute;
-  	height: 62.75%;
-  	width: 87.27%;
-  	top: 10.78%;
-  	right: 7.05%;
-  	bottom: 26.47%;
-  	left: 5.68%;
+    position: absolute;
+    height: 62.75%;
+    width: 87.27%;
+    top: 10.78%;
+    right: 7.05%;
+    bottom: 26.47%;
+    left: 5.68%;
+    pointer-events: none;
+}
+.categoryijo-parent .categoryijo-icon,
+.categoryijo-parent .home,
+.categoryijo-parent .category,
+.categoryijo-parent .cart,
+.categoryijo-parent .wishlist,
+.categoryijo-parent .cart-icon,
+.categoryijo-parent .material-symbolshome-outline-icon {
+    pointer-events: auto;
 }
 .categoryijo-icon {
   	position: absolute;
@@ -438,4 +448,21 @@ body {
   	height: 29px;
   	object-fit: contain;
 }
-
+.imageslove-removebg-preview-1-icon,
+.categoryijo-icon,
+.material-symbolshome-outline-icon,
+.cart-icon,
+.group-icon,
+.arrow-left-icon,
+.home,
+.category,
+.cart,
+.wishlist,
+.profile {
+    cursor: pointer;
+}
+#imagesLoveRemovebgPreview1Icon {
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 10;
+}

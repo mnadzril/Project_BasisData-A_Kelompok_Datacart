@@ -281,3 +281,18 @@ body {
     position: relative;
     flex: 0 0 440px;
 }
+
+/* Cursor elemen yang bisa diklik */
+.arrow-left-icon,
+.loveijo-icon,
+.orang-icon,
+.category-icon,
+.cart-icon,
+.rumahitem-icon,
+.home,
+.category,
+.cart,
+.wishlist2,
+.profile {
+    cursor: pointer;
+}
