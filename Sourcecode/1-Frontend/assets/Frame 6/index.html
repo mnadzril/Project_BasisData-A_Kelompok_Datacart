@@ -86,18 +86,60 @@
   	
   	
   	
-  	<script>
-    		var arrowLeftIcon = document.getElementById("arrowLeftIcon");
-    		if(arrowLeftIcon) {
-      			arrowLeftIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var cartIcon = document.getElementById("cartIcon");
-    		if(cartIcon) {
-      			cartIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+<script>
+    function pindahHalaman(url) {
+        window.location.href = url;
+    }
+
+    // Home
+    document.querySelector(".rumahitem-icon").addEventListener("click", function() {
+        pindahHalaman("../Frame%202/index.html");
+    });
+
+    document.querySelector(".home").addEventListener("click", function() {
+        pindahHalaman("../Frame%202/index.html");
+    });
+
+    // Category
+    document.querySelector(".category-icon").addEventListener("click", function() {
+        pindahHalaman("../Frame%204/index.html");
+    });
+
+    document.querySelector(".category").addEventListener("click", function() {
+        pindahHalaman("../Frame%204/index.html");
+    });
+
+    // Wishlist
+    document.querySelector(".loveijo-icon").addEventListener("click", function() {
+        pindahHalaman("../Frame%206/index.html");
+    });
+
+    document.querySelector(".wishlist2").addEventListener("click", function() {
+        pindahHalaman("../Frame%206/index.html");
+    });
+
+    // Cart
+    document.getElementById("cartIcon").addEventListener("click", function() {
+        pindahHalaman("../Frame%207/index.html");
+    });
+
+    document.querySelector(".cart").addEventListener("click", function() {
+        pindahHalaman("../Frame%207/index.html");
+    });
+
+	// Profile
+document.querySelector(".orang-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+
+document.querySelector(".profile").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+
+    // Tombol kembali
+    document.getElementById("arrowLeftIcon").addEventListener("click", function() {
+        window.history.back();
+    });
+</script>
+</body>
 </html>

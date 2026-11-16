@@ -147,17 +147,7 @@ body {
   	width: 41px;
   	height: 41px;
 }
-.pesanan-saya {
-  	position: absolute;
-  	top: 22px;
-  	left: 96px;
-  	line-height: 140%;
-  	font-weight: 800;
-  	display: flex;
-  	align-items: center;
-  	width: 119px;
-  	height: 31px;
-}
+
 .panah-icon {
   	position: absolute;
   	top: 31px;
@@ -179,8 +169,8 @@ body {
 }
 .wishlist {
   	position: absolute;
-  	top: 22px;
-  	left: 99px;
+  	top: 21px;
+  	left: 87px;
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
@@ -208,8 +198,8 @@ body {
 }
 .voucher-saya {
   	position: absolute;
-  	top: 27px;
-  	left: 93px;
+  	top: 20px;
+  	left: 87px;
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
@@ -237,14 +227,36 @@ body {
 }
 .metode-pembayaran {
   	position: absolute;
-  	top: 21px;
-  	left: 89px;
+  	top: 20px;
+  	left: 87px;
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
   	align-items: center;
   	width: 193px;
   	height: 28px;
+}
+.pesanan-saya {
+  	position: absolute;
+  	top: 22px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
+}
+.pesanan-saya2 {
+  	position: absolute;
+  	top: 22px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
 }
 .pesanan-saya-parent {
   	position: absolute;
@@ -256,17 +268,6 @@ body {
   	width: 411px;
   	height: 75px;
   	overflow: hidden;
-}
-.pesanan-saya2 {
-  	position: absolute;
-  	top: 19px;
-  	left: 87px;
-  	line-height: 140%;
-  	font-weight: 800;
-  	display: flex;
-  	align-items: center;
-  	width: 119px;
-  	height: 31px;
 }
 .pengaturan-parent {
   	position: absolute;
@@ -283,14 +284,14 @@ body {
 }
 .pengaturan {
   	position: absolute;
-  	top: 27px;
-  	left: 84px;
+  	top: 20px;
+  	left: 87px;
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
   	align-items: center;
   	justify-content: center;
-  	width: 119px;
+  	width: 101px;
   	height: 31px;
 }
 .alamat-saya-parent {
@@ -306,8 +307,8 @@ body {
 }
 .alamat-saya {
   	position: absolute;
-  	top: 27px;
-  	left: calc(50% - 111.5px);
+  	top: 20px;
+  	left: calc(50% - 118.5px);
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
@@ -377,6 +378,7 @@ body {
   	height: 36px;
   	object-fit: cover;
   	cursor: pointer;
+	z-index: 10;
 }
 .vector-parent {
   	position: absolute;
@@ -481,4 +483,37 @@ body {
   	overflow: hidden;
   	max-height: 100%;
 }
+/* Navigasi bawah */
+.imageslove-removebg-preview-1-icon,
+.vector-icon,
+.material-symbolshome-outline-icon,
+.cart-icon,
+.orang-icon,
+.home,
+.category,
+.cart,
+.wishlist2,
+.profile {
+    cursor: pointer;
+}
 
+/* Menu profil */
+.pengaturan-icon,
+.notifikasi-icon,
+.edit-profil,
+.panah-icon,
+.bag-icon,
+.wishlist-icon,
+.voucher-icon,
+.logout-icon,
+.humbleiconslogout,
+.pesanan-saya,
+.pesanan-saya2,
+.wishlist,
+.voucher-saya,
+.metode-pembayaran,
+.pengaturan,
+.alamat-saya,
+.logout {
+    cursor: pointer;
+}

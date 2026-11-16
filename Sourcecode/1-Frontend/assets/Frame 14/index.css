@@ -237,6 +237,7 @@
 }
 
 /* Menyesuaikan tampilan dengan Figma */
+/* Menyesuaikan tampilan dengan Figma */
 
 * {
     box-sizing: border-box;
@@ -259,17 +260,22 @@ body {
     width: 442px;
     height: 956px;
     flex-shrink: 0;
-    transform: scale(0.83);
-    transform-origin: top center;
-    margin-bottom: -162px;
 }
+
 .evaarrow-left-fill-icon {
     top: 119px;
     left: 47px;
     width: 22px;
     height: 22px;
-}
-.profile-wrapper {
-    width: 403px;
+    cursor: pointer;
 }
 
+.profile-wrapper {
+    width: 403px;
+    cursor: pointer;
+}
+
+.panah-icon,
+.profile-wrapper {
+    cursor: pointer;
+}

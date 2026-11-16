@@ -552,3 +552,15 @@ body {
     font-weight: 700;
     cursor: text;
 }
+.home-icon,
+.category-icon,
+.cart-icon,
+.love-icon,
+.group-profile-icon,
+.home,
+.category,
+.cart,
+.wishlist,
+.profile {
+    cursor: pointer;
+}

@@ -110,22 +110,55 @@
       			
     		</div>
   	</div>
-  	
-  	
-  	
-  	
-  	<script>
-    		var imagesLoveRemovebgPreview1Icon = document.getElementById("imagesLoveRemovebgPreview1Icon");
-    		if(imagesLoveRemovebgPreview1Icon) {
-      			imagesLoveRemovebgPreview1Icon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var cartIcon = document.getElementById("cartIcon");
-    		if(cartIcon) {
-      			cartIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+<script>
+
+	function pindahHalaman(url) {
+		window.location.href = url;
+	}
+	
+	// HOME
+	document.querySelector(".material-symbolshome-outline-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+document.querySelector(".home").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+
+// CATEGORY
+document.querySelector(".vector-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%204/index.html");
+});
+document.querySelector(".category").addEventListener("click", function() {
+	pindahHalaman("../Frame%204/index.html");
+});
+
+// WISHLIST
+document.getElementById("imagesLoveRemovebgPreview1Icon").addEventListener("click", function() {
+	pindahHalaman("../Frame%206/index.html");
+});
+document.querySelector(".wishlist2").addEventListener("click", function() {
+	pindahHalaman("../Frame%206/index.html");
+});
+
+// CART
+document.getElementById("cartIcon").addEventListener("click", function() {
+	pindahHalaman("../Frame%207/index.html");
+});
+document.querySelector(".cart").addEventListener("click", function() {
+	pindahHalaman("../Frame%207/index.html");
+});
+
+// PROFILE
+document.querySelector(".orang-icon").addEventListener("click", function() {
+	pindahHalaman("../Frame%2011/index.html");
+});
+document.querySelector(".profile").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});		
+// PENGATURAN AKUN
+document.querySelector(".pengaturan").addEventListener("click", function() {
+    pindahHalaman("../Frame%2012/index.html");
+});
+</script>
+</body>
 </html>

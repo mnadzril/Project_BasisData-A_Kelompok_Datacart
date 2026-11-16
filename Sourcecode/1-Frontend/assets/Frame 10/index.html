@@ -133,34 +133,61 @@
 <b class="detai-produk">Detai Produk</b>
 
 </div>
+
+<script>
+	// Fungsi pindah halaman
+function pindahHalaman(url) {
+    window.location.href = url;
+}
+
+// HOME
+document.querySelector(".rumah-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+
+document.querySelector(".home").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+
+// CATEGORY
+document.querySelector(".kategori-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%204/index.html");
+});
+
+document.querySelector(".category").addEventListener("click", function() {
+    pindahHalaman("../Frame%204/index.html");
+});
+
+// WISHLIST
+document.getElementById("wishlistIcon").addEventListener("click", function() {
+    pindahHalaman("../Frame%206/index.html");
+});
+
+document.querySelector(".wishlist").addEventListener("click", function() {
+    pindahHalaman("../Frame%206/index.html");
+});
+
+// CART
+document.getElementById("keranjangIcon").addEventListener("click", function() {
+    pindahHalaman("../Frame%207/index.html");
+});
+
+document.querySelector(".cart").addEventListener("click", function() {
+    pindahHalaman("../Frame%207/index.html");
+});
+
+// TOMBOL KEMBALI
+document.getElementById("panahIcon").addEventListener("click", function() {
+    window.history.back();
+});
+// PROFILE
+document.querySelector(".orang-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+
+document.querySelector(".profile").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+</script>
 </body>
 </html>
-  	
-  	<script>
-    		var wishlistIcon = document.getElementById("wishlistIcon");
-    		if(wishlistIcon) {
-      			wishlistIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var keranjangIcon = document.getElementById("keranjangIcon");
-    		if(keranjangIcon) {
-      			keranjangIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var rumah = document.getElementById("rumah");
-    		if(rumah) {
-      			rumah.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var panahIcon = document.getElementById("panahIcon");
-    		if(panahIcon) {
-      			panahIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>

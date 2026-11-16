@@ -15,7 +15,7 @@
   	
   	<div class="frame-parent">
     		<div class="panah-parent">
-      			<img class="panah-icon" src="icons/panah (3).svg">
+      			<img class="panah-icon" src="icons/panah (3).svg" id="panahIcon">
       			
       			<b class="admin-cs">Admin & CS  </b>
     		</div>
@@ -24,7 +24,7 @@
     		<div class="frame-item"></div>
             
     		<b class="cari-nama">Cari nama....</b>
-    		<b class="tambah">Tambah</b>
+    		<b class="tambah">Jadwal</b>
     		<img class="icbaseline-search-icon" src="icons/kacaPembesar.svg">
     		
     		<b class="b">+</b>
@@ -72,9 +72,22 @@
       			<div class="profile">Profile</div>
     		</div>
   	</div>
-  	
-  	
-  	
+ <script>
+// KEMBALI
+document.getElementById("panahIcon").addEventListener("click", function() {
+    window.history.back();
+});
+
+// JADWAL
+document.querySelector(".tambah").addEventListener("click", function() {
+    window.location.href = "../Frame%2014/index.html";
+});
+
+// PROFILE
+document.querySelector(".profile").addEventListener("click", function() {
+    window.location.href = "../Frame%2011/index.html";
+});
+</script> 	
   	
 </body>
 </html>

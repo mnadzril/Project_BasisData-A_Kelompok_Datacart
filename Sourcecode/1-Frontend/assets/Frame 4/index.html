@@ -89,35 +89,42 @@
     		
   	</div>
   	
-  	
-  	
-  	
-  	<script>
-    		var imagesLoveRemovebgPreview1Icon = document.getElementById("imagesLoveRemovebgPreview1Icon");
-    		if(imagesLoveRemovebgPreview1Icon) {
-      			imagesLoveRemovebgPreview1Icon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var cartIcon = document.getElementById("cartIcon");
-    		if(cartIcon) {
-      			cartIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var materialSymbolshomeOutline = document.getElementById("materialSymbolshomeOutline");
-    		if(materialSymbolshomeOutline) {
-      			materialSymbolshomeOutline.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var arrowLeftIcon = document.getElementById("arrowLeftIcon");
-    		if(arrowLeftIcon) {
-      			arrowLeftIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+<script>
+    function aturNavigasi(selector, url) {
+        const elemen = document.querySelector(selector);
+
+        if (elemen) {
+            elemen.style.cursor = "pointer";
+            elemen.addEventListener("click", function() {
+                window.location.href = url;
+            });
+        }
+    }
+
+    // Home
+    aturNavigasi(".material-symbolshome-outline-icon", "../Frame%202/index.html");
+    aturNavigasi(".home", "../Frame%202/index.html");
+
+    // Category
+    aturNavigasi(".categoryijo-icon", "../Frame%204/index.html");
+    aturNavigasi(".category", "../Frame%204/index.html");
+
+    // Wishlist
+    aturNavigasi("#imagesLoveRemovebgPreview1Icon", "../Frame%206/index.html");
+    aturNavigasi(".wishlist", "../Frame%206/index.html");
+
+    // Cart
+    aturNavigasi("#cartIcon", "../Frame%207/index.html");
+    aturNavigasi(".cart", "../Frame%207/index.html");
+
+	// Profile
+	aturNavigasi(".group-icon", "../Frame%2011/index.html");
+	aturNavigasi(".profile", "../Frame%2011/index.html");
+
+// Tombol kembali ke halaman sebelumnya
+document.getElementById("arrowLeftIcon").addEventListener("click", function() {
+    window.history.back();
+});
+</script>
+	</body>
 </html>

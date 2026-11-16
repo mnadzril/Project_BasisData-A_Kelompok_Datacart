@@ -117,17 +117,28 @@
   	
   	
   	<script>
-    		var rectangle2 = document.getElementById("rectangle2");
-    		if(rectangle2) {
-      			rectangle2.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}
-    		
-    		var arrowLeftIcon = document.getElementById("arrowLeftIcon");
-    		if(arrowLeftIcon) {
-      			arrowLeftIcon.addEventListener("click", function (e) {
-        				// Add your code here
-      			});
-    		}</script></body>
+		var rectangle2 = document.getElementById("rectangle2");
+		var tombolCheckout = document.querySelector(".checkout-1");
+
+		function kePengiriman() {
+    	window.location.href = "../Frame%208/index.html";
+		}
+
+		if (rectangle2) {
+	    	rectangle2.addEventListener("click", kePengiriman);
+		}
+
+		if (tombolCheckout) {
+    	tombolCheckout.addEventListener("click", kePengiriman);
+		}
+// Tombol kembali ke halaman sebelumnya
+var arrowLeftIcon = document.getElementById("arrowLeftIcon");
+
+if (arrowLeftIcon) {
+    arrowLeftIcon.addEventListener("click", function() {
+        window.history.back();
+    });
+}
+</script>
+</body>
 </html>

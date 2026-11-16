@@ -342,6 +342,7 @@ body {
   	object-fit: cover;
   	cursor: pointer;
   	flex-shrink: 0;
+	z-index: 2;
 }
 .rectangle-group {
   	position: absolute;
@@ -410,6 +411,7 @@ body {
   	width: 98px;
   	height: 112.7px;
   	object-fit: cover;
+	cursor: pointer;
 }
 .ulasan-parent {
   	position: absolute;
@@ -844,4 +846,27 @@ body {
   	width: 66.9px;
   	height: 13px;
 }
+/* Cursor navigasi bawah */
+.group-icon,
+.cart-icon,
+.vector-icon2,
+.vector-icon3,
+.imageslove-removebg-preview-1-icon,
+.home,
+.category,
+.cart,
+.wishlist,
+.profile {
+    cursor: pointer;
+}
 
+/* Cursor elemen produk yang bisa diklik */
+.samsunghp-icon,
+.wishlistt-icon,
+.cart-icon2 {
+    cursor: pointer;
+}
+#imagesLoveRemovebgPreview1Icon,
+.wishlist {
+    cursor: pointer;
+}

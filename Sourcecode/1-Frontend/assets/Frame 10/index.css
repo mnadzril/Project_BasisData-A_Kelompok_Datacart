@@ -348,6 +348,7 @@ body {
     height: 36px;
     object-fit: cover;
     cursor: pointer;
+    z-index: 2;
 }
 
 .kategori-parent {
@@ -477,4 +478,26 @@ body {
     position: absolute;
     top: 80px;
     left: 159px;
+}
+
+/* Cursor navigasi bawah */
+.panah-icon,
+.rumah-icon,
+.kategori-icon,
+.wishlist-icon,
+.keranjang-icon,
+.orang-icon,
+.home,
+.category,
+.cart,
+.wishlist,
+.profile {
+    cursor: pointer;
+}
+
+/* Cursor elemen interaktif lainnya */
+.uilcopy-icon,
+.uilcopy-icon2,
+.lacak {
+    cursor: pointer;
 }
