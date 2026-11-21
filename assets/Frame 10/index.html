@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./index.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="frame-10-done">
+    		<div class="frame-10-done-child">
+    		</div>
+    		<div class="frame-10-done-item">
+    		</div>
+    		<div class="no-pesanan">No. Pesanan</div>
+    		<div class="inv250500123">INV/2505/00123</div>
+    		<img class="uilcopy-icon" src="icons/copy.svg">
+    		
+    		<div class="rectangle-parent">
+      			<div class="group-child">
+      			</div>
+      			<b class="rp-22022000">Rp 22.022.000<br></b>
+      			<b class="samsung-s24-ultra">Samsung S24 Ultra  <br></b>
+      			<img class="samsung-icon" src="icons/Samsung.svg" alt="Samsung S24 Ultra">
+      			
+      			<b class="x-1">x 1</b>
+    		</div>
+    		<div class="no-resi-parent">
+      			<div class="no-resi">No. Resi</div>
+      			<div class="jne1234567890">Jne1234567890</div>
+      			<img class="uilcopy-icon2" src="icons/copy.svg">
+      			
+      			<b class="lacak">Lacak</b>
+      			<img class="jne-icon" src="icons/JNE.svg">
+      			
+      			<div class="rabu-20-mei">Rabu, 20 Mei 2025</div>
+    		</div>
+    		<div class="informasi-pengiriman">Informasi  Pengiriman </div>
+    		<div class="frame-10-done-inner">
+    		</div>
+    		
+
+<div class="kotakbiru-parent">
+
+    <div class="kotakbiru"></div>
+
+    <div class="timeline-line"></div>
+
+<div class="status-item status-1 status-selesai">
+    <div class="status-circle">
+        <img src="icons/check.svg" alt="Centang">
+    </div>
+
+    <div class="status-info">
+        <div class="status-title">Pesanan Diproses</div>
+        <div class="status-date">20 Mei 2025</div>
+    </div>
+</div>
+
+<div class="status-item status-2 status-selesai">
+    <div class="status-circle">
+        <img src="icons/check.svg" alt="Centang">
+    </div>
+
+    <div class="status-info">
+        <div class="status-title">Dikemas</div>
+        <div class="status-date">20 Mei 2025</div>
+    </div>
+</div>
+
+    <div class="status-item status-3">
+        <div class="status-circle">
+            <img src="icons/truk.svg" alt="">
+        </div>
+
+        <div class="status-info">
+            <div class="status-title">Diterima Agen Ekspedisi</div>
+        </div>
+    </div>
+
+    <div class="status-item status-4">
+        <div class="status-circle">
+            <img src="icons/truk.svg" alt="">
+        </div>
+
+        <div class="status-info">
+            <div class="status-title">Dalam Perjalanan</div>
+        </div>
+    </div>
+
+    <div class="status-item status-5">
+        <div class="status-circle">
+            <img src="icons/package.svg" alt="">
+        </div>
+
+        <div class="status-info">
+            <div class="status-title">Diterima</div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="rectangle-group">
+    <div class="rectangle-div"></div>
+
+    <img class="wishlist-icon" src="icons/wishlist.svg" id="wishlistIcon">
+
+    <div class="kategori-parent">
+        <img class="kategori-icon" src="icons/kategori.svg">
+
+        <b class="home">Home</b>
+        <b class="category">Category</b>
+        <b class="cart">Cart</b>
+        <b class="wishlist">Wishlist</b>
+        <b class="profile">Profile</b>
+
+        <img class="keranjang-icon" src="icons/keranjang.svg" id="keranjangIcon">
+        <img class="rumah-icon" src="icons/rumah.svg" id="rumah">
+    </div>
+
+    <img class="orang-icon" src="icons/orang.svg">
+</div>
+
+<img class="panah-icon" src="icons/panah.svg" id="panahIcon">
+
+<b class="detai-produk">Detai Produk</b>
+
+</div>
+
+<script>
+function pindahHalaman(url) {
+    window.location.href = url;
+}
+
+document.querySelector(".rumah-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+
+document.querySelector(".home").addEventListener("click", function() {
+    pindahHalaman("../Frame%202/index.html");
+});
+
+document.querySelector(".kategori-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%204/index.html");
+});
+
+document.querySelector(".category").addEventListener("click", function() {
+    pindahHalaman("../Frame%204/index.html");
+});
+
+document.getElementById("wishlistIcon").addEventListener("click", function() {
+    pindahHalaman("../Frame%206/index.html");
+});
+
+document.querySelector(".wishlist").addEventListener("click", function() {
+    pindahHalaman("../Frame%206/index.html");
+});
+
+document.getElementById("keranjangIcon").addEventListener("click", function() {
+    pindahHalaman("../Frame%207/index.html");
+});
+
+document.querySelector(".cart").addEventListener("click", function() {
+    pindahHalaman("../Frame%207/index.html");
+});
+
+document.getElementById("panahIcon").addEventListener("click", function() {
+    window.history.back();
+});
+document.querySelector(".orang-icon").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+
+document.querySelector(".profile").addEventListener("click", function() {
+    pindahHalaman("../Frame%2011/index.html");
+});
+</script>
+<script src="../shared/api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

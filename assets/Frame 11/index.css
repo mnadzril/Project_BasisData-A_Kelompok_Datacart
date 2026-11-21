@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.rectangle-parent {
+  	width: 440px;
+  	height: 956px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 17px;
+  	color: #000;
+  	font-family: Inter;
+}
+.frame-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+}
+.pengaturan-icon {
+  	position: absolute;
+  	top: 24px;
+  	left: 13px;
+  	width: 31px;
+  	height: 31px;
+}
+.notification {
+  	position: absolute;
+  	top: 39px;
+  	left: 379px;
+  	width: 24px;
+  	height: 24px;
+  	overflow: hidden;
+}
+.notifikasi-icon {
+  	position: absolute;
+  	height: 3.24%;
+  	width: 7.05%;
+  	top: 2.82%;
+  	right: 4.09%;
+  	bottom: 93.93%;
+  	left: 88.86%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.profile-parent {
+  	position: absolute;
+  	top: 102px;
+  	left: 16px;
+  	border-radius: 20px;
+  	background-color: #029d29;
+  	width: 408px;
+  	height: 121px;
+  	overflow: hidden;
+  	text-align: center;
+  	font-size: 15px;
+  	color: #fff;
+  	font-family: Poppins;
+}
+.profile-icon {
+  	position: absolute;
+  	top: 23px;
+  	left: 10px;
+  	width: 75px;
+  	height: 75px;
+  	flex-shrink: 0;
+}
+.wahyugmailcom {
+  	position: absolute;
+  	top: 49px;
+  	left: 90px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 157px;
+  	height: 19px;
+  	flex-shrink: 0;
+}
+.b {
+  	position: absolute;
+  	top: 71px;
+  	left: 90px;
+  	line-height: 140%;
+  	flex-shrink: 0;
+}
+.frame-item {
+  	position: absolute;
+  	top: 47px;
+  	left: 323px;
+  	border-radius: 5px;
+  	background-color: #4a79be;
+  	width: 75px;
+  	height: 24px;
+  	overflow: hidden;
+  	flex-shrink: 0;
+}
+.edit-profil {
+  	position: absolute;
+  	top: 53px;
+  	left: 304px;
+  	font-size: 10px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 113px;
+  	height: 12px;
+  	flex-shrink: 0;
+}
+.wahyu-kusuma {
+  	position: absolute;
+  	top: 26px;
+  	left: 90px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 166px;
+  	height: 23px;
+  	flex-shrink: 0;
+}
+.bag-parent {
+  	position: absolute;
+  	top: 253px;
+  	left: 14px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+}
+.bag-icon {
+  	position: absolute;
+  	top: 16px;
+  	left: 29px;
+  	width: 41px;
+  	height: 41px;
+}
+.pesanan-saya {
+  	position: absolute;
+  	top: 22px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
+}
+.panah-icon {
+  	position: absolute;
+  	top: 31px;
+  	left: 371px;
+  	width: 24px;
+  	height: 24px;
+  	object-fit: contain;
+}
+.wishlist-parent {
+  	position: absolute;
+  	top: 328px;
+  	left: 14px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+}
+.wishlist {
+  	position: absolute;
+  	top: 21px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 75px;
+  	height: 31px;
+}
+.wishlist-icon {
+  	position: absolute;
+  	top: 17px;
+  	left: 29px;
+  	width: 41px;
+  	height: 41px;
+}
+.keranjang-saya-parent {
+  	position: absolute;
+  	top: 403px;
+  	left: 14px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+}
+.keranjang-saya {
+  	position: absolute;
+  	top: 20px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 134px;
+  	height: 31px;
+}
+.cart-icon {
+  	position: absolute;
+  	top: 16px;
+  	left: 32px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
+}
+.admin-dan-costumer-service-parent {
+  	position: absolute;
+  	top: 478px;
+  	left: 14px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+}
+.admin-dan-costumer {
+  	position: absolute;
+  	top: 22px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 253px;
+  	height: 28px;
+}
+.clarityadministrator-line-icon {
+  	position: absolute;
+  	height: 50.67%;
+  	width: 9.25%;
+  	top: 25.33%;
+  	right: 82.24%;
+  	bottom: 24%;
+  	left: 8.52%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.blog-seller-parent {
+  	position: absolute;
+  	top: 553px;
+  	left: 14px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+}
+.blog-seller {
+  	position: absolute;
+  	top: 20px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
+}
+.iconmindbest-seller-outline-r {
+  	position: absolute;
+  	top: 13px;
+  	left: 29px;
+  	width: 45px;
+  	height: 42px;
+}
+.pengaturan-parent {
+  	position: absolute;
+  	top: 628px;
+  	left: 14px;
+  	border-radius: 0px 0px 30px 30px;
+  	background-color: #fff;
+  	border: 1px solid #9f9999;
+  	box-sizing: border-box;
+  	width: 411px;
+  	height: 75px;
+  	overflow: hidden;
+  	text-align: center;
+}
+.pengaturan {
+  	position: absolute;
+  	top: 20px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 101px;
+  	height: 31px;
+}
+.pengaturan-icon2 {
+  	position: absolute;
+  	top: 17px;
+  	left: 31px;
+  	width: 41px;
+  	height: 41px;
+}
+.logout-parent {
+  	position: absolute;
+  	top: 772px;
+  	left: 18px;
+  	border-radius: 7px;
+  	background-color: #fff;
+  	border: 3px solid #ff0000;
+  	box-sizing: border-box;
+  	width: 403px;
+  	height: 52px;
+  	overflow: hidden;
+  	text-align: center;
+  	color: #ff0000;
+}
+.logout-icon {
+  	position: absolute;
+  	top: 9px;
+  	left: 26px;
+  	width: 35px;
+  	height: 35px;
+}
+.humbleiconslogout {
+  	position: absolute;
+  	top: 9px;
+  	left: 356px;
+  	width: 35px;
+  	height: 35px;
+}
+.logout {
+  	position: absolute;
+  	top: 14px;
+  	left: 84px;
+  	line-height: 140%;
+  	font-weight: 800;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 854px;
+  	left: 0px;
+  	box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+  	width: 440px;
+  	height: 102px;
+  	text-align: center;
+  	font-size: 16px;
+  	font-family: Poppins;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 102px;
+}
+.imageslove-removebg-preview-1-icon {
+  	position: absolute;
+  	top: 18px;
+  	left: 280px;
+  	width: 36px;
+  	height: 36px;
+  	object-fit: cover;
+  	cursor: pointer;
+}
+.vector-parent {
+  	position: absolute;
+  	height: 62.75%;
+  	width: 87.27%;
+  	top: 10.78%;
+  	right: 7.05%;
+  	bottom: 26.47%;
+  	left: 5.68%;
+}
+.vector-icon {
+  	position: absolute;
+  	height: 50%;
+  	width: 8.59%;
+  	top: 14.06%;
+  	right: 65.63%;
+  	bottom: 35.94%;
+  	left: 25.78%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.home {
+  	position: absolute;
+  	top: 51px;
+  	left: 0px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 62px;
+  	height: 13px;
+}
+.category {
+  	position: absolute;
+  	top: 51px;
+  	left: 74px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 82px;
+  	height: 13px;
+}
+.cart {
+  	position: absolute;
+  	top: 51px;
+  	left: 176px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 39px;
+  	height: 13px;
+}
+.wishlist2 {
+  	position: absolute;
+  	top: 51px;
+  	left: 239px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 68px;
+  	height: 13px;
+}
+.profile {
+  	position: absolute;
+  	top: 51px;
+  	left: 330px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 54px;
+  	height: 13px;
+}
+.cart-icon2 {
+  	position: absolute;
+  	top: 6px;
+  	left: 176px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
+}
+.material-symbolshome-outline-icon {
+  	position: absolute;
+  	top: 0px;
+  	left: 6px;
+  	width: 51px;
+  	height: 51px;
+}
+.orang-icon {
+  	position: absolute;
+  	height: 32.65%;
+  	width: 7.57%;
+  	top: 16.67%;
+  	right: 9.48%;
+  	bottom: 50.69%;
+  	left: 82.95%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+
