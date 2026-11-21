@@ -634,9 +634,9 @@ body {
     object-fit: cover;
 }
 
-/* ================================= */
-/* POPUP FASHION - FRAME 4.2        */
-/* ================================= */
+
+
+
 
 #popupFashion .popup-divider {
     position: absolute;
@@ -649,7 +649,7 @@ body {
     z-index: 5;
 }
 
-/* CARD 1 - BAJU */
+
 
 #popupFashion .popup-nama-xiaomi {
     top: 16px;
@@ -677,7 +677,7 @@ body {
     object-fit: cover;
 }
 
-/* CARD 2 - GAMIS */
+
 
 #popupFashion .popup-nama-oven {
     top: 18px;
@@ -705,7 +705,7 @@ body {
     object-fit: cover;
 }
 
-/* CARD 3 - JAKET */
+
 
 #popupFashion .popup-card-3 .popup-divider {
     top: 13px;
@@ -737,7 +737,7 @@ body {
     object-fit: cover;
 }
 
-/* ===== POPUP ELEKTRONIK FRAME 4.1 ===== */
+
 
 #popupElektronik .popup-divider {
     position: absolute;
@@ -754,9 +754,7 @@ body {
     top: 13px;
 }
 
-/* POPUP BEAUTY - FRAME 4.3     
 
-/* CARD 1 */
 #popupBeauty .popup-beauty-1 {
     top: 25px;
     left: 12px;
@@ -809,7 +807,7 @@ body {
 }
 
 
-/* CARD 2 */
+
 #popupBeauty .popup-beauty-2 {
     top: 169px;
     left: 12px;
@@ -862,7 +860,7 @@ body {
 }
 
 
-/* CARD 3 */
+
 #popupBeauty .popup-beauty-3 {
     top: 307px;
     left: 12px;
@@ -914,12 +912,12 @@ body {
     object-fit: cover;
 }
 
-/* ================================= */
-/* POPUP SPORT - FRAME 4.4          */
-/* SESUAI KOORDINAT FRAME44 ASLI    */
-/* ================================= */
 
-/* CARD 1 */
+
+
+
+
+
 #popupSport .popup-sport-1 {
     top: 41px;
     left: 12px;
@@ -972,7 +970,7 @@ body {
 }
 
 
-/* CARD 2 */
+
 #popupSport .popup-sport-2 {
     top: 174px;
     left: 12px;
@@ -1025,7 +1023,7 @@ body {
 }
 
 
-/* CARD 3 */
+
 #popupSport .popup-sport-3 {
     top: 312px;
     left: 12px;
@@ -1077,11 +1075,9 @@ body {
     object-fit: cover;
 }
 
-/* =========================
-   POPUP HOME (FRAME 4.5)
-========================= */
 
-/* CARD 1 */
+
+
 #popupHome .popup-home-1 {
     top: 36px;
     left: 12px;
@@ -1134,7 +1130,7 @@ body {
 }
 
 
-/* CARD 2 */
+
 #popupHome .popup-home-2 {
     top: 177px;
     left: 12px;
@@ -1187,7 +1183,7 @@ body {
 }
 
 
-/* CARD 3 */
+
 #popupHome .popup-home-3 {
     top: 312px;
     left: 12px;
@@ -1239,11 +1235,9 @@ body {
     object-fit: cover;
 }
 
-/* =========================
-   POPUP FOOD (FRAME 4.6)
-========================= */
 
-/* CARD 1 */
+
+
 #popupFood .popup-food-1 {
     top: 41px;
     left: 12px;
@@ -1296,7 +1290,7 @@ body {
 }
 
 
-/* CARD 2 */
+
 #popupFood .popup-food-2 {
     top: 177px;
     left: 12px;
@@ -1349,7 +1343,7 @@ body {
 }
 
 
-/* CARD 3 */
+
 #popupFood .popup-food-3 {
     top: 307px;
     left: 12px;

@@ -103,31 +103,7 @@
     		</div>
   	</div>
   	
-<script>
-	var rectangle1 = document.getElementById("rectangle1");
-	  var tombolRingkasan = document.querySelector(".lanjut-ke-ringkasan");
-	  
-	  function keRingkasan() {
-    window.location.href = "../Frame%2010/index.html";
-}
-
-if (rectangle1) {
-    rectangle1.addEventListener("click", keRingkasan);
-}
-
-if (tombolRingkasan) {
-    tombolRingkasan.addEventListener("click", keRingkasan);
-}
-
-// Tombol kembali ke halaman sebelumnya
-var panahIcon = document.getElementById("panahIcon");
-
-if (panahIcon) {
-	panahIcon.addEventListener("click", function() {
-		window.history.back();
-    });
-}
-</script>
-
+<script src="../shared/api.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
 package com.ecommerce.models;
 
 public class Admin extends Pengguna {
-    private String levelAkses;
+    private String shift;
 
     public Admin() {
         super();
     }
 
-    public Admin(int id, String nama, String email, String password, String noTelepon, String levelAkses) {
+    public Admin(int id, String nama, String email, String password, String noTelepon, String shift) {
         super(id, nama, email, password, noTelepon);
-        this.levelAkses = levelAkses;
+        this.shift = shift;
     }
 
-    public String getLevelAkses() { return levelAkses; }
-    public void setLevelAkses(String levelAkses) { this.levelAkses = levelAkses; }
+    public String getShift() { return shift; }
+    public void setShift(String shift) { this.shift = shift; }
 }

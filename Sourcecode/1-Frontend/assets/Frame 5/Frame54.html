@@ -101,7 +101,7 @@ if (tombolKeranjang) {
     });
 }
 
-// Tutup popup jika klik bagian luar
+
 if (popup) {
     popup.addEventListener("click", function (e) {
         if (e.target === popup) {
@@ -110,7 +110,7 @@ if (popup) {
     });
 }
 
-// Terima perintah tutup dari popup
+
 window.addEventListener("message", function (e) {
     if (e.data === "closeOpenEar" && popup) {
         popup.style.display = "none";

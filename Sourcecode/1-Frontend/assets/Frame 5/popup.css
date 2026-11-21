@@ -1,0 +1,231 @@
+.rectangle-root {
+  	width: 440px;
+  	height: 500px;
+  	position: relative;
+  	border-radius: 50px;
+  	max-width: 90%;
+  	max-height: 90%;
+  	overflow: auto;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #545b62;
+  	font-family: Inter;
+}
+.frame-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 12px;
+  	border-radius: 10px;
+  	background-color: rgba(255, 255, 255, 0.97);
+  	border: 1px solid #18a999;
+  	box-sizing: border-box;
+  	width: 416px;
+  	height: 500px;
+}
+.frame-item {
+  	position: absolute;
+  	top: 403px;
+  	left: 27px;
+  	border-radius: 10px;
+  	background-color: #00c8b3;
+  	width: 385px;
+  	height: 76px;
+}
+.beli-sekarang2 {
+  	position: absolute;
+  	top: 425px;
+  	left: 66px;
+  	font-size: 30px;
+  	display: flex;
+  	color: #fff;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  	width: 307px;
+  	height: 32px;
+}
+.rectangle-group {
+  	position: absolute;
+  	top: 371px;
+  	left: 318px;
+  	width: 84px;
+  	height: 23px;
+  	font-size: 20px;
+  	color: #000;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 2px;
+  	left: 0px;
+  	border-radius: 5px;
+  	background-color: #00c3d0;
+  	width: 26px;
+  	height: 21px;
+}
+.b {
+  	position: absolute;
+  	top: 0px;
+  	left: 9px;
+  	display: inline-block;
+  	width: 13px;
+  	height: 14px;
+}
+.group-child2 {
+  	position: absolute;
+  	top: 2px;
+  	left: 29px;
+  	width: 26px;
+  	height: 21px;
+}
+.b2 {
+  	position: absolute;
+  	top: 1px;
+  	left: 37px;
+  	display: inline-block;
+  	width: 13px;
+  	height: 14px;
+}
+.group-child3 {
+  	position: absolute;
+  	top: 2px;
+  	left: 58px;
+  	border-radius: 5px;
+  	background-color: #00c3d0;
+  	width: 26px;
+  	height: 21px;
+}
+.b3 {
+  	position: absolute;
+  	top: 0px;
+  	left: 64px;
+  	display: inline-block;
+  	width: 13px;
+  	height: 14px;
+}
+.rp219990002 {
+  	position: absolute;
+  	top: 90px;
+  	left: 163px;
+  	font-size: 24px;
+  	font-weight: 800;
+  	color: #18a999;
+}
+.stok-1502 {
+  	position: absolute;
+  	top: 128px;
+  	left: 163px;
+  	font-weight: 800;
+  	color: #504e4e;
+}
+.jumlah {
+  	position: absolute;
+  	top: 374px;
+  	left: 39px;
+  	font-weight: 800;
+}
+.icon-warna-parent {
+  	position: absolute;
+  	top: 261px;
+  	left: 39px;
+  	width: 347px;
+  	height: 80px;
+}
+.icon-warna {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 213px;
+  	height: 80px;
+}
+.titanium-gray {
+  	position: absolute;
+  	top: 7px;
+  	left: 39px;
+  	font-weight: 800;
+}
+.titanium-violet {
+  	position: absolute;
+  	top: 55px;
+  	left: 39px;
+  	font-weight: 800;
+}
+.titanium-black {
+  	position: absolute;
+  	top: 7px;
+  	left: 220px;
+  	font-weight: 800;
+}
+.titanium-yellow {
+  	position: absolute;
+  	top: 55px;
+  	left: 220px;
+  	font-weight: 800;
+}
+.warna {
+  	position: absolute;
+  	top: 233px;
+  	left: 39px;
+  	font-weight: 800;
+}
+.frame-inner {
+  	position: absolute;
+  	top: 21px;
+  	left: 31px;
+  	border-radius: 10px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 120px;
+  	height: 181px;
+}
+.samsung-s24-ultra2 {
+  	position: absolute;
+  	top: 58px;
+  	left: 163px;
+  	font-size: 20px;
+  	display: inline-block;
+  	color: #000;
+  	white-space: pre-wrap;
+  	width: 192px;
+  	height: 23px;
+}
+.samsung-icon {
+  	position: absolute;
+  	top: 26px;
+  	left: 14px;
+  	width: 146px;
+  	height: 167px;
+  	object-fit: cover;
+}
+.akar-iconscross {
+  	position: absolute;
+  	top: 21px;
+  	left: 389px;
+  	width: 24px;
+  	height: 24px;
+}
+.line-icon {
+  	position: absolute;
+  	top: 220px;
+  	left: 29px;
+  	max-height: 100%;
+  	width: 382px;
+}
+.frame-child2 {
+  	position: absolute;
+  	top: 356px;
+  	left: 31px;
+  	max-height: 100%;
+  	width: 382px;
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+

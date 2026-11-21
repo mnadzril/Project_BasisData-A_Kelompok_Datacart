@@ -483,7 +483,6 @@ body {
   	overflow: hidden;
   	max-height: 100%;
 }
-/* Navigasi bawah */
 .imageslove-removebg-preview-1-icon,
 .vector-icon,
 .material-symbolshome-outline-icon,
@@ -497,7 +496,6 @@ body {
     cursor: pointer;
 }
 
-/* Menu profil */
 .pengaturan-icon,
 .notifikasi-icon,
 .edit-profil,

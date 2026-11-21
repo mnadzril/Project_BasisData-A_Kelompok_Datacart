@@ -216,7 +216,7 @@
   	width: 382px;
 }
 
-/* UKURAN POPUP */
+
 .frame-5c {
     width: 440px;
     height: 500px;
@@ -235,7 +235,7 @@ html, body {
     overflow: hidden;
 }
 
-/* TOMBOL POPUP */
+
 .silang-icon {
     cursor: pointer;
     z-index: 999;

@@ -109,7 +109,7 @@
     const teksBeli = document.querySelector(".beli-sekarang");
     const tombolTutup = document.querySelector(".akar-iconscross");
 
-    // Membuka popup
+    
     function bukaPopup() {
         popup.style.display = "flex";
     }
@@ -117,32 +117,32 @@
     tombolBeli.addEventListener("click", bukaPopup);
     teksBeli.addEventListener("click", bukaPopup);
 
-    // Menutup popup lewat area luar
+    
     popup.addEventListener("click", function(event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
 
-    // Menutup popup lewat tombol silang
+    
     tombolTutup.addEventListener("click", function() {
         popup.style.display = "none";
     });
 
-    // Menuju Frame 8 saat tombol bayar di popup diklik
+    
     const tombolBayar = document.querySelector(".beli-sekarang2");
 
     tombolBayar.addEventListener("click", function() {
         window.location.href = "../Frame%208/index.html";
     });
 
-    // Menuju Frame 7 saat tambah ke keranjang diklik
+    
     const tombolKeranjang = document.querySelector(".tombolkeranjang");
 
     tombolKeranjang.addEventListener("click", function() {
         window.location.href = "../Frame%207/index.html";
     });
-	// Tombol kembali ke halaman sebelumnya
+	
 var panahIcon = document.getElementById("panahIcon");
 
 if (panahIcon) {

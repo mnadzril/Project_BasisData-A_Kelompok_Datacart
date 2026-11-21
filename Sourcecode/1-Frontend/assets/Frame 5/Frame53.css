@@ -519,7 +519,7 @@ body {
     margin: 0 auto;
 }
 
-/* OVERLAY POPUP */
+
 .popup-overlay {
     display: none;
     position: fixed;
@@ -533,7 +533,7 @@ body {
     overflow: hidden;
 }
 
-/* FRAME POPUP */
+
 .popup-frame {
     width: 440px;
     height: 500px;

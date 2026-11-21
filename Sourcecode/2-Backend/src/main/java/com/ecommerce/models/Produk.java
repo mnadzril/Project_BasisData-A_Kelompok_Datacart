@@ -1,21 +1,29 @@
 package com.ecommerce.models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Produk {
     private int id;
+    @SerializedName("nama_produk")
     private String namaProduk;
     private double harga;
     private int stok;
+    private String kategori;
     private String deskripsi;
+    @SerializedName("foto_produk")
     private String fotoProduk;
+    @SerializedName("id_penjual")
     private int idPenjual;
 
     public Produk() {}
 
-    public Produk(int id, String namaProduk, double harga, int stok, String deskripsi, String fotoProduk,  int idPenjual) {
+    public Produk(int id, String namaProduk, double harga, int stok,
+                  String kategori, String deskripsi, String fotoProduk, int idPenjual) {
         this.id = id;
         this.namaProduk = namaProduk;
         this.harga = harga;
         this.stok = stok;
+        this.kategori = kategori;
         this.deskripsi = deskripsi;
         this.fotoProduk = fotoProduk;
         this.idPenjual = idPenjual;
@@ -32,6 +40,9 @@ public class Produk {
 
     public int getStok() { return stok; }
     public void setStok(int stok) { this.stok = stok; }
+
+    public String getKategori() { return kategori; }
+    public void setKategori(String kategori) { this.kategori = kategori; }
 
     public String getDeskripsi() { return deskripsi; }
     public void setDeskripsi(String deskripsi) { this.deskripsi = deskripsi; }

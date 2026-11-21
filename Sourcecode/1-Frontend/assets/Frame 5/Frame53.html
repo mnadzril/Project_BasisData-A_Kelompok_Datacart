@@ -70,7 +70,7 @@
   	
   	
   	<script>
-    // Tombol kembali ke Home
+    
     const panahIcon = document.getElementById("panahIcon");
 
     if (panahIcon) {
@@ -79,7 +79,7 @@
         });
     }
 
-    // Tombol Wishlist
+    
     const loveIcon = document.getElementById("loveIcon");
 
     if (loveIcon) {
@@ -88,7 +88,7 @@
         });
     }
 
-    // Popup Sneakers
+    
     const popup = document.getElementById("frame5aContainer");
     const bukaPopup = document.getElementById("bukaPopupSneakers");
 
@@ -98,7 +98,7 @@
         });
     }
 
-    // Tombol Tambah ke Keranjang
+    
     const tombolKeranjang = document.getElementById("tombolKeranjang");
 
     if (tombolKeranjang) {
@@ -107,7 +107,7 @@
         });
     }
 
-    // Tutup popup saat klik area luar
+    
     if (popup) {
         popup.addEventListener("click", function (e) {
             if (e.target === popup) {
@@ -116,7 +116,7 @@
         });
     }
 
-    // Tutup popup dari tombol X di iframe
+    
     window.addEventListener("message", function (e) {
         if (e.data === "closeSneakers") {
             popup.style.display = "none";

@@ -4,7 +4,7 @@ public class Pengguna {
     private int id;
     private String nama;
     private String email;
-    private String password;
+    private transient String password;
     private String noTelepon;
 
     public Pengguna() {}
