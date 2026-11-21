@@ -1,0 +1,483 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.frame-10-done {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    text-align: left;
+    font-size: 20px;
+    color: #000;
+    font-family: Inter;
+}
+
+.frame-10-done-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+    width: 440px;
+    height: 956px;
+}
+
+.frame-10-done-item {
+    position: absolute;
+    top: 124px;
+    left: 19px;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 402px;
+    height: 50px;
+}
+
+.no-pesanan {
+    position: absolute;
+    top: 137px;
+    left: 36px;
+    font-weight: 600;
+}
+
+.inv250500123 {
+    position: absolute;
+    top: 140px;
+    left: 275px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.uilcopy-icon {
+    position: absolute;
+    top: 139px;
+    left: 390px;
+    width: 20px;
+    height: 20px;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 186px;
+    left: 35px;
+    width: 370px;
+    height: 150px;
+}
+
+.group-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 370px;
+    height: 150px;
+}
+
+.rp-22022000 {
+    position: absolute;
+    top: 75px;
+    left: 129px;
+    font-size: 24px;
+    display: inline-block;
+    color: #18a999;
+    width: 224px;
+    height: 20px;
+    text-shadow: 1px 0 0 #ddd, 0 1px 0 #ddd,
+                 -1px 0 0 #ddd, 0 -1px 0 #ddd;
+}
+
+.samsung-s24-ultra {
+    position: absolute;
+    top: 47px;
+    left: 129px;
+    display: inline-block;
+    white-space: pre-wrap;
+    width: 196px;
+    height: 23px;
+    text-shadow: 1px 0 0 #ddd, 0 1px 0 #ddd,
+                 -1px 0 0 #ddd, 0 -1px 0 #ddd;
+}
+
+.samsung-icon {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 118px;
+    height: 136px;
+    object-fit: cover;
+}
+
+.x-1 {
+    position: absolute;
+    top: 9px;
+    left: 333px;
+    text-shadow: 1px 0 0 #ddd, 0 1px 0 #ddd,
+                 -1px 0 0 #ddd, 0 -1px 0 #ddd;
+}
+
+.no-resi-parent {
+    position: absolute;
+    top: 379px;
+    left: 19px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 402px;
+    height: 92px;
+    overflow: hidden;
+    font-size: 16px;
+}
+
+.no-resi {
+    position: absolute;
+    top: 23px;
+    left: 103px;
+    font-weight: 600;
+}
+
+.jne1234567890 {
+    position: absolute;
+    top: 45px;
+    left: 102px;
+    font-weight: 600;
+}
+
+.uilcopy-icon2 {
+    position: absolute;
+    top: 42px;
+    left: 237px;
+    width: 22px;
+    height: 22px;
+}
+
+.lacak {
+    position: absolute;
+    top: 38px;
+    left: 297px;
+    font-size: 24px;
+    font-family: Poppins;
+    color: #0d00ff;
+}
+
+.jne-icon {
+    position: absolute;
+    top: 17px;
+    left: 13px;
+    width: 77px;
+    height: 58px;
+    object-fit: cover;
+}
+
+.rabu-20-mei {
+    position: absolute;
+    top: 12px;
+    left: 248px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.informasi-pengiriman {
+    position: absolute;
+    top: 348px;
+    left: 19px;
+    font-weight: 600;
+    white-space: pre-wrap;
+}
+
+.frame-10-done-inner {
+    position: absolute;
+    top: 480px;
+    left: 19px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid rgba(221, 221, 221, 0.87);
+    box-sizing: border-box;
+    width: 402px;
+    height: 363px;
+}
+
+.kotakbiru-parent {
+    position: absolute;
+    top: 487px;
+    left: 26px;
+    width: 363px;
+    height: 349px;
+    font-size: 22px;
+}
+
+.kotakbiru {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    background-color: rgba(0, 187, 255, 0.4);
+    width: 91px;
+    height: 349px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 38px;
+    left: 44px;
+    width: 4px;
+    height: 274px;
+    background-color: #ccc;
+}
+
+.status-item {
+    position: absolute;
+    left: 21px;
+    width: 342px;
+    height: 50px;
+}
+
+.status-1 {
+    top: 13px;
+}
+
+.status-2 {
+    top: 82px;
+}
+
+.status-3 {
+    top: 151px;
+}
+
+.status-4 {
+    top: 220px;
+}
+
+.status-5 {
+    top: 289px;
+}
+
+.status-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status-circle img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.status-selesai .status-circle {
+    background-color: #16c03b;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.status-info {
+    position: absolute;
+    top: 0;
+    left: 83px;
+    white-space: nowrap;
+}
+
+.status-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.status-date {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rectangle-group {
+    position: absolute;
+    top: 854px;
+    left: 0;
+    width: 440px;
+    height: 102px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Poppins;
+}
+
+.rectangle-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 440px;
+    height: 102px;
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 18px;
+    left: 280px;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.kategori-parent {
+    position: absolute;
+    height: 62.75%;
+    width: 87.27%;
+    top: 10.78%;
+    right: 7.05%;
+    bottom: 26.47%;
+    left: 5.68%;
+}
+
+.kategori-icon {
+    position: absolute;
+    height: 50%;
+    width: 8.59%;
+    top: 14.06%;
+    right: 65.63%;
+    bottom: 35.94%;
+    left: 25.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.home {
+    position: absolute;
+    top: 51px;
+    left: 0;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 13px;
+}
+
+.category {
+    position: absolute;
+    top: 51px;
+    left: 74px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 13px;
+}
+
+.cart {
+    position: absolute;
+    top: 51px;
+    left: 176px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 13px;
+}
+
+.wishlist {
+    position: absolute;
+    top: 51px;
+    left: 239px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 13px;
+}
+
+.profile {
+    position: absolute;
+    top: 51px;
+    left: 330px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 13px;
+}
+
+.keranjang-icon {
+    position: absolute;
+    top: 6px;
+    left: 176px;
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+}
+
+.rumah-icon {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+}
+
+.orang-icon {
+    position: absolute;
+    height: 32.65%;
+    width: 7.57%;
+    top: 16.67%;
+    right: 9.48%;
+    bottom: 50.69%;
+    left: 82.95%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.panah-icon {
+    position: absolute;
+    top: 72px;
+    left: 19px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.detai-produk {
+    position: absolute;
+    top: 80px;
+    left: 159px;
+}
+
+.panah-icon,
+.rumah-icon,
+.kategori-icon,
+.wishlist-icon,
+.keranjang-icon,
+.orang-icon,
+.home,
+.category,
+.cart,
+.wishlist,
+.profile {
+    cursor: pointer;
+}
+
+.uilcopy-icon,
+.uilcopy-icon2,
+.lacak {
+    cursor: pointer;
+}

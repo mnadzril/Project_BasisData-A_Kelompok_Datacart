@@ -5,15 +5,15 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
-
 .rectangle-parent {
-  	width: 440px;
-  	height: 956px;
-  	position: relative;
-  	text-align: left;
-  	font-size: 17px;
-  	color: #000;
-  	font-family: Inter;
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex-shrink: 0;
+    text-align: left;
+    font-size: 17px;
+    color: #000;
+    font-family: Inter;
 }
 .frame-child {
   	position: absolute;
@@ -52,7 +52,7 @@ body {
 }
 .profile-parent {
   	position: absolute;
-  	top: 77px;
+  	top: 102px;
   	left: 16px;
   	border-radius: 20px;
   	background-color: #029d29;
@@ -130,7 +130,7 @@ body {
 }
 .bag-parent {
   	position: absolute;
-  	top: 212px;
+  	top: 253px;
   	left: 14px;
   	border-radius: 30px 30px 0px 0px;
   	background-color: #fff;
@@ -147,7 +147,17 @@ body {
   	width: 41px;
   	height: 41px;
 }
-
+.pesanan-saya {
+  	position: absolute;
+  	top: 22px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
+}
 .panah-icon {
   	position: absolute;
   	top: 31px;
@@ -158,7 +168,7 @@ body {
 }
 .wishlist-parent {
   	position: absolute;
-  	top: 287px;
+  	top: 328px;
   	left: 14px;
   	background-color: #fff;
   	border: 1px solid #9f9999;
@@ -185,9 +195,9 @@ body {
   	width: 41px;
   	height: 41px;
 }
-.voucher-saya-parent {
+.keranjang-saya-parent {
   	position: absolute;
-  	top: 362px;
+  	top: 403px;
   	left: 14px;
   	background-color: #fff;
   	border: 1px solid #9f9999;
@@ -196,7 +206,7 @@ body {
   	height: 75px;
   	overflow: hidden;
 }
-.voucher-saya {
+.keranjang-saya {
   	position: absolute;
   	top: 20px;
   	left: 87px;
@@ -204,19 +214,20 @@ body {
   	font-weight: 800;
   	display: flex;
   	align-items: center;
-  	width: 119px;
+  	width: 134px;
   	height: 31px;
 }
-.voucher-icon {
+.cart-icon {
   	position: absolute;
-  	top: 14px;
-  	left: 29px;
-  	width: 41px;
-  	height: 41px;
+  	top: 16px;
+  	left: 32px;
+  	width: 39px;
+  	height: 39px;
+  	cursor: pointer;
 }
-.metode-pembayaran-parent {
+.admin-dan-costumer-service-parent {
   	position: absolute;
-  	top: 512px;
+  	top: 478px;
   	left: 14px;
   	background-color: #fff;
   	border: 1px solid #9f9999;
@@ -225,42 +236,32 @@ body {
   	height: 75px;
   	overflow: hidden;
 }
-.metode-pembayaran {
+.admin-dan-costumer {
   	position: absolute;
-  	top: 20px;
+  	top: 22px;
   	left: 87px;
   	line-height: 140%;
   	font-weight: 800;
   	display: flex;
   	align-items: center;
-  	width: 193px;
+  	width: 253px;
   	height: 28px;
 }
-.pesanan-saya {
+.clarityadministrator-line-icon {
   	position: absolute;
-  	top: 22px;
-  	left: 87px;
-  	line-height: 140%;
-  	font-weight: 800;
-  	display: flex;
-  	align-items: center;
-  	width: 119px;
-  	height: 31px;
+  	height: 50.67%;
+  	width: 9.25%;
+  	top: 25.33%;
+  	right: 82.24%;
+  	bottom: 24%;
+  	left: 8.52%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
 }
-.pesanan-saya2 {
+.blog-seller-parent {
   	position: absolute;
-  	top: 22px;
-  	left: 87px;
-  	line-height: 140%;
-  	font-weight: 800;
-  	display: flex;
-  	align-items: center;
-  	width: 119px;
-  	height: 31px;
-}
-.pesanan-saya-parent {
-  	position: absolute;
-  	top: 587px;
+  	top: 553px;
   	left: 14px;
   	background-color: #fff;
   	border: 1px solid #9f9999;
@@ -268,10 +269,28 @@ body {
   	width: 411px;
   	height: 75px;
   	overflow: hidden;
+}
+.blog-seller {
+  	position: absolute;
+  	top: 20px;
+  	left: 87px;
+  	line-height: 140%;
+  	font-weight: 800;
+  	display: flex;
+  	align-items: center;
+  	width: 119px;
+  	height: 31px;
+}
+.iconmindbest-seller-outline-r {
+  	position: absolute;
+  	top: 13px;
+  	left: 29px;
+  	width: 45px;
+  	height: 42px;
 }
 .pengaturan-parent {
   	position: absolute;
-  	top: 662px;
+  	top: 628px;
   	left: 14px;
   	border-radius: 0px 0px 30px 30px;
   	background-color: #fff;
@@ -294,27 +313,12 @@ body {
   	width: 101px;
   	height: 31px;
 }
-.alamat-saya-parent {
+.pengaturan-icon2 {
   	position: absolute;
-  	top: 437px;
-  	left: 14px;
-  	background-color: #fff;
-  	border: 1px solid #9f9999;
-  	box-sizing: border-box;
-  	width: 411px;
-  	height: 75px;
-  	overflow: hidden;
-}
-.alamat-saya {
-  	position: absolute;
-  	top: 20px;
-  	left: calc(50% - 118.5px);
-  	line-height: 140%;
-  	font-weight: 800;
-  	display: flex;
-  	align-items: center;
-  	width: 119px;
-  	height: 31px;
+  	top: 17px;
+  	left: 31px;
+  	width: 41px;
+  	height: 41px;
 }
 .logout-parent {
   	position: absolute;
@@ -378,7 +382,6 @@ body {
   	height: 36px;
   	object-fit: cover;
   	cursor: pointer;
-	z-index: 10;
 }
 .vector-parent {
   	position: absolute;
@@ -456,7 +459,7 @@ body {
   	width: 54px;
   	height: 13px;
 }
-.cart-icon {
+.cart-icon2 {
   	position: absolute;
   	top: 6px;
   	left: 176px;
@@ -483,35 +486,4 @@ body {
   	overflow: hidden;
   	max-height: 100%;
 }
-.imageslove-removebg-preview-1-icon,
-.vector-icon,
-.material-symbolshome-outline-icon,
-.cart-icon,
-.orang-icon,
-.home,
-.category,
-.cart,
-.wishlist2,
-.profile {
-    cursor: pointer;
-}
 
-.pengaturan-icon,
-.notifikasi-icon,
-.edit-profil,
-.panah-icon,
-.bag-icon,
-.wishlist-icon,
-.voucher-icon,
-.logout-icon,
-.humbleiconslogout,
-.pesanan-saya,
-.pesanan-saya2,
-.wishlist,
-.voucher-saya,
-.metode-pembayaran,
-.pengaturan,
-.alamat-saya,
-.logout {
-    cursor: pointer;
-}
