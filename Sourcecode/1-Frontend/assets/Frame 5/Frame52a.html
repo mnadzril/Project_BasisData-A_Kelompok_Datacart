@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="Frame52a.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
+</head>
+<body>
+
+    <div class="frame-5b">
+        <div class="frame-5b-child"></div>
+        <div class="frame-5b-item"></div>
+
+        <b class="beli-sekarang" id="buyRTX">Beli Sekarang</b>
+
+        <div class="rectangle-parent">
+            <div class="group-child" id="minusRTX"></div>
+            <b class="b">-</b>
+
+            <div class="group-item"></div>
+            <b class="b2" id="jumlahRTX">1</b>
+
+            <div class="group-inner" id="plusRTX"></div>
+            <b class="b3">+</b>
+        </div>
+
+        <div class="rp-173999000">Rp 173.999.000</div>
+        <div class="stok-40">Stok : 40</div>
+        <div class="jumlah">Jumlah</div>
+
+        <div class="iconwarnartx-parent">
+            <img class="iconwarnartx" src="icons/IconWarnaRTX.svg" alt="Pilihan warna RTX">
+
+            <div class="gunmetal">Gunmetal</div>
+            <div class="metallic-grey">Metallic Grey</div>
+            <div class="matte-black">Matte Black</div>
+            <div class="green">Green</div>
+        </div>
+
+        <div class="warna">Warna</div>
+        <div class="frame-5b-inner"></div>
+
+        <b class="nvidia-geforce-rtx">NVIDIA GeForce RTX 5090</b>
+
+        <img class="rtx-icon" src="icons/RTX.svg" alt="NVIDIA RTX 5090" />
+
+        <img class="silang-icon" src="icons/silang.svg" id="closeRTX" alt="Tutup popup" />
+
+        <img class="line-icon" src="" alt="" />
+
+        <img class="frame-5b-child2" src="" alt="" />
+    </div>
+
+    <script>
+        // TUTUP POPUP
+        const closeRTX = document.getElementById("closeRTX");
+
+        if (closeRTX) {
+            closeRTX.addEventListener("click", function () {
+                parent.postMessage("closeRTX", "*");
+            });
+        }
+
+        // JUMLAH PRODUK
+        let jumlah = 1;
+
+        const jumlahRTX = document.getElementById("jumlahRTX");
+        const minusRTX = document.getElementById("minusRTX");
+        const plusRTX = document.getElementById("plusRTX");
+
+        // MINUS
+        if (minusRTX) {
+            minusRTX.addEventListener("click", function () {
+                if (jumlah > 1) {
+                    jumlah--;
+                    jumlahRTX.textContent = jumlah;
+                }
+            });
+        }
+
+        // PLUS
+        if (plusRTX) {
+            plusRTX.addEventListener("click", function () {
+                if (jumlah < 40) {
+                    jumlah++;
+                    jumlahRTX.textContent = jumlah;
+                }
+            });
+        }
+
+        // BELI SEKARANG -> FRAME 8
+        const buyRTX = document.getElementById("buyRTX");
+
+        if (buyRTX) {
+            buyRTX.addEventListener("click", function () {
+                window.parent.location.href = "../Frame%208/index.html";
+            });
+        }
+    </script>
+
+</body>
+</html>

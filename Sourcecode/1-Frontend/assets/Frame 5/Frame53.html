@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="Frame53.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="frame-52-done">
+    		<div class="frame-52-done-child">
+    		</div>
+    		<div class="frame-52-done-item">
+    		</div>
+    		<img class="slide-icon" src="icons/slide.svg" alt="">
+    		
+    		<img class="panah-icon" src="Icons/panah.svg" id="panahIcon">
+    		
+    		<img class="love-icon" src="Icons/love.svg" id="loveIcon">
+    		
+    		<img class="share-icon" src="Icons/share.svg" alt="Share  ">
+    		
+    		<b class="sneakers-classic-black">Sneakers Classic Black White</b>
+    		<b class="pilih-warna">Pilih Warna</b>
+    		<div class="tersedia-parent">
+      			<div class="tersedia">Tersedia</div>
+      			<div class="group-child">
+      			</div>
+    		</div>
+    		<div class="rectangle-parent">
+      			<div class="group-item">
+      			</div>
+      			<img class="warna-icon" src="icons/warnaSneakers.svg">
+      			
+      			<div class="k-terjual-parent">
+        				<b class="k-terjual">1.3K Terjual</b>
+        				<div class="group-inner">
+        				</div>
+      			</div>
+    		</div>
+    		<b class="ulasan">(290 Ulasan)</b>
+    		<b class="stok-123">Stok : 123</b>
+    		<div class="rp-4899000">Rp 4.899.000</div>
+    		<img class="garansi-icon" src="icons/garansi.svg">
+    		
+    		<img class="grupbintang-icon" src="icons/grupBintang.svg">
+    		
+<div class="frame-52-done-inner"></div>
+
+<div class="tombolkeranjang" id="tombolKeranjang">
+    <img class="tombolkeranjang-child" src="icons/tombolkeranjang.svg">
+    <b class="tambah-ke-keranjang">Tambah ke Keranjang</b>
+    <img class="keranjang-icon" src="icons/keranjang.svg">
+</div>
+
+<b class="garansi-resmi-2">Garansi Resmi 2 Tahun</b>
+<b class="beli-sekarang" id="bukaPopupSneakers">Beli Sekarang</b>
+    		<img class="sneakers-icon" src="icons/Sneakers.svg">
+    		
+  	</div>
+  	
+<div id="frame5aContainer" class="popup-overlay">
+    <iframe src="Frame53a.html" class="popup-frame"></iframe>
+</div>
+  	
+  	
+  	<script>
+    // Tombol kembali ke Home
+    const panahIcon = document.getElementById("panahIcon");
+
+    if (panahIcon) {
+        panahIcon.addEventListener("click", function () {
+            window.location.href = "../Frame%203/index.html";
+        });
+    }
+
+    // Tombol Wishlist
+    const loveIcon = document.getElementById("loveIcon");
+
+    if (loveIcon) {
+        loveIcon.addEventListener("click", function () {
+            window.location.href = "../Frame%206/index.html";
+        });
+    }
+
+    // Popup Sneakers
+    const popup = document.getElementById("frame5aContainer");
+    const bukaPopup = document.getElementById("bukaPopupSneakers");
+
+    if (bukaPopup && popup) {
+        bukaPopup.addEventListener("click", function () {
+            popup.style.display = "flex";
+        });
+    }
+
+    // Tombol Tambah ke Keranjang
+    const tombolKeranjang = document.getElementById("tombolKeranjang");
+
+    if (tombolKeranjang) {
+        tombolKeranjang.addEventListener("click", function () {
+            window.location.href = "../Frame%207/index.html";
+        });
+    }
+
+    // Tutup popup saat klik area luar
+    if (popup) {
+        popup.addEventListener("click", function (e) {
+            if (e.target === popup) {
+                popup.style.display = "none";
+            }
+        });
+    }
+
+    // Tutup popup dari tombol X di iframe
+    window.addEventListener("message", function (e) {
+        if (e.data === "closeSneakers") {
+            popup.style.display = "none";
+        }
+    });
+
+    
+</script>
+
+</body>
+</html>

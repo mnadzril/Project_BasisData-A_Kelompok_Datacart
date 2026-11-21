@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="Frame54.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="frame-53-done">
+    		<div class="frame-53-done-child">
+    		</div>
+    		<div class="frame-53-done-item">
+    		</div>
+    		<img class="slide-icon" src="icons/slide.svg">
+    		
+    		<img class="panah-icon" src="icons/panah.svg" id="panahIcon">
+    		
+    		<img class="love-icon" src="icons/love.svg" id="loveIcon">
+    		
+    		<img class="share-icon" src="icons/share.svg">
+    		
+    		<img class="openear-icon" src="icons/openear.svg">
+    		
+    		<b class="headset-openear-2">Headset OpenEar 2</b>
+    		<b class="pilih-warna">Pilih Warna</b>
+    		<div class="tersedia-parent">
+      			<div class="tersedia">Tersedia</div>
+      			<div class="group-child">
+      			</div>
+    		</div>
+    		<div class="rectangle-parent">
+      			<div class="group-item">
+      			</div>
+      			<img class="warna-icon" src="icons/warnaEar.svg">
+      			
+      			<div class="k-terjual-parent">
+        				<b class="k-terjual">1.9K Terjual</b>
+        				<div class="group-inner">
+        				</div>
+      			</div>
+    		</div>
+    		<b class="ulasan">(68 Ulasan)</b>
+    		<b class="stok-110">Stok : 110</b>
+    		<div class="rp-550000">Rp 550.000</div>
+    		<img class="garansi-icon" src="icons/garansi.svg">
+    		
+    		<img class="grupbintang-icon" src="icons/grupBintang.svg">
+    		
+    		<div class="frame-53-done-inner" id="rectangle2">
+    		</div>
+    		<div class="tombolkeranjang">
+      			<img class="tombolkeranjang-child" src="icons/tombolkeranjang.svg">
+      			
+      			<b class="tambah-ke-keranjang">Tambah ke Keranjang</b>
+      			<img class="keranjang-icon" src="icons/keranjang.svg" id="keranjangIcon">
+      			
+    		</div>
+    		<b class="garansi-resmi-3">Garansi Resmi 3 Tahun</b>
+            <b class="beli-sekarang" id="bukaPopupOpenEar">Beli Sekarang</b>
+  	</div>
+  	
+<div id="frame54aContainer" class="popup-overlay" style="display:none">
+    <iframe src="Frame54a.html" class="popup-frame"></iframe>
+</div>
+  	
+  <script>
+const panahIcon = document.getElementById("panahIcon");
+if (panahIcon) {
+    panahIcon.addEventListener("click", function () {
+        window.location.href = "../Frame%203/index.html";
+    });
+}
+
+const loveIcon = document.getElementById("loveIcon");
+if (loveIcon) {
+    loveIcon.addEventListener("click", function () {
+        window.location.href = "../Frame%206/index.html";
+    });
+}
+
+const popup = document.getElementById("frame54aContainer");
+const bukaPopup = document.getElementById("bukaPopupOpenEar");
+
+if (bukaPopup && popup) {
+    bukaPopup.addEventListener("click", function () {
+        popup.style.display = "flex";
+    });
+}
+
+const tombolKeranjang = document.querySelector(".tombolkeranjang");
+
+if (tombolKeranjang) {
+    tombolKeranjang.addEventListener("click", function () {
+        window.location.href = "../Frame%207/index.html";
+    });
+}
+
+// Tutup popup jika klik bagian luar
+if (popup) {
+    popup.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+}
+
+// Terima perintah tutup dari popup
+window.addEventListener("message", function (e) {
+    if (e.data === "closeOpenEar" && popup) {
+        popup.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>

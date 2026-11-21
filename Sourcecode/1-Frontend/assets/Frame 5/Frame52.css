@@ -1,4 +1,291 @@
-.rectangle-root {
+.frame-51-done {
+  	position: relative;
+  	text-align: left;
+  	font-size: 14.5px;
+  	color: #000;
+  	font-family: Inter;
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex: 0 0 440px;
+
+}
+.frame-51-done-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #e5f7f3 45%, #fff 81%, #fff);
+  	width: 440px;
+  	height: 956px;
+}
+.frame-51-done-item {
+  	position: absolute;
+  	top: 455px;
+  	left: 0px;
+  	border-radius: 30px 0px 30px 30px;
+  	background-color: #fff;
+  	border-bottom: 3px solid #18a999;
+  	box-sizing: border-box;
+  	width: 440px;
+  	height: 180px;
+}
+.slide-icon {
+  	position: absolute;
+  	top: 422px;
+  	left: 160px;
+  	width: 119px;
+  	height: 15px;
+}
+.panah-icon {
+  	position: absolute;
+  	top: 72px;
+  	left: 19px;
+  	width: 40px;
+  	height: 40px;
+  	cursor: pointer;
+}
+.love-icon {
+  	position: absolute;
+  	height: 2.93%;
+  	width: 6.36%;
+  	top: 8.05%;
+  	right: 6.82%;
+  	bottom: 89.02%;
+  	left: 86.82%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+  	cursor: pointer;
+}
+.share-icon {
+  	position: absolute;
+  	top: 77px;
+  	left: 339px;
+  	width: 31px;
+  	height: 31px;
+}
+.rtx-icon {
+  	position: absolute;
+  	top: 136px;
+  	left: 68px;
+  	width: 303px;
+  	height: 258px;
+  	object-fit: cover;
+}
+.nvidia-geforce-rtx {
+  	position: absolute;
+  	top: 476px;
+  	left: 22px;
+  	font-size: 29px;
+  	display: inline-block;
+  	width: 378px;
+  	height: 38px;
+}
+.pilih-warna {
+  	position: absolute;
+  	top: 645px;
+  	left: 27px;
+  	font-size: 16px;
+  	display: inline-block;
+  	text-align: center;
+  	width: 88px;
+  	height: 17px;
+}
+.tersedia-parent {
+  	position: absolute;
+  	top: 585px;
+  	left: 22px;
+  	width: 71px;
+  	height: 21px;
+  	text-align: center;
+  	color: #004712;
+}
+.tersedia {
+  	position: absolute;
+  	top: 2px;
+  	left: 0px;
+  	font-weight: 800;
+  	display: inline-block;
+  	width: 70px;
+  	height: 19px;
+}
+.group-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 3px;
+  	background-color: rgba(183, 255, 201, 0.67);
+  	width: 71px;
+  	height: 21px;
+}
+
+.rectangle-parent {
+    position: absolute;
+    top: 644px;
+    left: 0px;
+    width: 440px;
+    height: 86px;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.group-item {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 30px 30px 0px 0px;
+  	background-color: #fff;
+  	border-top: 3px solid #18a999;
+  	box-sizing: border-box;
+  	width: 440px;
+  	height: 86px;
+}
+.warna-icon {
+  	position: absolute;
+  	top: 39px;
+  	left: 28px;
+  	width: 179px;
+  	height: 32px;
+}
+.k-terjual-parent {
+    position: absolute;
+    top: 45px;
+    left: 330px;
+    width: 83px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.k-terjual {
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    white-space: nowrap;
+}
+
+.group-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #d7d7d7;
+    border-right: 2.1px solid #acacac;
+    box-sizing: border-box;
+    width: 2.1px;
+    height: 20.1px;
+}
+.ulasan {
+  	position: absolute;
+  	top: 518px;
+  	left: 147px;
+  	font-size: 15px;
+  	color: #7e7e7e;
+}
+.stok-40 {
+  	position: absolute;
+  	top: 586px;
+  	left: 104px;
+  	color: #6b6969;
+}
+.rp-173999000 {
+  	position: absolute;
+  	top: 540px;
+  	left: 22px;
+  	font-size: 32px;
+  	font-weight: 800;
+  	color: #18a999;
+}
+.garansi-icon {
+  	position: absolute;
+  	top: 580px;
+  	left: 234px;
+  	width: 28px;
+  	height: 29px;
+}
+.grupbintang-icon {
+  	position: absolute;
+  	height: 2.09%;
+  	width: 27.27%;
+  	top: 54.08%;
+  	right: 67.73%;
+  	bottom: 43.83%;
+  	left: 5%;
+  	max-width: 100%;
+  	overflow: hidden;
+  	max-height: 100%;
+}
+.frame-51-done-inner {
+  	position: absolute;
+  	top: 756px;
+  	left: 27px;
+  	border-radius: 10px;
+  	background-color: #00c8b3;
+  	width: 385px;
+  	height: 76px;
+}
+.tombolkeranjang {
+  	position: absolute;
+  	top: 841px;
+  	left: 27px;
+  	width: 385px;
+  	height: 75px;
+  	text-align: center;
+  	font-size: 30px;
+  	color: #fff;
+}
+.tombolkeranjang-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 10px;
+  	width: 385px;
+  	height: 75px;
+}
+.tambah-ke-keranjang {
+  	position: absolute;
+  	top: 23px;
+  	left: 47px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 338px;
+  	height: 26px;
+}
+.keranjang-icon {
+  	position: absolute;
+  	top: 18px;
+  	left: 17px;
+  	width: 35.7px;
+  	height: 35.7px;
+  	cursor: pointer;
+}
+.garansi-resmi-5 {
+  	position: absolute;
+  	top: 589px;
+  	left: 264px;
+  	display: flex;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  	width: 164px;
+  	height: 11px;
+}
+.beli-sekarang {
+  	position: absolute;
+  	top: 778px;
+  	left: 66px;
+  	font-size: 30px;
+  	display: flex;
+  	color: #fff;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  	width: 307px;
+  	height: 32px;
+}
+
+
+.frame-5a {
   	width: 440px;
   	height: 500px;
   	position: relative;
@@ -11,7 +298,7 @@
   	color: #545b62;
   	font-family: Inter;
 }
-.frame-child {
+.frame-5a-child {
   	position: absolute;
   	top: 0px;
   	left: 12px;
@@ -22,7 +309,7 @@
   	width: 416px;
   	height: 500px;
 }
-.frame-item {
+.frame-5a-item {
   	position: absolute;
   	top: 403px;
   	left: 27px;
@@ -102,7 +389,7 @@
   	width: 13px;
   	height: 14px;
 }
-.rp219990002 {
+.rp21999000 {
   	position: absolute;
   	top: 90px;
   	left: 163px;
@@ -110,7 +397,7 @@
   	font-weight: 800;
   	color: #18a999;
 }
-.stok-1502 {
+.stok-150 {
   	position: absolute;
   	top: 128px;
   	left: 163px;
@@ -167,7 +454,7 @@
   	left: 39px;
   	font-weight: 800;
 }
-.frame-inner {
+.frame-5a-inner {
   	position: absolute;
   	top: 21px;
   	left: 31px;
@@ -176,7 +463,7 @@
   	width: 120px;
   	height: 181px;
 }
-.samsung-s24-ultra2 {
+.samsung-s24-ultra {
   	position: absolute;
   	top: 58px;
   	left: 163px;
@@ -187,7 +474,7 @@
   	width: 192px;
   	height: 23px;
 }
-.samsung-icon {
+.samsungicon {
   	position: absolute;
   	top: 26px;
   	left: 14px;
@@ -195,7 +482,7 @@
   	height: 167px;
   	object-fit: cover;
 }
-.akar-iconscross {
+.silang-icon {
   	position: absolute;
   	top: 21px;
   	left: 389px;
@@ -209,7 +496,7 @@
   	max-height: 100%;
   	width: 382px;
 }
-.frame-child2 {
+.frame-5a-child2 {
   	position: absolute;
   	top: 356px;
   	left: 31px;
@@ -217,15 +504,58 @@
   	width: 382px;
 }
 
-.popup-overlay {
-    position: fixed;
-    inset: 0;
+html, body {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
+    min-height: 100%;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.frame-51-done {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex: 0 0 440px;
+    margin: 0 auto;
+}
+
+/* OVERLAY POPUP */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 9999;
+
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* FRAME POPUP */
+.popup-frame {
+    width: 440px;
+    height: 500px;
+    border: none;
+    display: block;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+#bukaPopupRTX {
+    cursor: pointer;
+    z-index: 5;
+}
+
+#tombolKeranjang {
+    cursor: pointer;
+    z-index: 5;
+}

@@ -466,3 +466,937 @@ body {
     pointer-events: auto;
     z-index: 10;
 }
+
+.popup-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    height: 956px;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 999;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup-elektronik {
+    position: relative;
+    width: 399px;
+    height: 476px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border: 1px solid #18a999;
+    box-sizing: border-box;
+    font-family: Inter;
+    text-align: left;
+    overflow: hidden;
+}
+
+.popup-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 399px;
+    height: 35px;
+}
+
+.popup-close {
+    position: absolute;
+    top: 9px;
+    left: 361px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.popup-card {
+    position: absolute;
+    top: 41px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+    font-size: 20px;
+}
+
+.popup-card-2 {
+    top: 177px;
+}
+
+.popup-card-3 {
+    top: 309px;
+    height: 124px;
+}
+
+.popup-card-bg {
+    position: absolute;
+    inset: 0;
+    width: 374px;
+    height: 121px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(2, 157, 41, 0.4) inset,
+                2px 2px 2px rgba(2, 157, 41, 0.4);
+}
+
+.popup-card b {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.popup-nama-xiaomi {
+    top: 28px;
+    left: 175px;
+    width: 152px;
+}
+
+.popup-terjual {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+    font-size: 13px;
+    color: #8a8989 !important;
+}
+
+.popup-harga-xiaomi {
+    top: 59px;
+    left: 175px;
+    width: 139px;
+    color: #18a999 !important;
+}
+
+.popup-tv {
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    width: 147px;
+    height: 99px;
+    object-fit: cover;
+}
+
+.popup-nama-oven {
+    top: 18px;
+    left: 175px;
+    width: 186px;
+}
+
+.popup-harga-oven {
+    top: 69px;
+    left: 175px;
+    width: 139px;
+    color: #18a999 !important;
+}
+
+.popup-oven {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    width: 138px;
+    height: 103px;
+    object-fit: cover;
+}
+
+.popup-terjual-2 {
+    top: 96px;
+}
+
+.popup-nama-amd {
+    top: 17px;
+    left: 175px;
+    width: 184px;
+}
+
+.popup-harga-amd {
+    top: 66px;
+    left: 175px;
+    width: 152px;
+    color: #18a999 !important;
+}
+
+.popup-terjual-3 {
+    top: 99px;
+}
+
+.popup-amd {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 116px;
+    height: 119px;
+    object-fit: cover;
+}
+
+/* ================================= */
+/* POPUP FASHION - FRAME 4.2        */
+/* ================================= */
+
+#popupFashion .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+/* CARD 1 - BAJU */
+
+#popupFashion .popup-nama-xiaomi {
+    top: 16px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupFashion .popup-harga-xiaomi {
+    top: 64px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupFashion .popup-terjual {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFashion .popup-tv {
+    top: 5px;
+    left: 28px;
+    width: 113px;
+    height: 108px;
+    object-fit: cover;
+}
+
+/* CARD 2 - GAMIS */
+
+#popupFashion .popup-nama-oven {
+    top: 18px;
+    left: 175px;
+    width: 186px;
+}
+
+#popupFashion .popup-harga-oven {
+    top: 69px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupFashion .popup-terjual-2 {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFashion .popup-oven {
+    top: 0;
+    left: 28px;
+    width: 113px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* CARD 3 - JAKET */
+
+#popupFashion .popup-card-3 .popup-divider {
+    top: 13px;
+}
+
+#popupFashion .popup-nama-amd {
+    top: 19px;
+    left: 175px;
+    width: 184px;
+}
+
+#popupFashion .popup-harga-amd {
+    top: 72px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupFashion .popup-terjual-3 {
+    top: 101px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFashion .popup-amd {
+    top: 0;
+    left: 18px;
+    width: 133px;
+    height: 136px;
+    object-fit: cover;
+}
+
+/* ===== POPUP ELEKTRONIK FRAME 4.1 ===== */
+
+#popupElektronik .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupElektronik .popup-card-3 .popup-divider {
+    top: 13px;
+}
+
+/* POPUP BEAUTY - FRAME 4.3     
+
+/* CARD 1 */
+#popupBeauty .popup-beauty-1 {
+    top: 25px;
+    left: 12px;
+    width: 374px;
+    height: 149px;
+}
+
+#popupBeauty .popup-beauty-1 .popup-card-bg {
+    top: 16px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupBeauty .popup-beauty-1 .popup-divider {
+    position: absolute;
+    top: 24px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupBeauty .popup-beauty-1 .popup-nama-xiaomi {
+    top: 34px;
+    left: 175px;
+    width: 186px;
+}
+
+#popupBeauty .popup-beauty-1 .popup-terjual {
+    top: 112px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupBeauty .popup-beauty-1 .popup-harga-xiaomi {
+    top: 84px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupBeauty .popup-beauty-1 .popup-tv {
+    top: 0;
+    left: 7px;
+    width: 156px;
+    height: 149px;
+    object-fit: cover;
+}
+
+
+/* CARD 2 */
+#popupBeauty .popup-beauty-2 {
+    top: 169px;
+    left: 12px;
+    width: 374px;
+    height: 129px;
+}
+
+#popupBeauty .popup-beauty-2 .popup-card-bg {
+    top: 8px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupBeauty .popup-beauty-2 .popup-divider {
+    position: absolute;
+    top: 16px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupBeauty .popup-beauty-2 .popup-nama-oven {
+    top: 26px;
+    left: 175px;
+    width: 186px;
+}
+
+#popupBeauty .popup-beauty-2 .popup-terjual-2 {
+    top: 104px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupBeauty .popup-beauty-2 .popup-harga-oven {
+    top: 77px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupBeauty .popup-beauty-2 .popup-oven {
+    top: 0;
+    left: 25px;
+    width: 113px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
+/* CARD 3 */
+#popupBeauty .popup-beauty-3 {
+    top: 307px;
+    left: 12px;
+    width: 374px;
+    height: 136px;
+}
+
+#popupBeauty .popup-beauty-3 .popup-card-bg {
+    top: 5px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupBeauty .popup-beauty-3 .popup-divider {
+    position: absolute;
+    top: 13px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupBeauty .popup-beauty-3 .popup-nama-amd {
+    top: 31px;
+    left: 175px;
+    width: 184px;
+}
+
+#popupBeauty .popup-beauty-3 .popup-terjual-3 {
+    top: 101px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupBeauty .popup-beauty-3 .popup-harga-amd {
+    top: 62px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupBeauty .popup-beauty-3 .popup-amd {
+    top: 0;
+    left: 15px;
+    width: 133px;
+    height: 136px;
+    object-fit: cover;
+}
+
+/* ================================= */
+/* POPUP SPORT - FRAME 4.4          */
+/* SESUAI KOORDINAT FRAME44 ASLI    */
+/* ================================= */
+
+/* CARD 1 */
+#popupSport .popup-sport-1 {
+    top: 41px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupSport .popup-sport-1 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupSport .popup-sport-1 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupSport .popup-sport-1 .popup-nama-xiaomi {
+    top: 14px;
+    left: 175px;
+    width: 191px;
+}
+
+#popupSport .popup-sport-1 .popup-terjual {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupSport .popup-sport-1 .popup-harga-xiaomi {
+    top: 64px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupSport .popup-sport-1 .popup-tv {
+    top: 9px;
+    left: 30px;
+    width: 109px;
+    height: 104px;
+    object-fit: cover;
+}
+
+
+/* CARD 2 */
+#popupSport .popup-sport-2 {
+    top: 174px;
+    left: 12px;
+    width: 374px;
+    height: 138px;
+}
+
+#popupSport .popup-sport-2 .popup-card-bg {
+    top: 3px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupSport .popup-sport-2 .popup-divider {
+    position: absolute;
+    top: 11px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupSport .popup-sport-2 .popup-nama-oven {
+    top: 21px;
+    left: 175px;
+    width: 194px;
+}
+
+#popupSport .popup-sport-2 .popup-terjual-2 {
+    top: 99px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupSport .popup-sport-2 .popup-harga-oven {
+    top: 72px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupSport .popup-sport-2 .popup-oven {
+    top: 0;
+    left: 19px;
+    width: 130px;
+    height: 138px;
+    object-fit: cover;
+}
+
+
+/* CARD 3 */
+#popupSport .popup-sport-3 {
+    top: 312px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupSport .popup-sport-3 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupSport .popup-sport-3 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupSport .popup-sport-3 .popup-nama-amd {
+    top: 18px;
+    left: 175px;
+    width: 184px;
+}
+
+#popupSport .popup-sport-3 .popup-terjual-3 {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupSport .popup-sport-3 .popup-harga-amd {
+    top: 67px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupSport .popup-sport-3 .popup-amd {
+    top: 8px;
+    left: 31px;
+    width: 108px;
+    height: 111px;
+    object-fit: cover;
+}
+
+/* =========================
+   POPUP HOME (FRAME 4.5)
+========================= */
+
+/* CARD 1 */
+#popupHome .popup-home-1 {
+    top: 36px;
+    left: 12px;
+    width: 374px;
+    height: 126px;
+}
+
+#popupHome .popup-home-1 .popup-card-bg {
+    top: 5px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupHome .popup-home-1 .popup-divider {
+    position: absolute;
+    top: 13px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupHome .popup-home-1 .popup-nama-xiaomi {
+    top: 19px;
+    left: 175px;
+    width: 184px;
+}
+
+#popupHome .popup-home-1 .popup-terjual {
+    top: 101px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupHome .popup-home-1 .popup-harga-xiaomi {
+    top: 69px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupHome .popup-home-1 .popup-tv {
+    top: 0;
+    left: 12px;
+    width: 131px;
+    height: 125px;
+    object-fit: cover;
+}
+
+
+/* CARD 2 */
+#popupHome .popup-home-2 {
+    top: 177px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupHome .popup-home-2 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupHome .popup-home-2 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupHome .popup-home-2 .popup-nama-oven {
+    top: 18px;
+    left: 175px;
+    width: 186px;
+}
+
+#popupHome .popup-home-2 .popup-terjual-2 {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupHome .popup-home-2 .popup-harga-oven {
+    top: 69px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupHome .popup-home-2 .popup-oven {
+    top: 6px;
+    left: 31px;
+    width: 107px;
+    height: 113px;
+    object-fit: cover;
+}
+
+
+/* CARD 3 */
+#popupHome .popup-home-3 {
+    top: 312px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupHome .popup-home-3 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupHome .popup-home-3 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupHome .popup-home-3 .popup-nama-amd {
+    top: 16px;
+    left: 175px;
+    width: 184px;
+}
+
+#popupHome .popup-home-3 .popup-terjual-3 {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupHome .popup-home-3 .popup-harga-amd {
+    top: 67px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupHome .popup-home-3 .popup-amd {
+    top: 7px;
+    left: 17px;
+    width: 132px;
+    height: 107px;
+    object-fit: cover;
+}
+
+/* =========================
+   POPUP FOOD (FRAME 4.6)
+========================= */
+
+/* CARD 1 */
+#popupFood .popup-food-1 {
+    top: 41px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupFood .popup-food-1 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupFood .popup-food-1 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupFood .popup-food-1 .popup-nama-xiaomi {
+    top: 16px;
+    left: 175px;
+    width: 191px;
+}
+
+#popupFood .popup-food-1 .popup-terjual {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFood .popup-food-1 .popup-harga-xiaomi {
+    top: 64px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupFood .popup-food-1 .popup-tv {
+    top: 5px;
+    left: 18px;
+    width: 129px;
+    height: 111px;
+    object-fit: cover;
+}
+
+
+/* CARD 2 */
+#popupFood .popup-food-2 {
+    top: 177px;
+    left: 12px;
+    width: 374px;
+    height: 121px;
+}
+
+#popupFood .popup-food-2 .popup-card-bg {
+    top: 0;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupFood .popup-food-2 .popup-divider {
+    position: absolute;
+    top: 8px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupFood .popup-food-2 .popup-nama-oven {
+    top: 36px;
+    left: 175px;
+    width: 186px;
+}
+
+#popupFood .popup-food-2 .popup-terjual-2 {
+    top: 96px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFood .popup-food-2 .popup-harga-oven {
+    top: 63px;
+    left: 175px;
+    width: 139px;
+}
+
+#popupFood .popup-food-2 .popup-oven {
+    top: 26px;
+    left: 5px;
+    width: 159px;
+    height: 77px;
+    object-fit: cover;
+}
+
+
+/* CARD 3 */
+#popupFood .popup-food-3 {
+    top: 307px;
+    left: 12px;
+    width: 374px;
+    height: 136px;
+}
+
+#popupFood .popup-food-3 .popup-card-bg {
+    top: 5px;
+    left: 0;
+    width: 374px;
+    height: 121px;
+}
+
+#popupFood .popup-food-3 .popup-divider {
+    position: absolute;
+    top: 13px;
+    left: 161px;
+    width: 4px;
+    height: 105px;
+    background-color: #81d49b;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#popupFood .popup-food-3 .popup-nama-amd {
+    top: 23px;
+    left: 175px;
+    width: 198px;
+}
+
+#popupFood .popup-food-3 .popup-terjual-3 {
+    top: 101px;
+    left: 289px;
+    width: 77px;
+}
+
+#popupFood .popup-food-3 .popup-harga-amd {
+    top: 72px;
+    left: 175px;
+    width: 152px;
+}
+
+#popupFood .popup-food-3 .popup-amd {
+    top: 0;
+    left: 18px;
+    width: 133px;
+    height: 136px;
+    object-fit: cover;
+}
