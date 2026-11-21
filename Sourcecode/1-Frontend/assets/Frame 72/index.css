@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.group-parent {
+  	width: 440px;
+  	height: 956px;
+  	position: relative;
+  	text-align: left;
+  	font-size: 16px;
+  	color: #0b655e;
+  	font-family: Poppins;
+}
+.group-wrapper {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 440px;
+  	height: 956px;
+}
+.loginnnnnnnnn {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background-color: #fff;
+  	width: 440px;
+  	height: 956px;
+}
+.loginnnnnnnnn-child {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	background: linear-gradient(180deg, #18a999 55%, #0b655e 70%);
+  	width: 440px;
+  	height: 956px;
+}
+.pengaturan-akun-wrapper {
+  	position: absolute;
+  	top: 33px;
+  	left: 79px;
+  	width: 180px;
+  	height: 18px;
+  	font-size: 20px;
+  	color: #fff;
+}
+.pengaturan-akun {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	width: 180px;
+  	height: 18px;
+}
+.kotak {
+  	position: absolute;
+  	top: 68px;
+  	left: 25px;
+  	border-radius: 20px;
+  	background-color: rgba(252, 255, 253, 0.9);
+  	width: 390px;
+  	height: 845px;
+}
+.kotaktoko-parent {
+  	position: absolute;
+  	top: 121px;
+  	left: 45px;
+  	width: 349px;
+  	height: 72px;
+  	text-align: center;
+  	font-size: 20px;
+}
+.kotaktoko {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 10px;
+  	background-color: #fff;
+  	border: 1px solid #7e7e7e;
+  	box-sizing: border-box;
+  	width: 349px;
+  	height: 72px;
+}
+.toko-icon {
+  	position: absolute;
+  	top: 5px;
+  	left: 14px;
+  	border-radius: 50%;
+  	width: 62px;
+  	height: 61px;
+  	object-fit: cover;
+}
+.toko-mimauid {
+  	position: absolute;
+  	top: 19px;
+  	left: 88px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 150px;
+  	height: 16px;
+}
+.toko-aktif {
+  	position: absolute;
+  	top: 46px;
+  	left: 90px;
+  	font-size: 16px;
+  	line-height: 140%;
+  	font-weight: 300;
+  	color: #7e7e7e;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	width: 78px;
+  	height: 10px;
+}
+.kotakisi {
+  	position: absolute;
+  	top: 241px;
+  	left: 59px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 15px;
+  	background-color: #fff;
+  	border: 1px solid #7e7e7e;
+  	box-sizing: border-box;
+  	width: 321px;
+  	height: 489px;
+}
+.loginnnnnnnnn-item {
+  	position: absolute;
+  	top: 617px;
+  	left: 85px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 273px;
+  	height: 58px;
+}
+.loginnnnnnnnn-inner {
+  	position: absolute;
+  	top: 515px;
+  	left: 83px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 273px;
+  	height: 58px;
+}
+.rectangle-div {
+  	position: absolute;
+  	top: 413px;
+  	left: 83px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 273px;
+  	height: 58px;
+}
+.loginnnnnnnnn-child2 {
+  	position: absolute;
+  	top: 306px;
+  	left: 83px;
+  	border-radius: 5px;
+  	background-color: #e5f7f3;
+  	width: 273px;
+  	height: 58px;
+}
+.nama-toko {
+  	position: absolute;
+  	top: 289px;
+  	left: 87px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 96px;
+  	height: 11px;
+}
+.shopin {
+  	position: absolute;
+  	top: 326px;
+  	left: 91px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	width: 95px;
+  	height: 18px;
+}
+.nama-penjual {
+  	position: absolute;
+  	top: 392px;
+  	left: 85px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 121px;
+  	height: 15px;
+}
+.rakhyan-harun-nugraha {
+  	position: absolute;
+  	top: 433px;
+  	left: 90px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	width: 213px;
+  	height: 15px;
+}
+.alamat-email {
+  	position: absolute;
+  	top: 496px;
+  	left: 85px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 112px;
+  	height: 13px;
+}
+.rakhyangmailcom {
+  	position: absolute;
+  	top: 534px;
+  	left: 90px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	width: 183px;
+  	height: 18px;
+}
+.alamat-toko {
+  	position: absolute;
+  	top: 594px;
+  	left: 89px;
+  	line-height: 140%;
+  	display: flex;
+  	align-items: center;
+  	width: 108px;
+  	height: 16px;
+}
+.lenteng-agung-jakarta {
+  	position: absolute;
+  	top: 635px;
+  	left: 90px;
+  	font-size: 15px;
+  	line-height: 140%;
+  	font-weight: 600;
+  	display: flex;
+  	align-items: center;
+  	width: 249px;
+  	height: 21px;
+}
+.ovalijo {
+  	position: absolute;
+  	top: 799px;
+  	left: 73px;
+  	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  	border-radius: 35px;
+  	background-color: #0b655e;
+  	border: 1px solid #0b655e;
+  	box-sizing: border-box;
+  	width: 293px;
+  	height: 47px;
+}
+.simpan {
+  	position: absolute;
+  	top: 812px;
+  	left: 173px;
+  	font-size: 20px;
+  	line-height: 140%;
+  	display: flex;
+  	color: #fff;
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  	width: 94px;
+  	height: 22px;
+}
+.arrow-left-icon {
+  	position: absolute;
+  	top: 27px;
+  	left: 33px;
+  	width: 32px;
+  	height: 32px;
+  	cursor: pointer;
+}
+
