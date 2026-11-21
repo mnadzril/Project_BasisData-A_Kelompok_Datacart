@@ -175,9 +175,6 @@
     		</div>
   	</div>
   	
-  	
-  	
-  	
   	<script>
 // Menu navigasi bawah
 
@@ -241,14 +238,41 @@ if (kataKunci) {
         'Hasil pencarian untuk, “' + kataKunci + '”';
 
 }
-// Pindah ke Frame 5 ketika gambar Samsung diklik
-const samsungHpIcon = document.getElementById("samsungHpIcon");
 
-if (samsungHpIcon) {
-    samsungHpIcon.addEventListener("click", function() {
-        window.location.href = "../Frame%205/index.html";
+// Samsung
+document.getElementById("samsungHpIcon").addEventListener("click", function() {
+    window.location.href = "../Frame%205/Frame51.html";
+});
+
+document.querySelector(".rtx-icon").addEventListener("click", function() {
+    window.location.href = "../Frame%205/Frame52.html";
+});
+
+// Sneakers ke Frame 53
+document.querySelector(".sneakers-icon").addEventListener("click", function() {
+    window.location.href = "../Frame%205/Frame53.html";
+});
+
+// OpenEar ke Frame 54
+document.querySelector(".openear-icon").addEventListener("click", function() {
+    window.location.href = "../Frame%205/Frame54.html";
+});
+
+// Semua ikon Wishlist ke Frame 6
+document.querySelectorAll(
+    ".wishlistt-icon, .vector-icon4, .vector-icon6, .vector-icon8"
+).forEach(function(icon) {
+    icon.addEventListener("click", function() {
+        window.location.href = "../Frame%206/index.html";
     });
-}
-			</script>
-			</body>
+});
+
+// Semua ikon Cart ke Frame 7
+document.querySelectorAll(".cart-icon2").forEach(function(icon) {
+    icon.addEventListener("click", function() {
+        window.location.href = "../Frame%207/index.html";
+    });
+});
+	</script>
+</body>
 </html>

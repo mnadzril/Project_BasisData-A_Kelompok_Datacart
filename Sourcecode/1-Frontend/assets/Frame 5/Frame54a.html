@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="Frame54a.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="frame-5c">
+    		<div class="frame-5c-child">
+    		</div>
+<div class="frame-5c-item" id="tombolBeli"></div>
+<b class="beli-sekarang" id="tombolBeliText">Beli Sekarang</b>
+    		<div class="rectangle-parent">
+    <div class="group-child" id="kurangJumlah"></div>
+    <b class="b" id="btnMinus">-</b>
+
+    <div class="group-item"></div>
+    <b class="b2" id="jumlahProduk">1</b>
+
+    <div class="group-inner" id="tambahJumlah"></div>
+    <b class="b3" id="btnPlus">+</b>
+</div>
+    		<div class="rp550000">Rp550.000</div>
+    		<div class="stok-110">Stok : 110</div>
+    		<div class="jumlah">Jumlah</div>
+    		<div class="iconwarnaopen-parent">
+      			<img class="iconwarnaopen" src="icons/IconWarnaOpen.svg">
+      			
+      			<div class="night-shadow">Night Shadow</div>
+      			<div class="ember-orange">Ember Orange</div>
+      			<div class="arctic-silver">Arctic Silver</div>
+      			<div class="graphite-steel">Graphite Steel</div>
+    		</div>
+    		<div class="warna">Warna </div>
+    		<div class="frame-5c-inner">
+    		</div>
+    		<b class="headset-openear-2">Headset OpenEar 2</b>
+    		<img class="openear-icon" src="icons/openear.svg">
+    		
+            <img class="silang-icon" id="silangIcon" src="icons/silang.svg">
+
+    		<img class="line-icon" src="">
+    		
+    		<img class="frame-5c-child2" src="">
+    		
+  	</div>
+  	<script>
+let jumlah = 1;
+const stok = 110;
+
+const jumlahProduk = document.getElementById("jumlahProduk");
+const btnMinus = document.getElementById("btnMinus");
+const btnPlus = document.getElementById("btnPlus");
+
+btnMinus.addEventListener("click", function () {
+    if (jumlah > 1) {
+        jumlah--;
+        jumlahProduk.textContent = jumlah;
+    }
+});
+
+btnPlus.addEventListener("click", function () {
+    if (jumlah < stok) {
+        jumlah++;
+        jumlahProduk.textContent = jumlah;
+    }
+});
+
+// Tutup popup
+const silangIcon = document.getElementById("silangIcon");
+
+if (silangIcon) {
+    silangIcon.addEventListener("click", function () {
+        window.parent.postMessage("closeOpenEar", "*");
+    });
+}
+
+// Menuju checkout
+const tombolBeli = document.getElementById("tombolBeli");
+const tombolBeliText = document.getElementById("tombolBeliText");
+
+function keCheckout() {
+    window.parent.location.href = "../Frame%208/index.html";
+}
+
+if (tombolBeli) {
+    tombolBeli.addEventListener("click", keCheckout);
+}
+
+if (tombolBeliText) {
+    tombolBeliText.addEventListener("click", keCheckout);
+}
+</script>
+  	
+</body>
+</html>

@@ -4,7 +4,7 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="initial-scale=1, width=device-width">
   	
-  	<link rel="stylesheet"  href="./Frame52.css" />
+  	<link rel="stylesheet"  href="Frame52.css" />
   	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap" />
   	
   	
@@ -12,50 +12,119 @@
 </head>
 <body>
   	
-  	<div class="rectangle-root">
-    		<div class="frame-child">
+  	<div class="frame-51-done">
+    		<div class="frame-51-done-child">
     		</div>
-    		<div class="frame-item">
+    		<div class="frame-51-done-item">
     		</div>
-    		<b class="beli-sekarang2">Beli Sekarang</b>
-    		<div class="rectangle-group">
-      			<div class="rectangle-div">
+    		<img class="slide-icon" src="icons/slide.svg" alt="Slide">
+    		
+    		<img class="panah-icon" src="icons/panah.svg" id="panahIcon">
+    		
+    		<img class="love-icon" src="icons/love.svg" id="loveIcon">
+    		
+    		<img class="share-icon" src="icons/share.svg" alt="Share">
+    		
+    		<img class="rtx-icon" src="icons/rtx.svg">
+    		
+    		<b class="nvidia-geforce-rtx">NVIDIA GeForce RTX 5090</b>
+    		<b class="pilih-warna">Pilih Warna</b>
+    		<div class="tersedia-parent">
+      			<div class="tersedia">Tersedia</div>
+      			<div class="group-child">
       			</div>
-      			<b class="b">-</b>
-      			<div class="group-child2">
-      			</div>
-      			<b class="b2">1</b>
-      			<div class="group-child3">
-      			</div>
-      			<b class="b3">+</b>
     		</div>
-    		<div class="rp219990002">Rp21.999.000</div>
-    		<div class="stok-1502">Stok : 150</div>
-    		<div class="jumlah">Jumlah</div>
-    		<div class="icon-warna-parent">
-      			<img class="icon-warna" src="icons/IconWarna.svg" alt="">
+    		<div class="rectangle-parent">
+      			<div class="group-item">
+      			</div>
+      			<img class="warna-icon" src="icons/warnaRTX.svg">
       			
-      			<div class="titanium-gray">Titanium Gray</div>
-      			<div class="titanium-violet">Titanium Violet</div>
-      			<div class="titanium-black">Titanium Black</div>
-      			<div class="titanium-yellow">Titanium Yellow</div>
+      			<div class="k-terjual-parent">
+        				<b class="k-terjual">1.K Terjual</b>
+        				<div class="group-inner">
+        				</div>
+      			</div>
     		</div>
-    		<div class="warna">Warna </div>
-    		<div class="frame-inner">
-    		</div>
-    		<b class="samsung-s24-ultra2">Samsung S24 Ultra  </b>
-    		<img class="samsung-icon" src="icons/Samsungicon.svg" alt="">
+    		<b class="ulasan">(560 Ulasan)</b>
+    		<b class="stok-40">Stok : 40</b>
+    		<div class="rp-173999000">Rp 173.999.000</div>
+    		<img class="garansi-icon" src="icons/garansi.svg">
     		
-    		<img class="akar-iconscross" src="icons/silang.svg">
+    		<img class="grupbintang-icon" src="icons/grupBintang.svg">
     		
-    		<img class="line-icon"  alt="">
-    		
-    		<img class="frame-child2" alt="">
-    		
+        <div class="frame-51-done-inner"></div>
+
+<div class="tombolkeranjang" id="tombolKeranjang">
+    <img class="tombolkeranjang-child" src="icons/tombolKeranjang.svg">
+
+    <b class="tambah-ke-keranjang">Tambah ke Keranjang</b>
+    <img class="keranjang-icon" src="icons/keranjang.svg">
+</div>
+
+<b class="garansi-resmi-5">Garansi Resmi 5 Tahun</b>
+
+<b class="beli-sekarang" id="bukaPopupRTX">Beli Sekarang</b>
   	</div>
   	
+<div id="frame5aContainer" class="popup-overlay">
+    <iframe src="Frame52a.html" class="popup-frame"></iframe>
+</div>
   	
   	
-  	
+<script>
+    // PANAH KEMBALI
+    const panahIcon = document.getElementById("panahIcon");
+
+    if (panahIcon) {
+        panahIcon.addEventListener("click", function () {
+            window.location.href = "../Frame%203/index.html";
+        });
+    }
+
+    // WISHLIST
+    const loveIcon = document.getElementById("loveIcon");
+
+    if (loveIcon) {
+        loveIcon.addEventListener("click", function () {
+            window.location.href = "../Frame%206/index.html";
+        });
+    }
+
+// BUKA POPUP RTX - HANYA TOMBOL BELI SEKARANG
+const bukaPopupRTX = document.getElementById("bukaPopupRTX");
+const popup = document.getElementById("frame5aContainer");
+
+if (bukaPopupRTX && popup) {
+    bukaPopupRTX.addEventListener("click", function () {
+        popup.style.display = "flex";
+    });
+}
+
+// TAMBAH KE KERANJANG
+const tombolKeranjang = document.getElementById("tombolKeranjang");
+
+if (tombolKeranjang) {
+    tombolKeranjang.addEventListener("click", function () {
+        window.location.href = "../Frame%207/index.html";
+    });
+}
+
+// TUTUP POPUP KLIK AREA GELAP
+if (popup) {
+    popup.addEventListener("click", function (e) {
+        if (e.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+}
+
+// TUTUP POPUP DARI FRAME52a
+window.addEventListener("message", function (e) {
+    if (e.data === "closeRTX" && popup) {
+        popup.style.display = "none";
+    }
+});
+</script>
+            
 </body>
 </html>
