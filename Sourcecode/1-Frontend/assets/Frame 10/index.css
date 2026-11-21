@@ -120,8 +120,6 @@ body {
                  -1px 0 0 #ddd, 0 -1px 0 #ddd;
 }
 
-/* INFORMASI PENGIRIMAN */
-
 .no-resi-parent {
     position: absolute;
     top: 379px;
@@ -192,8 +190,6 @@ body {
     white-space: pre-wrap;
 }
 
-/* KOTAK STATUS PESANAN */
-
 .frame-10-done-inner {
     position: absolute;
     top: 480px;
@@ -225,8 +221,6 @@ body {
     height: 349px;
 }
 
-/* GARIS PENGHUBUNG */
-
 .timeline-line {
     position: absolute;
     top: 38px;
@@ -235,8 +229,6 @@ body {
     height: 274px;
     background-color: #ccc;
 }
-
-/* POSISI STATUS */
 
 .status-item {
     position: absolute;
@@ -265,8 +257,6 @@ body {
     top: 289px;
 }
 
-/* LINGKARAN STATUS */
-
 .status-circle {
     position: absolute;
     top: 0;
@@ -280,15 +270,11 @@ body {
     align-items: center;
 }
 
-/* IKON STATUS */
-
 .status-circle img {
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
-
-/* STATUS SELESAI */
 
 .status-selesai .status-circle {
     background-color: #16c03b;
@@ -296,8 +282,6 @@ body {
     font-size: 30px;
     font-weight: 500;
 }
-
-/* TULISAN STATUS */
 
 .status-info {
     position: absolute;
@@ -316,8 +300,6 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
-
-/* NAVIGASI BAWAH */
 
 .rectangle-group {
     position: absolute;
@@ -480,7 +462,6 @@ body {
     left: 159px;
 }
 
-/* Cursor navigasi bawah */
 .panah-icon,
 .rumah-icon,
 .kategori-icon,
@@ -495,7 +476,6 @@ body {
     cursor: pointer;
 }
 
-/* Cursor elemen interaktif lainnya */
 .uilcopy-icon,
 .uilcopy-icon2,
 .lacak {

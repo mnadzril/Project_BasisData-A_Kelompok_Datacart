@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
 }
 
-/* Frame utama */
+
 .dashboard {
     position: relative;
     width: 440px;
@@ -24,7 +24,7 @@ body {
     color: #0b655e;
 }
 
-/* Background */
+
 .background {
     position: absolute;
     top: 0;
@@ -38,7 +38,7 @@ body {
     );
 }
 
-/* Header */
+
 .header {
     position: absolute;
     top: 27px;
@@ -65,7 +65,7 @@ body {
     margin-left: 12px;
 }
 
-/* Panel utama */
+
 .main-panel {
     position: absolute;
     top: 67px;
@@ -76,7 +76,7 @@ body {
     background: rgba(252, 255, 253, 0.9);
 }
 
-/* Informasi toko */
+
 .store-card {
     position: absolute;
     top: 127px;
@@ -124,7 +124,7 @@ body {
     color: #7e7e7e;
 }
 
-/* Kartu statistik */
+
 .stat-card {
     position: absolute;
     width: 123px;
@@ -173,7 +173,7 @@ body {
     line-height: 140%;
 }
 
-/* Kartu menu */
+
 .menu-card {
     position: absolute;
     width: 123px;
@@ -204,7 +204,7 @@ body {
     white-space: nowrap;
 }
 
-/* Posisi menu */
+
 .manage-card {
     top: 576px;
     left: 59px;

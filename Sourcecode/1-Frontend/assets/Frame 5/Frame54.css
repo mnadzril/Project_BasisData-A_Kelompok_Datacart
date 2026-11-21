@@ -499,7 +499,7 @@
   	max-height: 100%;
   	width: 382px;
 }
-/* POPUP OVERLAY */
+
 .popup-overlay {
     display: none;
     position: fixed;
@@ -513,7 +513,7 @@
     overflow: hidden;
 }
 
-/* POPUP FRAME */
+
 .popup-frame {
     width: 440px;
     height: 500px;

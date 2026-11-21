@@ -122,10 +122,8 @@
 
     }
 
-    // Klik ikon Search
     searchIcon.addEventListener("click", cariProduk);
 
-    // Tekan Enter
     inputPencarian.addEventListener("keydown", function(event) {
 
         if (event.key === "Enter") {
@@ -133,13 +131,11 @@
         }
 
     });
-// Menu navigasi bawah
 
 function pindahHalaman(url) {
     window.location.href = url;
 }
 
-// Home
 document.querySelector(".home-icon").addEventListener("click", function() {
     pindahHalaman("../Frame%202/index.html");
 });
@@ -148,7 +144,6 @@ document.querySelector(".home").addEventListener("click", function() {
     pindahHalaman("../Frame%202/index.html");
 });
 
-// Category
 document.querySelector(".category-icon").addEventListener("click", function() {
     pindahHalaman("../Frame%204/index.html");
 });
@@ -157,7 +152,6 @@ document.querySelector(".category").addEventListener("click", function() {
     pindahHalaman("../Frame%204/index.html");
 });
 
-// Wishlist
 document.querySelector(".love-icon").addEventListener("click", function() {
     pindahHalaman("../Frame%206/index.html");
 });
@@ -166,7 +160,6 @@ document.querySelector(".wishlist").addEventListener("click", function() {
     pindahHalaman("../Frame%206/index.html");
 });
 
-// Cart
 document.querySelector(".cart-icon").addEventListener("click", function() {
     pindahHalaman("../Frame%207/index.html");
 });
@@ -174,7 +167,6 @@ document.querySelector(".cart-icon").addEventListener("click", function() {
 document.querySelector(".cart").addEventListener("click", function() {
     pindahHalaman("../Frame%207/index.html");
 });
-// Profile
 document.querySelector(".group-profile-icon").addEventListener("click", function() {
     pindahHalaman("../Frame%2011/index.html");
 });
@@ -183,5 +175,7 @@ document.querySelector(".profile").addEventListener("click", function() {
     pindahHalaman("../Frame%2011/index.html");
 });
 </script>
+<script src="../shared/api.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

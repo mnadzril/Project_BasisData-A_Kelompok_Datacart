@@ -175,104 +175,10 @@
     		</div>
   	</div>
   	
-  	<script>
-// Menu navigasi bawah
-
-function pindahHalaman(url) {
-    window.location.href = url;
-}
-
-// Home ke Frame 2
-document.getElementById("vectorIcon2").addEventListener("click", function() {
-    pindahHalaman("../Frame%202/index.html");
-});
-
-document.querySelector(".home").addEventListener("click", function() {
-    pindahHalaman("../Frame%202/index.html");
-});
-
-// Category ke Frame 4
-document.querySelector(".vector-icon2").addEventListener("click", function() {
-    pindahHalaman("../Frame%204/index.html");
-});
-
-document.querySelector(".category").addEventListener("click", function() {
-    pindahHalaman("../Frame%204/index.html");
-});
-
-// Wishlist ke Frame 6
-document.querySelector(".imageslove-removebg-preview-1-icon").addEventListener("click", function() {
-    pindahHalaman("../Frame%206/index.html");
-});
-
-document.querySelector(".wishlist").addEventListener("click", function() {
-    pindahHalaman("../Frame%206/index.html");
-});
-
-// Cart ke Frame 7
-document.querySelector(".cart-icon").addEventListener("click", function() {
-    pindahHalaman("../Frame%207/index.html");
-});
-
-document.querySelector(".cart").addEventListener("click", function() {
-    pindahHalaman("../Frame%207/index.html");
-});
-// Profile ke Frame 11
-document.querySelector(".group-icon").addEventListener("click", function() {
-    pindahHalaman("../Frame%2011/index.html");
-});
-
-document.querySelector(".profile").addEventListener("click", function() {
-    pindahHalaman("../Frame%2011/index.html");
-});
-
-const params = new URLSearchParams(window.location.search);
-
-const kataKunci = params.get("q");
-
-if (kataKunci) {
-
-    document.getElementById("kataKunci").textContent = kataKunci;
-
-    document.getElementById("hasilPencarian").textContent =
-        'Hasil pencarian untuk, “' + kataKunci + '”';
-
-}
-
-// Samsung
-document.getElementById("samsungHpIcon").addEventListener("click", function() {
-    window.location.href = "../Frame%205/Frame51.html";
-});
-
-document.querySelector(".rtx-icon").addEventListener("click", function() {
-    window.location.href = "../Frame%205/Frame52.html";
-});
-
-// Sneakers ke Frame 53
-document.querySelector(".sneakers-icon").addEventListener("click", function() {
-    window.location.href = "../Frame%205/Frame53.html";
-});
-
-// OpenEar ke Frame 54
-document.querySelector(".openear-icon").addEventListener("click", function() {
-    window.location.href = "../Frame%205/Frame54.html";
-});
-
-// Semua ikon Wishlist ke Frame 6
-document.querySelectorAll(
-    ".wishlistt-icon, .vector-icon4, .vector-icon6, .vector-icon8"
-).forEach(function(icon) {
-    icon.addEventListener("click", function() {
-        window.location.href = "../Frame%206/index.html";
-    });
-});
-
-// Semua ikon Cart ke Frame 7
-document.querySelectorAll(".cart-icon2").forEach(function(icon) {
-    icon.addEventListener("click", function() {
-        window.location.href = "../Frame%207/index.html";
-    });
-});
-	</script>
+  	
+  	
+  	
+  	<script src="../shared/api.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

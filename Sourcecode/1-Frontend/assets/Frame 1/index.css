@@ -1,5 +1,5 @@
 
-/* PENGATURAN HALAMAN */
+
 
 * {
     box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
 }
 
 
-/* HALAMAN LOGIN */
+
 
 .loginnnnnnnnn {
     width: 440px;
@@ -40,7 +40,7 @@ body {
 }
 
 
-/* TOMBOL LOGIN */
+
 
 .login,
 .login2 {
@@ -59,7 +59,7 @@ body {
 }
 
 
-/* INPUT USERNAME DAN PASSWORD */
+
 
 .username,
 .password {
@@ -92,7 +92,7 @@ body {
 }
 
 
-/* TULISAN LOGIN */
+
 
 .login2 {
     position: absolute;
@@ -109,7 +109,7 @@ body {
 }
 
 
-/* IKON USERNAME DAN PASSWORD */
+
 
 .vector-user-icon {
     position: absolute;
@@ -140,7 +140,7 @@ body {
 }
 
 
-/* TULISAN SIGN UP */
+
 
 .sign-up {
     position: absolute;
@@ -166,7 +166,7 @@ body {
 }
 
 
-/* LOGO */
+
 
 .logo-shop-parent {
     position: absolute;

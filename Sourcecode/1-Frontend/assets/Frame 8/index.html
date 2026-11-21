@@ -121,30 +121,7 @@
   	
   	
   	
-  	<script>
-// Tombol lanjut ke pembayaran
-var kotakBayar = document.getElementById("kotakBayar");
-var tombolPembayaran = document.querySelector(".lanjut-ke-pembayaran");
-
-function kePembayaran() {
-    window.location.href = "../Frame%209/index.html";
-}
-
-if (kotakBayar) {
-    kotakBayar.addEventListener("click", kePembayaran);
-}
-
-if (tombolPembayaran) {
-    tombolPembayaran.addEventListener("click", kePembayaran);
-}
-// Tombol kembali ke halaman sebelumnya
-var arrowLeftIcon = document.getElementById("arrowLeftIcon");
-
-if (arrowLeftIcon) {
-    arrowLeftIcon.addEventListener("click", function() {
-        window.history.back();
-    });
-}
-			</script>
-	</body>
+  	<script src="../shared/api.js"></script>
+<script src="app.js"></script>
+</body>
 </html>

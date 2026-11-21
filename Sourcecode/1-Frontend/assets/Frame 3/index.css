@@ -846,7 +846,6 @@ body {
   	width: 66.9px;
   	height: 13px;
 }
-/* Cursor navigasi bawah */
 .group-icon,
 .cart-icon,
 .vector-icon2,
@@ -860,7 +859,6 @@ body {
     cursor: pointer;
 }
 
-/* Cursor elemen produk yang bisa diklik */
 .samsunghp-icon,
 .wishlistt-icon,
 .cart-icon2 {
