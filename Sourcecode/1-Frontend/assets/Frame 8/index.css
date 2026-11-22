@@ -505,3 +505,226 @@ body {
   	cursor: pointer;
 }
 
+
+#daftarAlamat {
+  	position: absolute;
+  	top: 173px;
+  	left: 17px;
+  	width: 406px;
+  	max-height: 264px;   
+  	overflow-y: auto;
+  	overflow-x: hidden;
+}
+.kartu-alamat {
+  	position: relative;
+  	width: 406px;
+  	height: 120px;
+  	margin-bottom: 12px;
+  	cursor: pointer;
+}
+.kartu-alamat .kartu-bg {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	border-radius: 12px;
+  	width: 406px;
+  	height: 120px;
+  	display: block;
+}
+.kartu-alamat.dipilih .kartu-bg {
+  	border: 2px solid #18a999;
+  	box-sizing: border-box;
+  	border-radius: 12px;
+}
+.kartu-alamat .radio-alamat {
+  	position: absolute;
+  	top: 18px;
+  	left: 16px;
+  	width: 24px;
+  	height: 24px;
+}
+.kartu-alamat .nama-alamat {
+  	position: absolute;
+  	top: 18px;
+  	left: 69px;
+  	font-size: 18px;
+  	font-weight: 700;
+  	color: #000;
+  	font-family: Inter, Arial, sans-serif;
+  	max-width: 250px;
+  	overflow: hidden;
+  	white-space: nowrap;
+  	text-overflow: ellipsis;
+}
+.kartu-alamat .telepon-alamat {
+  	position: absolute;
+  	top: 21px;
+  	left: 229px;
+  	font-size: 13px;
+  	font-weight: 600;
+  	color: #504e4e;
+  	font-family: Inter, Arial, sans-serif;
+  	max-width: 115px;
+  	overflow: hidden;
+  	white-space: nowrap;
+  	text-overflow: ellipsis;
+}
+.kartu-alamat .ikon-telepon {
+  	position: absolute;
+  	top: 21px;
+  	left: 210px;
+  	width: 15px;
+  	height: 15px;
+}
+.kartu-alamat .teks-alamat {
+  	position: absolute;
+  	top: 50px;
+  	left: 69px;
+  	font-size: 15px;
+  	font-weight: 500;
+  	color: #504e4e;
+  	width: 322px;
+  	height: 48px;
+  	overflow: hidden;
+  	font-family: Inter, Arial, sans-serif;
+}
+.kartu-alamat .garis-alamat {
+  	position: absolute;
+  	top: 15px;
+  	left: 295px;
+  	width: 1px;
+  	height: 90px;
+}
+.kartu-alamat .tombol-ubah {
+  	position: absolute;
+  	top: 86px;
+  	left: 346px;
+  	color: #16c03b;
+  	font-weight: 700;
+  	font-size: 15px;
+  	cursor: pointer;
+  	font-family: Inter, Arial, sans-serif;
+}
+.modal-alamat {
+  	position: fixed;
+  	inset: 0;
+  	background: rgba(0, 0, 0, 0.45);
+  	z-index: 999;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-family: Inter, Arial, sans-serif;
+}
+.modal-alamat .kotak-modal {
+  	background: #fff;
+  	border-radius: 16px;
+  	padding: 20px 22px;
+  	width: 360px;
+  	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.modal-alamat .judul-modal {
+  	margin: 0 0 14px;
+  	font-size: 18px;
+  	font-weight: 800;
+  	color: #0b3ea8;
+  	font-family: Poppins, Arial, sans-serif;
+}
+.modal-alamat .label-form {
+  	display: block;
+  	font-size: 12.5px;
+  	font-weight: 700;
+  	color: #555;
+  	margin: 10px 0 4px;
+}
+.modal-alamat .input-form {
+  	width: 100%;
+  	box-sizing: border-box;
+  	border: 1px solid #ccc;
+  	border-radius: 9px;
+  	padding: 9px 11px;
+  	font-size: 14px;
+  	font-family: Inter, Arial, sans-serif;
+   outline: none;
+}
+.modal-alamat .input-form:focus {
+  	border-color: #18a999;
+}
+.modal-alamat .baris-tombol {
+  	display: flex;
+  	gap: 10px;
+  	margin-top: 16px;
+}
+.modal-alamat .tombol-batal,
+.modal-alamat .tombol-simpan {
+  	flex: 1;
+  	padding: 10px 0;
+  	border: none;
+  	border-radius: 9px;
+  	font-weight: 700;
+  	font-size: 14px;
+  	cursor: pointer;
+  	font-family: Inter, Arial, sans-serif;
+}
+.modal-alamat .tombol-batal {
+  	background: #f0f0f0;
+  	color: #444;
+}
+.modal-alamat .tombol-simpan {
+  	background: #18a999;
+  	color: #fff;
+}
+
+.modal-alamat .kotak-ekspedisi {
+  	max-height: 72vh;
+  	overflow-y: auto;
+}
+.daftar-ekspedisi {
+  	margin-top: 4px;
+}
+.baris-ekspedisi {
+  	display: flex;
+  	align-items: center;
+  	gap: 10px;
+  	padding: 10px 10px;
+  	border: 1px solid #e3e3e3;
+  	border-radius: 10px;
+  	margin-bottom: 8px;
+  	cursor: pointer;
+  	background: #fff;
+}
+.baris-ekspedisi:hover {
+  	background: #f2fbfa;
+}
+.bulet-ekspedisi {
+  	width: 18px;
+  	height: 18px;
+  	border-radius: 50%;
+  	border: 2px solid #bdbdbd;
+  	flex: 0 0 auto;
+  	box-sizing: border-box;
+}
+.baris-ekspedisi.dipilih .bulet-ekspedisi {
+  	border-color: #18a999;
+  	background: #18a999;
+  	box-shadow: inset 0 0 0 3px #fff;
+}
+.info-ekspedisi {
+  	flex: 1;
+  	min-width: 0;
+}
+.nama-ekspedisi {
+  	font-weight: 800;
+  	font-size: 14.5px;
+  	color: #1c1c1c;
+}
+.eta-ekspedisi {
+  	font-size: 12px;
+  	color: #666;
+  	margin-top: 2px;
+}
+.harga-ekspedisi {
+  	font-weight: 800;
+  	color: #18a999;
+  	font-size: 13.5px;
+  	white-space: nowrap;
+}

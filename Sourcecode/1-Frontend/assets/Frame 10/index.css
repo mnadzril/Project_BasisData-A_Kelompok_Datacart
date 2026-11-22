@@ -481,3 +481,21 @@ body {
 .lacak {
     cursor: pointer;
 }
+
+.lacak {
+    transition: color .15s ease;
+}
+.lacak:hover {
+    color: #0600b8;
+    text-decoration: underline;
+}
+.uilcopy-icon,
+.uilcopy-icon2 {
+    opacity: .85;
+    transition: opacity .15s ease, transform .15s ease;
+}
+.uilcopy-icon:hover,
+.uilcopy-icon2:hover {
+    opacity: 1;
+    transform: scale(1.15);
+}

@@ -276,3 +276,27 @@ body {
 .profile-wrapper {
     cursor: pointer;
 }
+.panah-parent {
+	top: 0px;
+	left: 0px;
+	width: 440px;
+	height: 105px;
+	border-radius: 0 0 20px 20px;
+}
+.panah-icon {
+	top: 18px;
+	left: 10px;
+	width: 62px;
+	height: 62px;
+	cursor: pointer;
+}
+.jadwal-shift {
+	top: 40px;
+	left: 96px;
+}
+
+.senin-25-oktober {
+	left: 58px;
+	width: 290px;
+	justify-content: flex-start;
+}

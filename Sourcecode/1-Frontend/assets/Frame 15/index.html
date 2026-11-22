@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>shop.id - Pulsa</title>
+        <link rel="stylesheet" href="../shared/layanan.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap">
+</head>
+<body>
+        <div class="halaman">
+                <div class="atas">
+                        <img class="panah" src="icons/panah.svg" id="tombolKembali" alt="Kembali">
+                        <h1>Pulsa</h1>
+                </div>
+
+                <div class="kartu">
+                        <img class="ikon-besar" src="icons/LogoPulsa.svg" alt="Pulsa">
+                        <div class="bagian-judul" style="margin: 0 0 10px;">Nomor Telepon</div>
+                        <input class="kolom" id="nomorPulsa" type="tel" inputmode="numeric"
+                               maxlength="13" placeholder="Contoh: 081234567890">
+                </div>
+
+                <div class="bagian-judul">Pilih Nominal</div>
+                <div class="kartu">
+                        <div class="kisi" id="kisiNominal">
+                                <div class="pilihan" data-harga="10000">
+                                        <span class="nominal">10rb</span>
+                                        <span class="harga">Rp 10.000</span>
+                                </div>
+                                <div class="pilihan" data-harga="25000">
+                                        <span class="nominal">25rb</span>
+                                        <span class="harga">Rp 25.000</span>
+                                </div>
+                                <div class="pilihan" data-harga="50000">
+                                        <span class="nominal">50rb</span>
+                                        <span class="harga">Rp 50.000</span>
+                                </div>
+                                <div class="pilihan" data-harga="75000">
+                                        <span class="nominal">75rb</span>
+                                        <span class="harga">Rp 75.000</span>
+                                </div>
+                                <div class="pilihan" data-harga="100000">
+                                        <span class="nominal">100rb</span>
+                                        <span class="harga">Rp 100.000</span>
+                                </div>
+                                <div class="pilihan" data-harga="150000">
+                                        <span class="nominal">150rb</span>
+                                        <span class="harga">Rp 150.000</span>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="kartu">
+                        <div class="ringkasan"><span>Nominal</span><b id="ringkasanNominal">-</b></div>
+                        <div class="ringkasan"><span>Biaya admin</span><b id="ringkasanAdmin">-</b></div>
+                        <div class="ringkasan"><span>Total bayar</span><b id="ringkasanTotal">-</b></div>
+                </div>
+
+                <button class="tombol-bayar" id="tombolBayar" disabled>Bayar Sekarang</button>
+        </div>
+
+        <div class="navbar-bawah">
+                <div class="menu-nav" data-tujuan="../Frame%202/index.html">
+                        <img src="icons/Home.svg" alt="Home"><span>Home</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%204/index.html">
+                        <img src="icons/Category.svg" alt="Category"><span>Category</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%207/index.html">
+                        <img src="icons/Cart.svg" alt="Cart"><span>Cart</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%206/index.html">
+                        <img src="icons/Love.svg" alt="Wishlist"><span>Wishlist</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%2011/index.html">
+                        <img src="icons/GroupProfile.svg" alt="Profile"><span>Profile</span>
+                </div>
+        </div>
+
+        <script src="../shared/api.js"></script>
+        <script src="../shared/nav.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>

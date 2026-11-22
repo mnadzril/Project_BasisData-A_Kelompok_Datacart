@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nexora - Login</title>
+    <title>shop.id - Login</title>
 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="KotakSign.css">
@@ -20,7 +21,7 @@
         <div class="login" id="login"></div>
 
         <input type="text" class="username" id="username"
-            placeholder="Email" autocomplete="username">
+            placeholder="Username" autocomplete="username">
 
         <input type="password" class="password" id="password"
             placeholder="Password" autocomplete="current-password">
@@ -35,50 +36,43 @@
         <b class="login-to-your">Login to your Account</b>
         <b class="dont-have-an">Don’t have an account?</b>
 
+        <b class="lupa-password" id="lupaPasswordText">Lupa Password?</b>
+
         <div class="logo-shop-parent">
             <img class="logo-shop-icon" src="icons/Logo Shop.png" alt="">
             <img class="shopid-icon" src="icons/Shop.id.png" alt="">
         </div>
 
+    </div>
 
-        <div id="kotakSignContainer" class="popup-overlay">
-
-            <div class="kotak-sign">
-
-                <div class="kotak-sign-child"></div>
-
-                <div class="login3" id="loginPopup"></div>
-                <b class="login4">LOGIN</b>
-
-                <input type="password" class="password3"
-                    id="passwordPopup" placeholder="Password">
-
-                <img class="vector-icon" src="icons/Vector_PW.svg" alt="">
-
-                <input type="email" class="password5"
-                    id="emailPopup" placeholder="Email">
-
-                <img class="group-email-icon" src="icons/Group_Email.svg" alt="">
-
-                <div class="username-parent">
-
-                    <input type="text" class="username3"
-                        id="usernamePopup" placeholder="Username">
-
-                    <img class="vector-icon2" src="icons/Vector_User.svg" alt="">
-
-                </div>
-
-                <b class="sign-up2">Sign up</b>
-
+    <div class="popup-overlay" id="popupLupaPassword">
+        <div class="popup-lupa">
+            <div class="popup-lupa-header">
+                <b class="popup-lupa-judul">Lupa Password</b>
+                <div class="popup-lupa-tutup" id="tutupPopupLupa" title="Tutup">&times;</div>
             </div>
-
+            <div class="popup-lupa-isi">
+                <label class="label-lupa">Email akun</label>
+                <input type="text" id="inputEmailLupa" class="input-lupa"
+                       placeholder="contoh: user10@gmail.com" autocomplete="off">
+                <label class="label-lupa">Password baru (min. 6 karakter)</label>
+                <input type="password" id="passwordBaruLupa" class="input-lupa"
+                       placeholder="Password baru" autocomplete="new-password">
+                <input type="password" id="passwordBaruLupa2" class="input-lupa"
+                       placeholder="Ulangi password baru" autocomplete="new-password">
+                <div class="pesan-lupa" id="pesanLupa"></div>
+                <button type="button" class="tombol-lupa" id="aturUlangPassword">Atur Ulang Password</button>
+                <div class="catatan-lupa">
+                    Password di database tersimpan sebagai hash satu arah sehingga tidak bisa
+                    dilihat kembali; lewat sini password akun diganti yang baru.
+                </div>
+            </div>
         </div>
-
     </div>
 
 
     <script src="../shared/api.js"></script>
-<script src="app.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

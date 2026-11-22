@@ -42,7 +42,7 @@
     		<div class="frame-5c-inner">
     		</div>
     		<b class="headset-openear-2">Headset OpenEar 2</b>
-    		<img class="openear-icon" src="icons/openear.svg">
+    		<img class="openear-icon" src="icons/OpenEAR.svg">
     		
             <img class="silang-icon" id="silangIcon" src="icons/silang.svg">
 
@@ -73,7 +73,6 @@ btnPlus.addEventListener("click", function () {
     }
 });
 
-
 const silangIcon = document.getElementById("silangIcon");
 
 if (silangIcon) {
@@ -81,7 +80,6 @@ if (silangIcon) {
         window.parent.postMessage("closeOpenEar", "*");
     });
 }
-
 
 const tombolBeli = document.getElementById("tombolBeli");
 const tombolBeliText = document.getElementById("tombolBeliText");
@@ -99,5 +97,9 @@ if (tombolBeliText) {
 }
 </script>
   	
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

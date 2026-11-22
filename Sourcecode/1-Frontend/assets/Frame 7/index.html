@@ -1,136 +1,154 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="initial-scale=1, width=device-width">
-  	
-  	<link rel="stylesheet"  href="./index.css" />
-  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" />
-  	
-  	
-  	
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        
+        
+    <title>shop.id - Keranjang</title>
+<link rel="stylesheet"  href="./index.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" />
+        
+        
+        
 </head>
 <body>
-  	
-  	<div class="frame-7-done">
-    		<div class="frame-7-done-child">
-    		</div>
-    		<div class="frame-7-done-item">
-    		</div>
-    		<b class="voucher">Voucher</b>
-    		<div class="rectangle-parent">
-      			<div class="group-child">
-      			</div>
-      			<div class="pilih-atau-masukkan">Pilih atau masukkan kode</div>
-      			<img class="panahkanan-icon" src="icons/PanahKanan.svg" alt="">
-      			
-    		</div>
-    		<b class="total">Total</b>
-    		<b class="rp21999000">Rp.21.999.000</b>
-    		<img class="frame-7-done-inner" src="icons/KotakCheckout.svg" id="rectangle2">
-    		
-    		<div class="checkout-1">Checkout (1)</div>
-    		<div class="pilih-semua-parent">
-      			<b class="pilih-semua">Pilih Semua</b>
-      			<div class="group-item">
-      			</div>
-    		</div>
-    		<div class="keranjang-parent">
-      			<b class="keranjang">Keranjang</b>
-      			<img class="arrow-left-icon" src="icons/PanahKiri.svg" id="arrowLeftIcon">
-      			
-    		</div>
-    		<div class="rectangle-group">
-      			<div class="group-inner">
-      			</div>
-      			<div class="rectangle-div">
-      			</div>
-      			<img class="iconoircheck-square-solid" src="icons/KotakCentang.svg">
-      			
-      			<div class="rectangle-container">
-        				<div class="group-child2">
-        				</div>
-        				<b class="b">+</b>
-        				<div class="group-child3">
-        				</div>
-        				<b class="b2">-</b>
-        				<div class="group-child4">
-        				</div>
-        				<b class="b3">1</b>
-      			</div>
-      			<b class="samsung-s24-ultra">Samsung S24 Ultra  <br></b>
-      			<b class="rp-21999000">Rp 21.999.000<br></b>
-      			<img class="tempatsampah-icon" src="icons/TempatSampah.svg">
-      			
-      			<img class="samsung-icon" src="icons/hp.svg">
-      			
-    		</div>
-    		<div class="group-div">
-      			<div class="rectangle-div">
-      			</div>
-      			<div class="rectangle-container">
-        				<div class="group-child2">
-        				</div>
-        				<b class="b">+</b>
-        				<div class="group-child3">
-        				</div>
-        				<b class="b2">-</b>
-        				<div class="group-child4">
-        				</div>
-        				<b class="b3">1</b>
-      			</div>
-      			<b class="laptop-rass-x56">Laptop Rass x56 Pro</b>
-      			<b class="rp-5699000">Rp 5.699.000</b>
-      			<img class="tempatsampah-icon" src="icons/TempatSampah.svg">
-      			
-      			<img class="laptop-icon" src="icons/Laptop.svg">
-      			
-      			<div class="group-child9">
-      			</div>
-    		</div>
-    		<div class="rectangle-parent3">
-      			<div class="rectangle-div">
-      			</div>
-      			<div class="rectangle-parent4">
-        				<div class="group-child2">
-        				</div>
-        				<b class="b">+</b>
-        				<div class="group-child3">
-        				</div>
-        				<b class="b2">-</b>
-        				<div class="group-child4">
-        				</div>
-        				<b class="b3">1</b>
-      			</div>
-      			<b class="vention-power-bank">Vention Power Bank 10000mAh</b>
-      			<b class="rp-345344">Rp 345.344</b>
-      			<img class="trash-5-icon2" src="icons/TempatSampah.svg">
-      			
-      			<img class="power-icon" src="icons/Power.svg">
-      			
-      			<div class="group-child9">
-      			</div>
-    		</div>
-  	</div>
-  	
-  	
-  	
-  	
-  	<script>
-		var rectangle2 = document.getElementById("rectangle2");
-		var tombolCheckout = document.querySelector(".checkout-1");
+        
+        <div class="frame-7-done">
+                <div class="frame-7-done-child">
+                </div>
+                <div class="frame-7-done-item">
+                </div>
+                <b class="voucher">Voucher</b>
+                <div class="rectangle-parent" id="barisVoucher" title="Pilih atau masukkan kode voucher">
+                        <div class="group-child">
+                        </div>
+                        <div class="pilih-atau-masukkan" id="teksVoucher">Pilih atau masukkan kode</div>
+                        <img class="panahkanan-icon" src="icons/PanahKanan.svg" alt="">
+                        
+                </div>
+                <b class="total">Total</b>
+                <b class="rp21999000">Rp.21.999.000</b>
+                <img class="frame-7-done-inner" src="icons/KotakCheckout.svg" id="rectangle2">
+                
+                <div class="checkout-1">Checkout (1)</div>
+                <div class="pilih-semua-parent">
+                        <b class="pilih-semua" id="teksPilihSemua">Pilih Semua</b>
+                        <img class="ikon-pilih-semua" id="ikonPilihSemua" src="icons/KotakCentangKosong.svg" alt="Pilih semua">
+                </div>
+                <div class="keranjang-parent">
+                        <b class="keranjang">Keranjang</b>
+                        <img class="arrow-left-icon" src="icons/PanahKiri.svg" id="arrowLeftIcon">
+                        
+                </div>
+                <div class="rectangle-group">
+                        <div class="group-inner">
+                        </div>
+                        <div class="rectangle-div">
+                        </div>
+                        <img class="iconoircheck-square-solid" data-utama="1" src="icons/KotakCentangKosong.svg">
+                        
+                        <div class="rectangle-container">
+                                        <div class="group-child2">
+                                        </div>
+                                        <b class="b">+</b>
+                                        <div class="group-child3">
+                                        </div>
+                                        <b class="b2">-</b>
+                                        <div class="group-child4">
+                                        </div>
+                                        <b class="b3">1</b>
+                        </div>
+                        <b class="samsung-s24-ultra">Samsung S24 Ultra  <br></b>
+                        <b class="rp-21999000">Rp 21.999.000<br></b>
+                        <img class="tempatsampah-icon" src="icons/TempatSampah.svg">
+                        
+                        <img class="samsung-icon" src="icons/hp.svg">
+                        
+                </div>
+                <div class="group-div">
+                        <div class="rectangle-div">
+                        </div>
+                        <img class="iconoircheck-square-solid" src="icons/KotakCentangKosong.svg">
+                        <div class="rectangle-container">
+                                        <div class="group-child2">
+                                        </div>
+                                        <b class="b">+</b>
+                                        <div class="group-child3">
+                                        </div>
+                                        <b class="b2">-</b>
+                                        <div class="group-child4">
+                                        </div>
+                                        <b class="b3">1</b>
+                        </div>
+                        <b class="laptop-rass-x56">Laptop Rass x56 Pro</b>
+                        <b class="rp-5699000">Rp 5.699.000</b>
+                        <img class="tempatsampah-icon" src="icons/TempatSampah.svg">
+                        
+                        <img class="laptop-icon" src="icons/Laptop.svg">
+                        
+                        <div class="group-child9">
+                        </div>
+                </div>
+                <div class="rectangle-parent3">
+                        <div class="rectangle-div">
+                        </div>
+                        <img class="iconoircheck-square-solid" src="icons/KotakCentangKosong.svg">
+                        <div class="rectangle-parent4">
+                                        <div class="group-child2">
+                                        </div>
+                                        <b class="b">+</b>
+                                        <div class="group-child3">
+                                        </div>
+                                        <b class="b2">-</b>
+                                        <div class="group-child4">
+                                        </div>
+                                        <b class="b3">1</b>
+                        </div>
+                        <b class="vention-power-bank">Vention Power Bank 10000mAh</b>
+                        <b class="rp-345344">Rp 345.344</b>
+                        <img class="trash-5-icon2" src="icons/TempatSampah.svg">
+                        
+                        <img class="power-icon" src="icons/Power.svg">
+                        
+                        <div class="group-child9">
+                        </div>
+                </div>
+        </div>
 
-		function kePengiriman() {
-    	window.location.href = "../Frame%208/index.html";
-		}
+<div class="popup-overlay" id="popupVoucher">
+    <div class="popup-voucher">
+        <div class="popup-voucher-header">
+            <b class="popup-voucher-judul">Pilih Voucher</b>
+            <div class="popup-voucher-tutup" id="tutupPopupVoucher" title="Tutup">&times;</div>
+        </div>
+        <div class="daftar-voucher" id="daftarVoucher"></div>
+        <div class="label-input-voucher">atau masukkan kode sendiri (teks / angka)</div>
+        <input type="text" id="inputVoucher" class="input-voucher"
+               placeholder="Contoh: HEMAT12K" autocomplete="off" maxlength="20">
+        <div class="pesan-voucher" id="pesanVoucher"></div>
+        <button type="button" class="tombol-gunakan-voucher" id="gunakanVoucher">Gunakan</button>
+        <button type="button" class="tombol-hapus-voucher" id="hapusVoucher">Hapus voucher terpasang</button>
+    </div>
+</div>
+        
+        
+        
+        <script>
+                var rectangle2 = document.getElementById("rectangle2");
+                var tombolCheckout = document.querySelector(".checkout-1");
 
-		if (rectangle2) {
-	    	rectangle2.addEventListener("click", kePengiriman);
-		}
+                function kePengiriman() {
+        window.location.href = "../Frame%208/index.html";
+                }
 
-		if (tombolCheckout) {
-    	tombolCheckout.addEventListener("click", kePengiriman);
-		}
+                if (rectangle2) {
+                rectangle2.addEventListener("click", kePengiriman);
+                }
+
+                if (tombolCheckout) {
+        tombolCheckout.addEventListener("click", kePengiriman);
+                }
 var arrowLeftIcon = document.getElementById("arrowLeftIcon");
 
 if (arrowLeftIcon) {
@@ -139,7 +157,9 @@ if (arrowLeftIcon) {
     });
 }
 </script>
-<script src="../shared/api.js"></script>
-<script src="app.js"></script>
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -50,12 +50,12 @@
     		<div class="rp21999000">Rp21.999.000</div>
     		<img class="garansi-icon" src="icons/garansi.svg" alt="">
     		
-    		<img class="grupbintang-icon" src="icons/grupbintang.svg" alt="">
+    		<img class="grupbintang-icon" src="icons/grupBintang.svg" alt="">
     		
     		<div class="frame-5-done-inner" id="rectangle2">
     		</div>
     		<div class="tombolkeranjang">
-      			<img class="tombolkeranjang-child" src="icons/tombolkeranjang.svg" alt="">
+      			<img class="tombolkeranjang-child" src="icons/tombolKeranjang.svg" alt="">
       			
       			<b class="tambah-ke-keranjang">Tambah ke Keranjang</b>
       			<img class="keranjang-icon" src="icons/keranjang.svg" id="keranjangIcon">
@@ -109,7 +109,6 @@
     const teksBeli = document.querySelector(".beli-sekarang");
     const tombolTutup = document.querySelector(".akar-iconscross");
 
-    
     function bukaPopup() {
         popup.style.display = "flex";
     }
@@ -117,32 +116,27 @@
     tombolBeli.addEventListener("click", bukaPopup);
     teksBeli.addEventListener("click", bukaPopup);
 
-    
     popup.addEventListener("click", function(event) {
         if (event.target === popup) {
             popup.style.display = "none";
         }
     });
 
-    
     tombolTutup.addEventListener("click", function() {
         popup.style.display = "none";
     });
 
-    
     const tombolBayar = document.querySelector(".beli-sekarang2");
 
     tombolBayar.addEventListener("click", function() {
         window.location.href = "../Frame%208/index.html";
     });
 
-    
     const tombolKeranjang = document.querySelector(".tombolkeranjang");
 
     tombolKeranjang.addEventListener("click", function() {
         window.location.href = "../Frame%207/index.html";
     });
-	
 var panahIcon = document.getElementById("panahIcon");
 
 if (panahIcon) {
@@ -151,5 +145,9 @@ if (panahIcon) {
     });
 }
 </script>
-			</body>
+			
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
+</body>
 </html>

@@ -37,6 +37,9 @@ public class OrderController {
         double ongkir = HttpUtil.desimal(data, "ongkir", 0);
         double biayaLayanan = HttpUtil.desimal(data, "biaya_layanan", 0);
 
+        double diskon = HttpUtil.desimal(data, "diskon", 0);
+        if (diskon < 0) diskon = 0;
+
         List<Integer> idProdukList = new ArrayList<>();
         List<Integer> jumlahList = new ArrayList<>();
         for (int i = 0; i < itemsJson.size(); i++) {
@@ -75,7 +78,9 @@ public class OrderController {
                     }
                 }
             }
-            double total = subtotal + ongkir + biayaLayanan;
+            double batas = subtotal + ongkir + biayaLayanan;
+            if (diskon > batas) diskon = batas;
+            double total = batas - diskon;
 
             int idPesanan;
             String sqlPesanan = "INSERT INTO pesanan "
@@ -131,6 +136,7 @@ public class OrderController {
             hasil.put("subtotal", subtotal);
             hasil.put("ongkir", ongkir);
             hasil.put("biaya_layanan", biayaLayanan);
+            hasil.put("diskon", diskon);
             hasil.put("total", total);
             return hasil;
 

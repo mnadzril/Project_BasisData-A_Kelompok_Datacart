@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengaturan Akun - shop.in Seller</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="halaman">
+
+        <div class="background"></div>
+
+        <div class="header">
+            <span class="back-arrow">&#8592;</span>
+            <div class="halaman-title">Pengaturan Akun</div>
+        </div>
+        <div class="tombol-ke-pembeli" id="tombolKePembeli" title="Keluar dari akun penjual, kembali ke akun pembeli">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>Akun Pembeli</span>
+        </div>
+
+
+        <div class="main-panel">
+
+            <div class="store-card">
+                <img src="icons/profile (2).svg" alt="Foto Toko" class="profile-icon">
+                <div class="store-info">
+                    <div class="store-name" id="namaToko">Toko</div>
+                    <div class="store-status">Toko Aktif</div>
+                </div>
+            </div>
+
+            <div class="form-card">
+
+                <div class="field">
+                    <div class="field-label">Nama Toko</div>
+                    <input type="text" class="field-input" id="inputNamaToko" placeholder="Nama toko">
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Nama Penjual</div>
+                    <input type="text" class="field-input" id="inputNamaPenjual" placeholder="Nama penjual">
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Alamat Email</div>
+                    <input type="email" class="field-input" id="inputEmail" placeholder="email@contoh.id">
+                </div>
+
+                <div class="field">
+                    <div class="field-label">Alamat Toko</div>
+                    <input type="text" class="field-input" id="inputAlamat" placeholder="Alamat toko">
+                </div>
+
+                <button class="simpan-button" id="tombolSimpan">SIMPAN</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

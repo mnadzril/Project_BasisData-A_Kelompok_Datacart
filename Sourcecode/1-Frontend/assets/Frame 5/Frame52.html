@@ -25,7 +25,7 @@
     		
     		<img class="share-icon" src="icons/share.svg" alt="Share">
     		
-    		<img class="rtx-icon" src="icons/rtx.svg">
+    		<img class="rtx-icon" src="icons/RTX.svg">
     		
     		<b class="nvidia-geforce-rtx">NVIDIA GeForce RTX 5090</b>
     		<b class="pilih-warna">Pilih Warna</b>
@@ -72,7 +72,6 @@
   	
   	
 <script>
-    
     const panahIcon = document.getElementById("panahIcon");
 
     if (panahIcon) {
@@ -81,7 +80,6 @@
         });
     }
 
-    
     const loveIcon = document.getElementById("loveIcon");
 
     if (loveIcon) {
@@ -89,7 +87,6 @@
             window.location.href = "../Frame%206/index.html";
         });
     }
-
 
 const bukaPopupRTX = document.getElementById("bukaPopupRTX");
 const popup = document.getElementById("frame5aContainer");
@@ -100,7 +97,6 @@ if (bukaPopupRTX && popup) {
     });
 }
 
-
 const tombolKeranjang = document.getElementById("tombolKeranjang");
 
 if (tombolKeranjang) {
@@ -108,7 +104,6 @@ if (tombolKeranjang) {
         window.location.href = "../Frame%207/index.html";
     });
 }
-
 
 if (popup) {
     popup.addEventListener("click", function (e) {
@@ -118,7 +113,6 @@ if (popup) {
     });
 }
 
-
 window.addEventListener("message", function (e) {
     if (e.data === "closeRTX" && popup) {
         popup.style.display = "none";
@@ -126,5 +120,9 @@ window.addEventListener("message", function (e) {
 });
 </script>
             
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

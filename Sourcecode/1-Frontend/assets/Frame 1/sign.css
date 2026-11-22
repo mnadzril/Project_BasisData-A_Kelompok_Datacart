@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.splash {
+    position: relative;
+    width: 440px;
+    height: 956px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #18a999 0%, #0b655e 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.splash-logo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.25));
+}
+
+.splash-nama {
+    margin-top: 28px;
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.splash-tagline {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.splash-muat {
+    position: absolute;
+    bottom: 60px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    animation: splashKedip 1.2s infinite;
+}
+
+@keyframes splashKedip {
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 1; }
+}
