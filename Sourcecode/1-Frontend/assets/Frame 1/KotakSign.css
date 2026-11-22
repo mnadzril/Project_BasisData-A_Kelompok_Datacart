@@ -1,21 +1,45 @@
-.popup-overlay {
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #18a999 0%, #0b655e 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-page {
+    width: 440px;
+    height: 956px;
+    position: relative;
+    flex-shrink: 0;
+    background-color: #fff;
+    text-align: center;
+    font-size: 20px;
+    color: #b1b1b1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-page-child {
     position: absolute;
     top: 0;
     left: 0;
+    background: linear-gradient(180deg, #18a999 55%, #0b655e 70%);
     width: 440px;
     height: 956px;
-    display: none;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: rgba(113, 113, 113, 0.3);
-    z-index: 100;
 }
 
 .kotak-sign {
+    position: absolute;
+    top: 228px;   
+    left: 26px;   
     width: 388px;
     height: 501px;
-    position: relative;
-    flex-shrink: 0;
     overflow: hidden;
     text-align: center;
     font-size: 20px;
@@ -27,10 +51,101 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px;
     background-color: #59d09d;
     width: 388px;
     height: 501px;
+}
+
+.sign-up2 {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 388px;
+    font-size: 36px;
+    color: #fffbfb;
+}
+
+.username3,
+.password3,
+.password5 {
+    position: absolute;
+    left: 56px;
+    width: 276px;
+    height: 68px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 3px solid #18a999;
+    padding-left: 65px;
+    padding-right: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+.username3::placeholder,
+.password3::placeholder,
+.password5::placeholder {
+    color: #b1b1b1;
+}
+
+.username-parent {
+    position: absolute;
+    top: 102px;
+    left: 55px;
+    width: 276px;
+    height: 68px;
+}
+
+.username3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.vector-icon2 {
+    position: absolute;
+    height: 41.18%;
+    width: 10.51%;
+    top: 29.41%;
+    left: 9.78%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+.password3 {
+    top: 187px;
+}
+
+.password5 {
+    top: 274px;
+}
+
+.vector-icon {
+    position: absolute;
+    height: 6.99%;
+    width: 8.25%;
+    top: 40.52%;
+    left: 20.88%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+.group-email-icon {
+    position: absolute;
+    height: 4.75%;
+    width: 7.94%;
+    top: 59.07%;
+    left: 21.16%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
 }
 
 .login3 {
@@ -60,108 +175,12 @@
     cursor: pointer;
 }
 
-.password3,
-.password5 {
+.login-masuk {
     position: absolute;
-    left: 56px;
-    width: 276px;
-    height: 68px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: 3px solid #18a999;
-    padding-left: 65px;
-    padding-right: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    outline: none;
-    color: #333;
-}
-
-.password3 {
-    top: 187px;
-}
-
-.password5 {
-    top: 274px;
-}
-
-.password3::placeholder,
-.password5::placeholder,
-.username3::placeholder {
-    color: #b1b1b1;
-}
-
-.vector-icon {
-    position: absolute;
-    height: 6.99%;
-    width: 8.25%;
-    top: 40.52%;
-    right: 70.88%;
-    bottom: 52.5%;
-    left: 20.88%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    pointer-events: none;
-}
-
-.group-email-icon {
-    position: absolute;
-    height: 4.75%;
-    width: 7.94%;
-    top: 59.07%;
-    right: 70.91%;
-    bottom: 36.18%;
-    left: 21.16%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    pointer-events: none;
-}
-
-.username-parent {
-    position: absolute;
-    top: 102px;
-    left: 55px;
-    width: 276px;
-    height: 68px;
-}
-
-.username3 {
-    position: absolute;
-    top: 0;
+    top: 470px;
     left: 0;
-    border-radius: 10px;
-    background-color: #fff;
-    border: 3px solid #18a999;
-    width: 276px;
-    height: 68px;
-    padding-left: 65px;
-    padding-right: 12px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    outline: none;
-    color: #333;
-}
-
-.vector-icon2 {
-    position: absolute;
-    height: 41.18%;
-    width: 10.51%;
-    top: 29.41%;
-    right: 79.71%;
-    bottom: 29.41%;
-    left: 9.78%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-    pointer-events: none;
-}
-
-.sign-up2 {
-    position: absolute;
-    top: 27px;
-    left: 124px;
-    font-size: 36px;
+    width: 388px;
+    font-size: 13px;
     color: #fffbfb;
+    cursor: pointer;
 }

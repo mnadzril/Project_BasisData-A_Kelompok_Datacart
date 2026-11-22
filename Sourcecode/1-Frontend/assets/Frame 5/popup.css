@@ -229,3 +229,14 @@
     z-index: 100;
 }
 
+
+.titanium-gray.warna-dipilih,
+.titanium-black.warna-dipilih,
+.titanium-violet.warna-dipilih,
+.titanium-yellow.warna-dipilih {
+  	background: #e5f7f3;
+  	color: #0b655e;
+  	border-radius: 7px;
+  	padding: 2px 7px;
+  	box-shadow: inset 0 0 0 1.5px #18a999;
+}

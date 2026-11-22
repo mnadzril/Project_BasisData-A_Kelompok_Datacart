@@ -85,6 +85,14 @@ public class ApiServer {
                         HttpUtil.sukses(ex, produk.daftarKategori());
                     }
                 }
+                case "toko"      -> {
+                    if (!"GET".equals(metode)) {
+                        HttpUtil.gagal(ex, 405, "Metode " + metode + " tidak didukung");
+                    } else {
+                        Map<String, String> q = HttpUtil.bacaQuery(ex);
+                        HttpUtil.sukses(ex, produk.daftarToko(q.get("search")));
+                    }
+                }
                 case "keranjang" -> tanganiKeranjang(ex, metode, seg);
                 case "pesanan"   -> tanganiPesanan(ex, metode, seg);
                 case "pembayaran"-> tanganiPembayaran(ex, metode, seg);
@@ -120,6 +128,8 @@ public class ApiServer {
             HttpUtil.sukses(ex, auth.register(body));
         } else if ("login".equals(aksi)) {
             HttpUtil.sukses(ex, auth.login(body));
+        } else if ("lupa-password".equals(aksi)) {
+            HttpUtil.sukses(ex, auth.lupaPassword(body));
         } else {
             HttpUtil.gagal(ex, 404, "Endpoint tidak ditemukan: /api/auth/" + aksi);
         }
@@ -130,7 +140,15 @@ public class ApiServer {
             switch (metode) {
                 case "GET" -> {
                     Map<String, String> q = HttpUtil.bacaQuery(ex);
-                    HttpUtil.sukses(ex, produk.daftarProduk(q.get("search"), q.get("kategori")));
+                    int idToko = 0;
+                    String paramToko = q.get("id_toko");
+                    if (paramToko != null && !paramToko.isBlank()) {
+                        try { idToko = Integer.parseInt(paramToko.trim()); }
+                        catch (NumberFormatException e) {
+                            throw new IllegalArgumentException("id_toko harus berupa angka");
+                        }
+                    }
+                    HttpUtil.sukses(ex, produk.daftarProduk(q.get("search"), q.get("kategori"), idToko));
                 }
                 case "POST" -> HttpUtil.sukses(ex, produk.tambahProduk(HttpUtil.bacaBodyJson(ex)));
                 default -> HttpUtil.gagal(ex, 405, "Metode " + metode + " tidak didukung");
@@ -297,7 +315,7 @@ public class ApiServer {
     private static Path kePathAman(String pathRelatif) {
         String bersih = pathRelatif.startsWith("/") ? pathRelatif.substring(1) : pathRelatif;
         if (bersih.isBlank()) {
-            bersih = "Frame 1/index.html";
+            bersih = "Frame 1/sign.html";
         }
         Path calon = folderStatis.resolve(bersih).normalize();
         if (!calon.startsWith(folderStatis)) {

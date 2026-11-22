@@ -284,7 +284,6 @@
   	height: 32px;
 }
 
-
 .frame-5a {
   	width: 440px;
   	height: 500px;
@@ -526,7 +525,6 @@ body {
     margin: 0 auto;
 }
 
-
 .popup-overlay {
     display: none;
     position: fixed;
@@ -540,7 +538,6 @@ body {
     justify-content: center;
     overflow: hidden;
 }
-
 
 .popup-frame {
     width: 440px;

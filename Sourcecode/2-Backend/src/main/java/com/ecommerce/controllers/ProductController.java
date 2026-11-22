@@ -18,7 +18,13 @@ import java.util.Map;
 public class ProductController {
 
     public List<Produk> daftarProduk(String cari, String kategori) throws SQLException {
-        StringBuilder sql = new StringBuilder("SELECT * FROM produk WHERE 1 = 1");
+        return daftarProduk(cari, kategori, 0);
+    }
+
+    public List<Produk> daftarProduk(String cari, String kategori, int idToko) throws SQLException {
+        StringBuilder sql = new StringBuilder(
+                "SELECT p.*, COALESCE((SELECT SUM(dp.jumlah) FROM detail_pesanan dp "
+              + "WHERE dp.id_produk = p.id), 0) AS terjual FROM produk p WHERE 1 = 1");
         List<String> params = new ArrayList<>();
 
         if (cari != null && !cari.trim().isEmpty()) {
@@ -31,6 +37,10 @@ public class ProductController {
         if (kategori != null && !kategori.trim().isEmpty()) {
             sql.append(" AND kategori = ?");
             params.add(kategori.trim());
+        }
+        if (idToko > 0) {
+            sql.append(" AND id_penjual = ?");
+            params.add(String.valueOf(idToko));
         }
         sql.append(" ORDER BY id DESC");
 
@@ -51,7 +61,8 @@ public class ProductController {
     }
 
     public Produk cariProduk(int id) throws SQLException {
-        String sql = "SELECT * FROM produk WHERE id = ?";
+        String sql = "SELECT p.*, COALESCE((SELECT SUM(dp.jumlah) FROM detail_pesanan dp "
+                   + "WHERE dp.id_produk = p.id), 0) AS terjual FROM produk p WHERE p.id = ?";
         try (Connection conn = DatabaseConfig.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, id);
@@ -73,6 +84,65 @@ public class ProductController {
              ResultSet rs = stmt.executeQuery()) {
             while (rs.next()) {
                 daftar.add(rs.getString("kategori"));
+            }
+        }
+        return daftar;
+    }
+
+    public List<Map<String, Object>> daftarToko() throws SQLException {
+        return daftarToko(null);
+    }
+
+    public List<Map<String, Object>> daftarToko(String cari) throws SQLException {
+        String kata = (cari == null) ? "" : cari.trim();
+        boolean pakaiCari = !kata.isEmpty();
+
+        StringBuilder sql = new StringBuilder(
+                "SELECT p.id, p.nama, p.nama_toko, p.alamat_toko, "
+              + "(SELECT COUNT(*) FROM produk pr WHERE pr.id_penjual = p.id) AS jumlah_produk ");
+        if (pakaiCari) {
+            sql.append(", (SELECT COUNT(*) FROM produk pr WHERE pr.id_penjual = p.id ")
+               .append("AND (pr.nama_produk LIKE ? OR pr.kategori LIKE ? OR pr.deskripsi LIKE ?)) AS produk_cocok ");
+        }
+        sql.append("FROM penjual p ");
+        if (pakaiCari) {
+            sql.append("WHERE (p.nama_toko LIKE ? OR p.nama LIKE ? OR p.alamat_toko LIKE ? ")
+               .append("OR EXISTS (SELECT 1 FROM produk pr WHERE pr.id_penjual = p.id ")
+               .append("AND (pr.nama_produk LIKE ? OR pr.kategori LIKE ? OR pr.deskripsi LIKE ?))) ");
+        }
+        sql.append("ORDER BY p.id");
+
+        List<Map<String, Object>> daftar = new ArrayList<>();
+        try (Connection conn = DatabaseConfig.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql.toString())) {
+
+            if (pakaiCari) {
+                String mirip = "%" + kata + "%";
+                int i = 1;
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+                stmt.setString(i++, mirip);
+            }
+
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    Map<String, Object> toko = new LinkedHashMap<>();
+                    toko.put("id", rs.getInt("id"));
+                    toko.put("nama", rs.getString("nama"));
+                    toko.put("nama_toko", rs.getString("nama_toko"));
+                    toko.put("alamat_toko", rs.getString("alamat_toko"));
+                    toko.put("jumlah_produk", rs.getInt("jumlah_produk"));
+                    if (pakaiCari) {
+                        toko.put("produk_cocok", rs.getInt("produk_cocok"));
+                    }
+                    daftar.add(toko);
+                }
             }
         }
         return daftar;
@@ -177,7 +247,8 @@ public class ProductController {
                 rs.getString("kategori"),
                 rs.getString("deskripsi"),
                 rs.getString("foto_produk"),
-                rs.getInt("id_penjual")
+                rs.getInt("id_penjual"),
+                rs.getInt("terjual")
         );
     }
 }

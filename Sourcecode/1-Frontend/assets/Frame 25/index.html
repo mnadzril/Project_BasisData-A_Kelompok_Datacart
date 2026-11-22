@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pesanan - shop.in Seller</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="halaman">
+
+        <div class="background"></div>
+
+        <div class="header">
+            <span class="back-arrow">&#8592;</span>
+            <div class="halaman-title">Detail Pesanan</div>
+        </div>
+        <div class="tombol-ke-pembeli" id="tombolKePembeli" title="Keluar dari akun penjual, kembali ke akun pembeli">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <span>Akun Pembeli</span>
+        </div>
+
+
+        <div class="main-panel">
+
+            <div class="detail-card">
+
+                <div class="baris-status">
+                    <div class="badge-status" id="badgeStatus">Diproses</div>
+                    <button class="selesai-button" id="tombolSelesai">Selesai</button>
+                </div>
+
+                <div class="baris-profil">
+                    <img src="icons/profile (2).svg" alt="Pembeli" class="profil-foto">
+                    <div class="profil-info">
+                        <div class="profil-nama" id="namaPembeli">Pembeli</div>
+                        <div class="profil-telepon" id="teleponPembeli">-</div>
+                    </div>
+                </div>
+
+                <div class="section-label">Produk</div>
+                <div id="daftarItem"></div>
+
+                <div class="baris-info">
+                    <div class="info-label">Ekspedisi</div>
+                    <div class="info-nilai">JNE</div>
+                </div>
+
+                <div class="baris-info">
+                    <div class="info-label">Resi</div>
+                    <div class="info-nilai abu" id="teksResi">-</div>
+                </div>
+
+                <div class="baris-info">
+                    <div class="info-label">Total</div>
+                    <div class="info-nilai tebal" id="teksTotal">Rp 0</div>
+                </div>
+
+                <div class="baris-info">
+                    <div class="info-label">Status</div>
+                    <div class="info-nilai tebal" id="teksStatus">-</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -260,11 +260,12 @@
 }
 .sepatu-icon {
   	position: absolute;
-  	top: 476px;
-  	left: 24px;
-  	width: 109px;
-  	height: 127px;
+  	top: 8px;
+  	left: 14px;
+  	width: 91px;
+  	height: 106px;
   	object-fit: cover;
+  	border-radius: 8px;
 }
 
 body {

@@ -1,13 +1,18 @@
-API.get("/api/admin")
-  .then(function (daftar) {
-    var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-    var bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
-                 "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-    var kini = new Date();
-    document.querySelector(".senin-25-oktober").textContent =
+(function pasangTanggal() {
+  var hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+  var bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni",
+               "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+  var kini = new Date();
+  var elTanggal = document.querySelector(".senin-25-oktober");
+  if (elTanggal) {
+    elTanggal.textContent =
       hari[kini.getDay()] + ", " + kini.getDate() + " " + bulan[kini.getMonth()] +
       " " + kini.getFullYear();
+  }
+})();
 
+API.get("/api/admin")
+  .then(function (daftar) {
     function ambilPetugas(shift) {
       var cocok = daftar.filter(function (a) {
         return (a.shift || "").toLowerCase() === shift.toLowerCase();
@@ -35,3 +40,5 @@ API.get("/api/admin")
     isiKartu(".frame-div", "Malam");
   })
   .catch(tampilkanError);
+
+pasangKembali();

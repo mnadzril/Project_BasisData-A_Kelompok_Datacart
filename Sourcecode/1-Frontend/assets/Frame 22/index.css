@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.halaman {
+    position: relative;
+    width: 440px;
+    height: 956px;
+    overflow: hidden;
+    color: #0b655e;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 440px;
+    height: 956px;
+    background: linear-gradient(180deg, #18a999 55%, #0b655e 70%);
+}
+
+.header {
+    position: absolute;
+    top: 27px;
+    left: 33px;
+    width: 300px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 2;
+}
+
+.back-arrow {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    width: 42px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.halaman-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 12px;
+}
+
+.main-panel {
+    position: absolute;
+    top: 67px;
+    left: 25px;
+    width: 390px;
+    height: 845px;
+    border-radius: 28px;
+    background: #dff2ec;
+    overflow-y: auto;
+}
+
+.tambah-button {
+    width: 350px;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    background: #0e9e8a;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 14px;
+    box-shadow: 0 6px 14px rgba(14, 158, 138, 0.35);
+}
+
+.daftar-produk {
+    padding: 0 20px 26px;
+}
+
+.item-produk {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(11, 101, 94, 0.10);
+}
+
+.item-foto {
+    width: 72px;
+    height: 72px;
+    border-radius: 16px;
+    background: #dcf1ea;
+    object-fit: contain;
+    padding: 6px;
+}
+
+.item-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.item-nama {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0b5e52;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-harga {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0f766e;
+    margin-top: 2px;
+}
+
+.item-aksi {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.chip-edit,
+.chip-hapus {
+    border: none;
+    border-radius: 12px;
+    padding: 5px 14px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.chip-edit {
+    background: #7ed9a6;
+    color: #0b5e52;
+}
+
+.chip-hapus {
+    background: #f47c7c;
+    color: #7a1f1f;
+}
+
+.kosong {
+    text-align: center;
+    font-size: 14px;
+    color: #0b5e52;
+    padding: 40px 0;
+    font-weight: 500;
+}
+
+.tombol-ke-pembeli {
+    position: absolute;
+    top: 26px;
+    right: 25px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    color: #0b655e;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 7px 12px;
+    border: 1px solid rgba(11, 101, 94, 0.35);
+    border-radius: 999px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.tombol-ke-pembeli:hover {
+    background: #e6f5f2;
+}
+
+.tombol-ke-pembeli svg {
+    width: 14px;
+    height: 14px;
+    fill: #0b655e;
+    flex-shrink: 0;
+}

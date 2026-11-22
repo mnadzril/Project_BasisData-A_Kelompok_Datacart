@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>shop.id - Makanan</title>
+        <link rel="stylesheet" href="../shared/layanan.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap">
+</head>
+<body>
+        <div class="halaman">
+                <div class="atas">
+                        <img class="panah" src="icons/panah.svg" id="tombolKembali" alt="Kembali">
+                        <h1>Makanan</h1>
+                </div>
+
+                <div class="kartu" style="display:flex; align-items:center; gap:14px;">
+                        <img src="icons/LogoMakanan.svg" alt="Makanan" style="width:58px; height:58px; flex-shrink:0;">
+                        <div>
+                                <div style="font-size:16px; font-weight:700;">Pesan makanan &amp; minuman</div>
+                                <div style="font-size:12.5px; color:#888; margin-top:3px;">
+                                        Makanan siap antar dari penjual terdekat.
+                                </div>
+                        </div>
+                </div>
+
+                <div class="bagian-judul">Menu Populer</div>
+                <div class="kartu" id="daftarMenu">
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/LogoMakanan.svg" alt="Nasi Goreng Spesial">
+                                <div class="info">
+                                        <div class="nama">Nasi Goreng Spesial</div>
+                                        <div class="catatan">Penjual: Warung Budi &bull; 15-20 menit</div>
+                                        <div class="harga">Rp 18.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Nasi Goreng Spesial" data-harga="18000">+ Keranjang</button>
+                        </div>
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/Burger.svg" alt="Burger Ayam Keju">
+                                <div class="info">
+                                        <div class="nama">Burger Ayam Keju</div>
+                                        <div class="catatan">Penjual: Sari Snack &bull; 10-15 menit</div>
+                                        <div class="harga">Rp 25.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Burger Ayam Keju" data-harga="25000">+ Keranjang</button>
+                        </div>
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/indomie.png" alt="Indomie Goreng">
+                                <div class="info">
+                                        <div class="nama">Indomie Goreng Double</div>
+                                        <div class="catatan">Penjual: Warung Budi &bull; 5-10 menit</div>
+                                        <div class="harga">Rp 12.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Indomie Goreng Double" data-harga="12000">+ Keranjang</button>
+                        </div>
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/yakult.png" alt="Yakult Pack 5">
+                                <div class="info">
+                                        <div class="nama">Yakult Pack 5</div>
+                                        <div class="catatan">Penjual: Sari Snack &bull; 5-10 menit</div>
+                                        <div class="harga">Rp 13.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Yakult Pack 5" data-harga="13000">+ Keranjang</button>
+                        </div>
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/kopi.png" alt="Es Kopi Susu">
+                                <div class="info">
+                                        <div class="nama">Es Kopi Susu Gula Aren</div>
+                                        <div class="catatan">Penjual: Sari Snack &bull; 5-10 menit</div>
+                                        <div class="harga">Rp 16.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Es Kopi Susu Gula Aren" data-harga="16000">+ Keranjang</button>
+                        </div>
+                        <div class="baris-item">
+                                <img class="gambar" src="icons/LogoMakanan.svg" alt="Ayam Geprek">
+                                <div class="info">
+                                        <div class="nama">Ayam Geprek Sambal Bawang</div>
+                                        <div class="catatan">Penjual: Warung Budi &bull; 15-20 menit</div>
+                                        <div class="harga">Rp 20.000</div>
+                                </div>
+                                <button class="tombol-kecil" data-nama="Ayam Geprek Sambal Bawang" data-harga="20000">+ Keranjang</button>
+                        </div>
+                </div>
+
+                <button class="tombol-bayar" id="tombolLihatKeranjang">Lihat Keranjang</button>
+        </div>
+
+        <div class="navbar-bawah">
+                <div class="menu-nav" data-tujuan="../Frame%202/index.html">
+                        <img src="icons/Home.svg" alt="Home"><span>Home</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%204/index.html">
+                        <img src="icons/Category.svg" alt="Category"><span>Category</span>
+                </div>
+                <div class="menu-nav aktif" data-tujuan="../Frame%207/index.html">
+                        <img src="icons/Cart.svg" alt="Cart"><span>Cart</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%206/index.html">
+                        <img src="icons/Love.svg" alt="Wishlist"><span>Wishlist</span>
+                </div>
+                <div class="menu-nav" data-tujuan="../Frame%2011/index.html">
+                        <img src="icons/GroupProfile.svg" alt="Profile"><span>Profile</span>
+                </div>
+        </div>
+
+        <script src="../shared/api.js"></script>
+        <script src="../shared/nav.js"></script>
+        <script src="app.js"></script>
+</body>
+</html>

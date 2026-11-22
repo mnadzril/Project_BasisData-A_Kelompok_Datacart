@@ -96,6 +96,37 @@ public class AuthController {
         return hasil;
     }
 
+    public Map<String, Object> lupaPassword(JsonObject data) throws SQLException {
+        String email    = HttpUtil.str(data, "email", "").trim().toLowerCase();
+        String password = HttpUtil.str(data, "password_baru", "").trim();
+
+        if (email.isEmpty() || password.isEmpty()) {
+            throw new IllegalArgumentException("Email dan password baru wajib diisi");
+        }
+        if (password.length() < 6) {
+            throw new IllegalArgumentException("Password baru minimal 6 karakter");
+        }
+
+        String hash = PasswordUtil.hash(password);
+
+        for (String tabel : new String[] { "pembeli", "penjual", "admin" }) {
+            String sql = "UPDATE " + tabel + " SET password = ? WHERE email = ?";
+            try (Connection conn = DatabaseConfig.getConnection();
+                 PreparedStatement stmt = conn.prepareStatement(sql)) {
+                stmt.setString(1, hash);
+                stmt.setString(2, email);
+                if (stmt.executeUpdate() > 0) {
+                    Map<String, Object> hasil = new LinkedHashMap<>();
+                    hasil.put("pesan",
+                            "Password akun " + email + " berhasil diatur ulang. Silakan login kembali.");
+                    return hasil;
+                }
+            }
+        }
+
+        throw new IllegalArgumentException("Email " + email + " tidak terdaftar");
+    }
+
     public Map<String, Object> login(JsonObject data) throws SQLException {
         String email    = HttpUtil.str(data, "email", "").trim().toLowerCase();
         String password = HttpUtil.str(data, "password", "").trim();

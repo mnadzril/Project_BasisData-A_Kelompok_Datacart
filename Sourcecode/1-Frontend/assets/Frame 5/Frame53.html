@@ -19,11 +19,11 @@
     		</div>
     		<img class="slide-icon" src="icons/slide.svg" alt="">
     		
-    		<img class="panah-icon" src="Icons/panah.svg" id="panahIcon">
+    		<img class="panah-icon" src="icons/panah.svg" id="panahIcon">
     		
-    		<img class="love-icon" src="Icons/love.svg" id="loveIcon">
+    		<img class="love-icon" src="icons/love.svg" id="loveIcon">
     		
-    		<img class="share-icon" src="Icons/share.svg" alt="Share  ">
+    		<img class="share-icon" src="icons/share.svg" alt="Share  ">
     		
     		<b class="sneakers-classic-black">Sneakers Classic Black White</b>
     		<b class="pilih-warna">Pilih Warna</b>
@@ -53,7 +53,7 @@
 <div class="frame-52-done-inner"></div>
 
 <div class="tombolkeranjang" id="tombolKeranjang">
-    <img class="tombolkeranjang-child" src="icons/tombolkeranjang.svg">
+    <img class="tombolkeranjang-child" src="icons/tombolKeranjang.svg">
     <b class="tambah-ke-keranjang">Tambah ke Keranjang</b>
     <img class="keranjang-icon" src="icons/keranjang.svg">
 </div>
@@ -70,7 +70,6 @@
   	
   	
   	<script>
-    
     const panahIcon = document.getElementById("panahIcon");
 
     if (panahIcon) {
@@ -79,7 +78,6 @@
         });
     }
 
-    
     const loveIcon = document.getElementById("loveIcon");
 
     if (loveIcon) {
@@ -88,7 +86,6 @@
         });
     }
 
-    
     const popup = document.getElementById("frame5aContainer");
     const bukaPopup = document.getElementById("bukaPopupSneakers");
 
@@ -98,7 +95,6 @@
         });
     }
 
-    
     const tombolKeranjang = document.getElementById("tombolKeranjang");
 
     if (tombolKeranjang) {
@@ -107,7 +103,6 @@
         });
     }
 
-    
     if (popup) {
         popup.addEventListener("click", function (e) {
             if (e.target === popup) {
@@ -116,7 +111,6 @@
         });
     }
 
-    
     window.addEventListener("message", function (e) {
         if (e.data === "closeSneakers") {
             popup.style.display = "none";
@@ -126,5 +120,9 @@
     
 </script>
 
+
+    <script src="../shared/api.js"></script>
+    <script src="../shared/nav.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

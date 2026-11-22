@@ -1,0 +1,33 @@
+# =====================================================
+# .gitignore — Project BasisData A (Kelompok Datacart)
+# File yang TIDAK ikut di-upload ke GitHub.
+# Semua file penting project (termasuk lib/mysql-connector)
+# tetap ikut ter-commit, jadi teman cukup git pull.
+# =====================================================
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Folder setting editor / IDE
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.settings/
+
+# Hasil build Java (folder kerja IDE, bukan source code)
+target/
+build/
+out/
+bin/
+
+# Log & file sementara
+*.log
+*.tmp
+*.bak
+*~
